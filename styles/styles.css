@@ -5,7 +5,6 @@ html {
 }
 
 body {
-  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -216,6 +215,13 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
+label {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500px;
+  color: #717171;
+}
+
 *,
 *:before,
 *:after {
@@ -235,14 +241,16 @@ input::-moz-focus-inner {
 }
 
 body {
-  font: 14px/25px "Plus Jakarta Sans", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
   font-weight: 400;
-  background-color: #fff;
-  color: #202020;
+  color: #1e1e1e;
+  overflow: hidden;
 }
 
 a {
-  color: #121212;
+  color: #1e1e1e;
   text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -253,7 +261,6 @@ a {
 
 a:hover,
 a:focus {
-  color: #14a077;
   text-decoration: none;
   outline: 0;
   -webkit-transition: all 0.3s ease-in-out;
@@ -269,7 +276,7 @@ ol {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -279,27 +286,23 @@ strong {
 }
 
 h1 {
-  font: 50px/50px "Plus Jakarta Sans", sans-serif;
+  font-size: 56px;
+  line-height: 68px;
 }
 
 h2 {
-  font: 45px/45px "Plus Jakarta Sans", sans-serif;
+  font-size: 44px;
+  line-height: 50px;
 }
 
 h3 {
-  font: 30px/30px "Plus Jakarta Sans", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 h4 {
-  font: 25px/25px "Plus Jakarta Sans", sans-serif;
-}
-
-h5 {
-  font: 22px/22px "Plus Jakarta Sans", sans-serif;
-}
-
-h6 {
-  font: 20px/20px "Plus Jakarta Sans", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 h1,
@@ -317,38 +320,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
-  color: #121212;
+  font-weight: 500;
+  color: #1e1e1e;
 }
 
-h1 {
-  font-size: 80px;
-  line-height: 1.1em;
-}
-
-h2 {
-  font-size: 56px;
-  line-height: 1.2142857143em;
-}
-
-h3 {
-  font-size: 44px;
-  line-height: 1.1363636364em;
-}
-
-h4 {
-  font-size: 36px;
-  line-height: 1.2222222222em;
-}
-
-h5 {
-  font-size: 30px;
-  line-height: 1.4em;
-}
-
-h6 {
-  font-size: 24px;
-  line-height: 1.25em;
+p {
+  font-size: 12px;
+  line-height: 20px;
+  color: #717171;
 }
 
 button {
@@ -394,12 +373,12 @@ input[type=tel],
 input[type=color] {
   width: 100%;
   font-size: 14px;
-  border: 1px solid #e5e5e5;
-  color: #a0a0a0;
+  border: 1px solid #dddddd;
+  color: #1e1e1e;
   background-color: transparent;
-  height: 50px;
-  padding: 12px 30px;
-  border-radius: 0;
+  height: 44px;
+  padding: 11px 14px;
+  border-radius: 8px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -425,6 +404,7 @@ input[type=color]:focus {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  border-color: #533dea;
 }
 
 textarea {
@@ -441,18 +421,27 @@ textarea:-moz-placeholder,
 textarea::-moz-placeholder,
 input:-moz-placeholder,
 input::-moz-placeholder {
-  color: #a0a0a0;
+  color: #c5c5c5;
   opacity: 1;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 input:-ms-input-placeholder {
-  color: #a0a0a0;
+  color: #c5c5c5;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 textarea::-webkit-input-placeholder,
 input::-webkit-input-placeholder {
-  color: #a0a0a0;
+  color: #c5c5c5;
   opacity: 1;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 /* bootstrap resetting elements */
@@ -488,6 +477,168 @@ input[type=color],
   -o-box-shadow: none;
   box-shadow: none;
   color: #a0a0a0;
+}
+
+.boarding-section {
+  background: #1e1e1e;
+  min-height: 394px;
+  margin: 0 -45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 300px;
+  border-bottom-right-radius: 300px;
+}
+.boarding-section .images img {
+  width: 307px;
+  height: 265px;
+}
+
+.boarding-section.st2 {
+  position: relative;
+}
+.boarding-section.st2 .images {
+  position: relative;
+  z-index: 1;
+  margin-left: 90px;
+}
+.boarding-section.st2::after {
+  content: "";
+  position: absolute;
+  height: 215px;
+  bottom: 0;
+  width: 100%;
+  background-color: #533dea;
+  border-radius: 50%;
+}
+
+.boarding-section.st3 {
+  position: relative;
+}
+.boarding-section.st3 .images {
+  position: relative;
+  z-index: 1;
+}
+.boarding-section.st3 .images img {
+  width: 375px;
+  height: 320px;
+}
+.boarding-section.st3::after {
+  content: "";
+  position: absolute;
+  height: 215px;
+  bottom: 0;
+  width: 100%;
+  background-color: #533dea;
+  border-radius: 50%;
+  transform: skew(-14deg, 8deg);
+}
+
+.boarding-content {
+  padding: 40px 0px;
+}
+.boarding-content .boarding-title {
+  text-align: center;
+  padding-bottom: 91px;
+}
+.boarding-content .boarding-title h2 {
+  margin-bottom: 16px;
+}
+.boarding-content .boarding-title p {
+  padding: 0 30px;
+}
+
+.boarding-footer {
+  padding-bottom: 24px;
+}
+.boarding-footer p {
+  text-align: center;
+  padding: 0px 50px 11px;
+}
+.boarding-footer p a {
+  font-weight: 700;
+}
+
+.login-section .tf-form-auth {
+  margin-bottom: 71px;
+}
+.login-section .auth-line {
+  margin-bottom: 24px;
+  text-align: center;
+}
+.login-section .auth-line::before {
+  content: "";
+}
+.login-section .auth-line::after {
+  content: "";
+}
+
+.tf-container {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.btn-large {
+  width: 100%;
+  height: 48px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #533dea;
+  border: 1px solid #533dea;
+  color: #ededed;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.tf-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.line {
+  display: block;
+  width: 134px;
+  height: 5px;
+  border-radius: 100px;
+  background: #dddddd;
+  margin: 0 auto;
+}
+
+.tf-form-auth .tf-title {
+  margin-top: 20px;
+  margin-bottom: 28px;
+}
+.tf-form-auth input {
+  margin-bottom: 24px;
+}
+.tf-form-auth .group-input {
+  position: relative;
+}
+.tf-form-auth .group-input label {
+  position: absolute;
+  top: -11px;
+  background-color: white;
+  padding: 0px 7px;
+  left: 18px;
+}
+.tf-form-auth .auth-pass-input .password-addon {
+  position: absolute;
+  right: 30px;
+  top: 14px;
+}
+.tf-form-auth .auth-forgot-password {
+  margin-top: -12px;
+  color: #717171;
+  font-size: 12px;
+  line-height: 20px;
+}
+.tf-form-auth .btn-large {
+  margin-top: 28px;
 }
 
 /*# sourceMappingURL=styles.css.map */

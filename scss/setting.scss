@@ -5,7 +5,6 @@ html {
 }
 
 body {
-    line-height: 1;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -215,6 +214,12 @@ input::-moz-focus-inner {
     border: 0;
     padding: 0;
 }
+label {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500px;
+    color: $secondary_color;
+}
 
 *,
 *:before,
@@ -235,14 +240,17 @@ input::-moz-focus-inner {
 }
 
 body {
-    font: 14px/25px "Plus Jakarta Sans", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
     font-weight: 400;
-    background-color: #fff;
-    color: #202020;
+    // background-color: #fff;
+    color: $on_surface_color;
+    overflow: hidden;
 }
 
 a {
-    color: #121212;
+    color: $on_surface_color;
     text-decoration: none;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -253,7 +261,6 @@ a {
 
 a:hover,
 a:focus {
-    color: #14a077;
     text-decoration: none;
     outline: 0;
     -webkit-transition: all 0.3s ease-in-out;
@@ -269,7 +276,7 @@ ol {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -279,27 +286,23 @@ strong {
 }
 
 h1 {
-    font: 50px/50px "Plus Jakarta Sans", sans-serif;
+    font-size: 56px;
+    line-height: 68px;
 }
 
 h2 {
-    font: 45px/45px "Plus Jakarta Sans", sans-serif;
+    font-size: 44px;
+    line-height: 50px;
 }
 
 h3 {
-    font: 30px/30px "Plus Jakarta Sans", sans-serif;
+    font-size: 24px;
+    line-height: 30px;
 }
 
 h4 {
-    font: 25px/25px "Plus Jakarta Sans", sans-serif;
-}
-
-h5 {
-    font: 22px/22px "Plus Jakarta Sans", sans-serif;
-}
-
-h6 {
-    font: 20px/20px "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    line-height: 28px;
 }
 
 h1,
@@ -317,40 +320,14 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 700;
-    color: #121212;
+    font-weight: 500;
+    color: $on_surface_color;
 }
-
-h1 {
-    font-size: 80px;
-    line-height: 1.1em;
+p {
+    font-size: 12px;
+    line-height: 20px;
+    color: $secondary_color;
 }
-
-h2 {
-    font-size: 56px;
-    line-height: 1.2142857142857142em;
-}
-
-h3 {
-    font-size: 44px;
-    line-height: 1.1363636363636365em;
-}
-
-h4 {
-    font-size: 36px;
-    line-height: 1.2222222222222223em;
-}
-
-h5 {
-    font-size: 30px;
-    line-height: 1.4em;
-}
-
-h6 {
-    font-size: 24px;
-    line-height: 1.25em;
-}
-
 button {
     border: none;
 }
@@ -394,12 +371,12 @@ input[type="tel"],
 input[type="color"] {
     width: 100%;
     font-size: 14px;
-    border: 1px solid #e5e5e5;
-    color: #a0a0a0;
+    border: 1px solid $line_color;
+    color: $on_surface_color;
     background-color: transparent;
-    height: 50px;
-    padding: 12px 30px;
-    border-radius: 0;
+    height: 44px;
+    padding: 11px 14px;
+    border-radius: 8px;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -425,6 +402,7 @@ input[type="color"]:focus {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+    border-color: $primary_color;
 }
 
 textarea {
@@ -441,18 +419,27 @@ textarea:-moz-placeholder,
 textarea::-moz-placeholder,
 input:-moz-placeholder,
 input::-moz-placeholder {
-    color: #a0a0a0;
+    color: $secondary3_color;
     opacity: 1;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
 }
 
 input:-ms-input-placeholder {
-    color: #a0a0a0;
+    color: $secondary3_color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
 }
 
 textarea::-webkit-input-placeholder,
 input::-webkit-input-placeholder {
-    color: #a0a0a0;
+    color: $secondary3_color;
     opacity: 1;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
 }
 
 /* bootstrap resetting elements */

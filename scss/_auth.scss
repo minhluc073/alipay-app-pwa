@@ -1,0 +1,22 @@
+
+.login-section {
+    .tf-form-auth{
+        margin-bottom: 71px;
+    }
+  
+    .auth-line {
+        margin-bottom: 24px;
+        text-align: center;
+        
+        &::before{
+            content: "";
+        }
+
+        &::after{
+            content: "";
+        }
+    } 
+}
+
+
+// login with social
