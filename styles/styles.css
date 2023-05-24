@@ -476,7 +476,74 @@ input[type=color],
   -moz-box-shadow: none;
   -o-box-shadow: none;
   box-shadow: none;
-  color: #a0a0a0;
+}
+
+.tf-container {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.btn-large {
+  width: 100%;
+  height: 48px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #533dea;
+  border: 1px solid #533dea;
+  color: #ededed;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.tf-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.line {
+  display: block;
+  width: 134px;
+  height: 5px;
+  border-radius: 100px;
+  background: #dddddd;
+  margin: 0 auto;
+}
+
+.tf-form-auth .tf-title {
+  margin-top: 20px;
+  margin-bottom: 28px;
+}
+.tf-form-auth input {
+  margin-bottom: 24px;
+}
+.tf-form-auth .group-input {
+  position: relative;
+}
+.tf-form-auth .group-input label {
+  position: absolute;
+  top: -11px;
+  background-color: white;
+  padding: 0px 7px;
+  left: 18px;
+}
+.tf-form-auth .auth-pass-input .password-addon {
+  position: absolute;
+  right: 30px;
+  top: 14px;
+}
+.tf-form-auth .auth-forgot-password {
+  margin-top: -12px;
+  color: #717171;
+  font-size: 12px;
+  line-height: 20px;
+}
+.tf-form-auth .btn-large {
+  margin-top: 28px;
 }
 
 .boarding-section {
@@ -564,81 +631,47 @@ input[type=color],
 }
 .login-section .auth-line {
   margin-bottom: 24px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 .login-section .auth-line::before {
   content: "";
+  position: absolute;
+  left: 0;
+  height: 1px;
+  width: 40%;
+  background-color: #dddddd;
 }
 .login-section .auth-line::after {
   content: "";
+  position: absolute;
+  right: 0;
+  height: 1px;
+  width: 40%;
+  background-color: #dddddd;
 }
-
-.tf-container {
-  padding-left: 16px;
-  padding-right: 16px;
+.login-section .socials-login li {
+  padding: 13px 0px;
+  border: 1px solid #dddddd;
+  border-radius: 12px;
 }
-
-.btn-large {
-  width: 100%;
-  height: 48px;
+.login-section .socials-login li:not(:last-child) {
+  margin-bottom: 12px;
+}
+.login-section .socials-login li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  background-color: #533dea;
-  border: 1px solid #533dea;
-  color: #ededed;
-  text-transform: capitalize;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
 }
-
-.tf-title {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 40px;
-}
-
-.line {
-  display: block;
-  width: 134px;
-  height: 5px;
-  border-radius: 100px;
-  background: #dddddd;
-  margin: 0 auto;
-}
-
-.tf-form-auth .tf-title {
-  margin-top: 20px;
-  margin-bottom: 28px;
-}
-.tf-form-auth input {
-  margin-bottom: 24px;
-}
-.tf-form-auth .group-input {
-  position: relative;
-}
-.tf-form-auth .group-input label {
-  position: absolute;
-  top: -11px;
-  background-color: white;
-  padding: 0px 7px;
-  left: 18px;
-}
-.tf-form-auth .auth-pass-input .password-addon {
-  position: absolute;
-  right: 30px;
-  top: 14px;
-}
-.tf-form-auth .auth-forgot-password {
-  margin-top: -12px;
-  color: #717171;
-  font-size: 12px;
-  line-height: 20px;
-}
-.tf-form-auth .btn-large {
-  margin-top: 28px;
+.login-section .socials-login li a img {
+  width: 20px;
+  height: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

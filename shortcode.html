@@ -18,8 +18,7 @@
         <!-- login -->
         <section class="login-section">
             <div class="tf-container">
-                <div class="top">
-                    <form action="./home.html" method="post" class="tf-form-auth">
+                <form action="./home.html" method="post" class="tf-form-auth">
                         <div class="row">
                             <h2 class="tf-title">Login</h2>
                             <div class="group-input">
@@ -36,23 +35,63 @@
                         </div>
                         <button type="submit" class="btn-large">Log In</button>
                     
-                    </form>
-                </div>
-
+                </form>
                 <div class="auth-line" >Or</div>
-                <div class="bottom">
-
-                </div>
+                <ul class="bottom socials-login">
+                    <li><a href="#"><img src="images/icon-socials/facebook.png" alt="image">Continue with Facebook</a></li>
+                    <li><a href="#"><img src="images/icon-socials/google.png" alt="image">Continue with Google</a></li>
+                    <li><a href="#"><img src="images/icon-socials/apple.png" alt="image">Continue with Google</a></li>
+                </ul>
             </div>
         </section>
         
         <!-- register -->
 
-        <section></section>
+        <section class="register-section">
+            <div class="tf-container">
+                <form action="./verify.html" method="post" class="tf-form-auth">
+                    <div class="row">
+                        <h2 class="tf-title">Register</h2>
+                        <div class="group-input">
+                            <label>Name</label>
+                            <input type="text" value="Tony Nguyen"  placeholder="Name">
+                        </div>
+                        <div class="group-input">
+                            <label>Email</label>
+                            <input type="text" placeholder="Example@gmail">
+                        </div>
+                        <div class="group-input">
+                            <label>Phone Number</label>
+                            <input type="number" value="1234567890" placeholder="number">
+                        </div>
+                        <div class="group-input">
+                            <label>Password</label>
+                            <input type="password" class="password-input" placeholder="6-20 characters" required>
+                        </div>
+                        <div class="group-input auth-pass-input">
+                            <label>Comfirm Password</label>
+                            <input type="password" class="password-input" value="Henryhoang@123456789" placeholder="Password" required>
+                            <a class="icon-union password-addon" id="password-addon"></a>
+                        </div>
+                        <div class="group-checkbox">
+                            <input type="checkbox" checked>
+                            <label>I agree to Terms and condition</label>
+                        </div>
+
+                    </div>
+                    <button type="submit" class="btn-large">Create An Account</button>
+                
+            </form>
+            </div>
+        </section>
 
         <!-- verify OTP -->
         
-        <section></section>
+        <section class="verify-secton">
+            <div class="tf-container">
+                
+            </div>
+        </section>
 
 
          <script type="text/javascript" src="javascript/bootstrap.min.js"></script>

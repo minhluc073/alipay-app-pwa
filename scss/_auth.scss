@@ -1,22 +1,55 @@
-
 .login-section {
-    .tf-form-auth{
+    .tf-form-auth {
         margin-bottom: 71px;
     }
-  
+
     .auth-line {
         margin-bottom: 24px;
-        text-align: center;
-        
-        &::before{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        &::before {
             content: "";
+            position: absolute;
+            left: 0;
+            height: 1px;
+            width: 40%;
+            background-color: $line_color;
         }
 
-        &::after{
+        &::after {
             content: "";
+            position: absolute;
+            right: 0;
+            height: 1px;
+            width: 40%;
+            background-color: $line_color;
         }
-    } 
+    }
+
+    // login with social
+    .socials-login {
+        li {
+            padding: 13px 0px;
+            border: 1px solid $line_color;
+            border-radius: 12px;
+            &:not(:last-child){
+                margin-bottom: 12px;
+            }
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
 }
-
-
-// login with social
