@@ -85,11 +85,65 @@
             </div>
         </section>
 
+        <!-- new pass -->
+        <section class="newpass-section">
+            <div class="tf-container">
+                <form action="./newpass.html" method="post" class="tf-form-auth">
+                    <div class="row">
+                        <h2 class="tf-title">Create New Password</h2>
+                        <div class="group-input">
+                            <label>Password</label>
+                            <input type="password" class="password-input" placeholder="" required>
+                        </div>
+                        <div class="group-input">
+                            <label>Comfirm Password</label>
+                            <input type="password" class="password-input" placeholder="6-20 characters" required>
+                        </div>
+
+                    </div>
+                    <button type="submit" class="btn-large">Log In</button>
+                
+            </form>
+            </div>
+        </section>
         <!-- verify OTP -->
         
-        <section class="verify-secton">
+        <section class="verify-secton" style="margin: 50px 0px;">
             <div class="tf-container">
-                
+                <form action="#" class="tf-form-verify">
+                    <div class="row">
+                        <h2 class="tf-title">
+                            Verification OTP
+                        </h2>
+                        <div class="d-flex group-input-verify">
+                            <input type="tel" maxlength="1" pattern="[0-9]" class="input-verify" value="1">
+                            <input type="tel" maxlength="1" pattern="[0-9]" class="input-verify" value="2">
+                            <input type="tel" maxlength="1" pattern="[0-9]" class="input-verify">
+                            <input type="tel" maxlength="1" pattern="[0-9]" class="input-verify">
+                        </div>
+                        <div class="text-send-code">
+                            <p>A code has been sent to your phone</p>
+                            <a href="#">Resend in 00:57</a>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-large">Continue</button>
+                </form>
+            </div>
+        </section>
+
+
+        <!-- verify account -->
+        <section class="verify-account-section">
+            <div class="tf-container">
+                <div class="images">
+                    <img src="images/user/register.jpg" alt="images">
+                </div>
+                <div class="verify-title">
+                    <h2 class="tf-title">You’re verified</h2>
+                    <p>You have been verified your information clet.
+                        Let’s make transactions!</p>
+                </div>
+                <a href="login.html" class="btn-large">Get Started</a>
             </div>
         </section>
 
@@ -97,6 +151,7 @@
          <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
          <script type="text/javascript" src="javascript/main.js"></script>
          <script type="text/javascript" src="javascript/password-addon.js"></script>
+         <script type="text/javascript" src="javascript/verify-input.js"></script>
          
     </body>
     </html>

@@ -546,6 +546,41 @@ input[type=color],
   margin-top: 28px;
 }
 
+.tf-form-verify .tf-title {
+  font-size: 16px;
+  line-height: 24px;
+}
+.tf-form-verify .group-input-verify {
+  margin: 28px 0px 12px;
+  justify-content: center;
+}
+.tf-form-verify .group-input-verify .input-verify {
+  display: block;
+  width: 58px;
+  height: 58px;
+  margin-right: 12px;
+  text-align: center;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 600;
+}
+.tf-form-verify .group-input-verify .input-verify:last-child {
+  margin-right: 0;
+}
+.tf-form-verify .group-input-verify .input-verify:focus {
+  border-color: #1e1e1e;
+}
+.tf-form-verify .text-send-code {
+  margin-bottom: 204px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 22px;
+}
+.tf-form-verify .text-send-code a {
+  color: #533dea;
+  font-weight: 700;
+}
+
 .boarding-section {
   background: #1e1e1e;
   min-height: 394px;
