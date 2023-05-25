@@ -491,7 +491,7 @@ input[type=color],
   line-height: 24px;
   background-color: #533dea;
   border: 1px solid #533dea;
-  color: #ededed;
+  color: #FFFFFF;
   text-transform: capitalize;
   display: flex;
   align-items: center;
@@ -579,6 +579,50 @@ input[type=color],
 .tf-form-verify .text-send-code a {
   color: #533dea;
   font-weight: 700;
+}
+
+.tf-wallet-card {
+  padding: 12px 0px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0px 8px 15px 0px rgba(24, 25, 27, 0.05);
+}
+.tf-wallet-card .balance {
+  padding: 0px 16px 8px;
+  border-bottom: 1px solid #EDEDED;
+}
+.tf-wallet-card .balance p {
+  font-weight: 500;
+}
+.tf-wallet-card .balance .br-right {
+  border-right: 1px solid #EDEDED;
+}
+.tf-wallet-card .balance .inner-left {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.tf-wallet-card .balance .inner-right {
+  text-align: end;
+}
+.tf-wallet-card .balance .inner-right h3 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+}
+.tf-wallet-card .balance .inner-right h3 .icon-gift-box {
+  display: inline-flex;
+  margin-right: 4px;
+}
+.tf-wallet-card .balance .inner-right h3 span {
+  margin-left: 2px;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #717171;
 }
 
 .boarding-section {
@@ -707,6 +751,14 @@ input[type=color],
 .login-section .socials-login li a img {
   width: 20px;
   height: 20px;
+}
+
+.verify-account-section .verify-title {
+  text-align: center;
+  margin: 32px 0px 34px;
+}
+.verify-account-section .verify-title p {
+  padding: 0px 35px;
 }
 
 /*# sourceMappingURL=styles.css.map */

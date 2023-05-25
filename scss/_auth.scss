@@ -34,7 +34,7 @@
             padding: 13px 0px;
             border: 1px solid $line_color;
             border-radius: 12px;
-            &:not(:last-child){
+            &:not(:last-child) {
                 margin-bottom: 12px;
             }
             a {
@@ -54,7 +54,12 @@
     }
 }
 
-
-.verify-account-section{
-    
+.verify-account-section {
+    .verify-title {
+        text-align: center;
+        margin: 32px 0px 34px;
+        p {
+            padding: 0px 35px;
+        }
+    }
 }

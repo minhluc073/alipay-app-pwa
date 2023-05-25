@@ -114,3 +114,49 @@
         }
     }
 }
+// tf-wallet-card
+.tf-wallet-card {
+    padding: 12px 0px;
+    background-color: $white_color;
+    border-radius: 15px;
+    box-shadow: $tf_shadow;
+
+    .balance {
+        padding: 0px 16px 8px;
+        border-bottom: 1px solid $line_br_color;
+        
+        p {
+            font-weight: 500;
+        }
+        .br-right {
+            border-right: 1px solid $line_br_color;
+        }
+        .inner-left {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 700;
+        }
+        .inner-right {
+            text-align: end;
+            h3 {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 22px;
+                .icon-gift-box {
+                    display: inline-flex;
+                    margin-right: 4px;
+                }
+                span {
+                    margin-left: 2px;
+                    font-size: 12px;
+                    line-height: 20px;
+                    font-weight: 500;
+                    color: $secondary_color;
+                }
+            }
+        }
+    }
+}
