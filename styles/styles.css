@@ -1,3 +1,79 @@
+.primary_color {
+  color: #533dea;
+}
+
+.on_surface_color {
+  color: #1e1e1e;
+}
+
+.secondary_color {
+  color: #717171;
+}
+
+.secondary2_color {
+  color: #c5c5c5;
+}
+
+.secondary3_color {
+  color: #F8F8F8;
+}
+
+.line_color {
+  color: #dddddd;
+}
+
+.line_br_color {
+  color: #ededed;
+}
+
+.surface_color {
+  color: #f5f5f5;
+}
+
+.warning_color {
+  color: #f2c71c;
+}
+
+.success_color {
+  color: #44b461;
+}
+
+.critical_color {
+  color: #ea3434;
+}
+
+.white_color {
+  color: #ffffff;
+}
+
+.tf_shadow {
+  box-shadow: 0px 8px 15px 0px rgba(24, 25, 27, 0.05);
+}
+
+.fw_3 {
+  font-weight: 300;
+}
+
+.fw_4 {
+  font-weight: 400;
+}
+
+.fw_5 {
+  font-weight: 500;
+}
+
+.fw_6 {
+  font-weight: 600;
+}
+
+.fw_7 {
+  font-weight: 700;
+}
+
+.fw_8 {
+  font-weight: 800;
+}
+
 html {
   overflow-y: scroll;
   -webkit-text-size-adjust: 100%;
@@ -93,10 +169,7 @@ u,
 ul,
 var,
 video {
-  font-family: inherit;
   font-size: 100%;
-  font-weight: inherit;
-  font-style: inherit;
   vertical-align: baseline;
   margin: 0;
   padding: 0;
@@ -218,8 +291,9 @@ input::-moz-focus-inner {
 label {
   font-size: 12px;
   line-height: 20px;
-  font-weight: 500px;
+  font-weight: 500;
   color: #717171;
+  margin-bottom: 5px;
 }
 
 *,
@@ -241,10 +315,9 @@ label {
 }
 
 body {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 400;
+  font: 12px/20px "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  background-color: #ffffff;
   color: #1e1e1e;
   overflow: hidden;
 }
@@ -261,6 +334,7 @@ a {
 
 a:hover,
 a:focus {
+  color: #533dea;
   text-decoration: none;
   outline: 0;
   -webkit-transition: all 0.3s ease-in-out;
@@ -286,23 +360,23 @@ strong {
 }
 
 h1 {
-  font-size: 56px;
-  line-height: 68px;
+  font-size: 32px;
+  line-height: 40px;
 }
 
 h2 {
-  font-size: 44px;
-  line-height: 50px;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 h3 {
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 h4 {
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 h1,
@@ -311,23 +385,8 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500;
+  font-weight: 700;
   color: #1e1e1e;
-}
-
-p {
-  font-size: 12px;
-  line-height: 20px;
-  color: #717171;
 }
 
 button {
@@ -338,21 +397,28 @@ button,
 input[type=button],
 input[type=reset],
 input[type=submit] {
-  font-size: 12px;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 700;
-  color: #202020;
-  background-color: transparent;
-  text-transform: uppercase;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #202020;
-  padding: 7px 21px;
+  width: 100%;
+  padding: 12px 40px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #533dea;
+  border: 1px solid #533dea;
+  color: #ffffff;
+  text-transform: capitalize;
+  text-align: center;
+  border-radius: 8px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -ms-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  color: #533dea;
+  border-color: #533dea;
+  background-color: #ffffff;
 }
 
 select,
@@ -373,11 +439,10 @@ input[type=tel],
 input[type=color] {
   width: 100%;
   font-size: 14px;
+  font-weight: 500;
   border: 1px solid #dddddd;
   color: #1e1e1e;
-  background-color: transparent;
-  height: 44px;
-  padding: 11px 14px;
+  padding: 13px 14px;
   border-radius: 8px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -407,16 +472,6 @@ input[type=color]:focus {
   border-color: #533dea;
 }
 
-textarea {
-  width: 100%;
-  height: 166px;
-  padding: 15px 30px;
-}
-
-input[type=checkbox] {
-  display: inline;
-}
-
 textarea:-moz-placeholder,
 textarea::-moz-placeholder,
 input:-moz-placeholder,
@@ -442,11 +497,6 @@ input::-webkit-input-placeholder {
   font-weight: 500;
   font-size: 14px;
   line-height: 22px;
-}
-
-/* bootstrap resetting elements */
-.btn {
-  background-image: none;
 }
 
 textarea,
@@ -478,25 +528,181 @@ input[type=color],
   box-shadow: none;
 }
 
-.tf-container {
-  padding-left: 16px;
-  padding-right: 16px;
+input[type=radio] {
+  width: 16px;
+  height: 16px;
+  border-color: #717171;
+  cursor: pointer;
+  font-size: 16px;
+  accent-color: #533dea;
 }
 
-.btn-large {
+.tf-spacing-4 {
+  height: 4px;
+}
+
+.tf-spacing-8 {
+  height: 8px;
+}
+
+.tf-spacing-12 {
+  height: 12px;
+}
+
+.tf-spacing-16 {
+  height: 16px;
+}
+
+.tf-spacing-20 {
+  height: 20px;
+}
+
+.tf-spacing-24 {
+  height: 24px;
+}
+
+.tf-spacing-40 {
+  height: 40px;
+}
+
+.tf-spacing-60 {
+  height: 60px;
+}
+
+.group-input {
+  margin-bottom: 24px;
+}
+
+.tf-switch-check {
+  position: relative;
+  width: 35px;
+  height: 20px;
+  -webkit-appearance: none;
+  background: #c5c5c5;
+  border-radius: 10px;
+  transition: 0.5s;
+  margin-right: 0;
+}
+.tf-switch-check::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: #ffffff;
+  transition: 0.5s;
+}
+.tf-switch-check:checked:checked[type=checkbox] {
+  background: #533dea;
+  transition: 0.5s;
+}
+.tf-switch-check:checked:checked[type=checkbox]::before {
+  background: #ffffff;
+  left: 16px;
+}
+
+.tf-checkbox {
+  position: relative;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  background: none;
+  cursor: pointer;
+  outline: 0;
+  height: 24px;
+  width: 24px;
+  -webkit-appearance: none;
+  opacity: 0.5;
+}
+.tf-checkbox:hover {
+  opacity: 1;
+}
+.tf-checkbox:checked {
+  background-color: #000;
+  opacity: 1;
+}
+.tf-checkbox::before {
+  content: "";
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  width: 6px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  margin: -1px -1px 0 -1px;
+  transform: rotate(45deg) translate(-50%, -50%);
+  z-index: 2;
+}
+
+.tf-checkbox.smail {
+  width: 22px;
+  height: 22px;
+}
+
+.tf-container {
+  max-width: 1320px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tf-btn {
   width: 100%;
-  height: 48px;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  background-color: #533dea;
-  border: 1px solid #533dea;
-  color: #FFFFFF;
   text-transform: capitalize;
   display: flex;
+  gap: 8px;
   align-items: center;
   justify-content: center;
   border-radius: 8px;
+}
+
+.tf-btn.accent {
+  background-color: #533dea;
+  border: 1px solid #533dea;
+  color: #ffffff;
+}
+.tf-btn.accent:hover {
+  color: #533dea;
+  border-color: #533dea;
+  background-color: #ffffff;
+}
+
+.tf-btn.outline {
+  color: #533dea;
+  border: 1px solid #533dea;
+  background-color: #ffffff;
+}
+.tf-btn.outline:hover {
+  background-color: #533dea;
+  border: 1px solid #533dea;
+  color: #ffffff;
+}
+
+.tf-btn.light {
+  color: #999999;
+  background-color: #DFDFDF;
+}
+.tf-btn.light:hover {
+  background-color: #533dea;
+  color: #ffffff;
+}
+
+.tf-btn.large {
+  padding: 12px 40px;
+}
+
+.tf-btn.medium {
+  padding: 10px 40px;
+}
+
+.tf-btn.small {
+  padding: 7px 40px;
 }
 
 .tf-title {
@@ -514,35 +720,32 @@ input[type=color],
   margin: 0 auto;
 }
 
-.tf-form-auth .tf-title {
+.tf-form .tf-title {
   margin-top: 20px;
   margin-bottom: 28px;
 }
-.tf-form-auth input {
-  margin-bottom: 24px;
-}
-.tf-form-auth .group-input {
+.tf-form .group-input {
   position: relative;
 }
-.tf-form-auth .group-input label {
+.tf-form .group-input label {
   position: absolute;
   top: -11px;
   background-color: white;
-  padding: 0px 7px;
-  left: 18px;
+  padding: 0px 5px;
+  left: 12px;
 }
-.tf-form-auth .auth-pass-input .password-addon {
+.tf-form .auth-pass-input .password-addon {
   position: absolute;
   right: 30px;
   top: 14px;
 }
-.tf-form-auth .auth-forgot-password {
+.tf-form .auth-forgot-password {
   margin-top: -12px;
   color: #717171;
   font-size: 12px;
   line-height: 20px;
 }
-.tf-form-auth .btn-large {
+.tf-form .btn-large {
   margin-top: 28px;
 }
 
@@ -583,19 +786,19 @@ input[type=color],
 
 .tf-wallet-card {
   padding: 12px 0px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 0px 8px 15px 0px rgba(24, 25, 27, 0.05);
 }
 .tf-wallet-card .balance {
   padding: 0px 16px 8px;
-  border-bottom: 1px solid #EDEDED;
+  border-bottom: 1px solid #ededed;
 }
 .tf-wallet-card .balance p {
   font-weight: 500;
 }
 .tf-wallet-card .balance .br-right {
-  border-right: 1px solid #EDEDED;
+  border-right: 1px solid #ededed;
 }
 .tf-wallet-card .balance .inner-left {
   font-size: 16px;
@@ -623,6 +826,9 @@ input[type=color],
   line-height: 20px;
   font-weight: 500;
   color: #717171;
+}
+.tf-wallet-card .wallet-footer {
+  margin-top: 12px;
 }
 
 .boarding-section {

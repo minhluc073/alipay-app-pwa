@@ -93,10 +93,7 @@ u,
 ul,
 var,
 video {
-    font-family: inherit;
     font-size: 100%;
-    font-weight: inherit;
-    font-style: inherit;
     vertical-align: baseline;
     margin: 0;
     padding: 0;
@@ -217,8 +214,9 @@ input::-moz-focus-inner {
 label {
     font-size: 12px;
     line-height: 20px;
-    font-weight: 500px;
+    font-weight: $fw_5;
     color: $secondary_color;
+    margin-bottom: 5px;
 }
 
 *,
@@ -240,11 +238,9 @@ label {
 }
 
 body {
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 400;
-    // background-color: #fff;
+    font: 12px/20px "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    background-color: $white_color;
     color: $on_surface_color;
     overflow: hidden;
 }
@@ -261,6 +257,7 @@ a {
 
 a:hover,
 a:focus {
+    color: $primary_color;
     text-decoration: none;
     outline: 0;
     -webkit-transition: all 0.3s ease-in-out;
@@ -286,23 +283,23 @@ strong {
 }
 
 h1 {
-    font-size: 56px;
-    line-height: 68px;
+    font-size: 32px;
+    line-height: 40px;
 }
 
 h2 {
-    font-size: 44px;
-    line-height: 50px;
+    font-size: 18px;
+    line-height: 26px;
 }
 
 h3 {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 h4 {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 14px;
+    line-height: 22px;
 }
 
 h1,
@@ -311,23 +308,10 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 500;
+    font-weight: 700;
     color: $on_surface_color;
 }
-p {
-    font-size: 12px;
-    line-height: 20px;
-    color: $secondary_color;
-}
+
 button {
     border: none;
 }
@@ -336,21 +320,27 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    font-size: 12px;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-weight: 700;
-    color: #202020;
-    background-color: transparent;
-    text-transform: uppercase;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #202020;
-    padding: 7px 21px;
+    width: 100%;
+    padding: 12px 40px;
+    font-weight: $fw_6;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: $primary_color;
+    border: 1px solid $primary_color;
+    color: $white_color;
+    text-transform: capitalize;
+    text-align: center;
+    border-radius: 8px;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -ms-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
+}
+button:hover {
+    color: $primary_color;
+    border-color: $primary_color;
+    background-color: $white_color;
 }
 
 select,
@@ -371,11 +361,10 @@ input[type="tel"],
 input[type="color"] {
     width: 100%;
     font-size: 14px;
+    font-weight: $fw_5;
     border: 1px solid $line_color;
     color: $on_surface_color;
-    background-color: transparent;
-    height: 44px;
-    padding: 11px 14px;
+    padding: 13px 14px;
     border-radius: 8px;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -405,46 +394,31 @@ input[type="color"]:focus {
     border-color: $primary_color;
 }
 
-textarea {
-    width: 100%;
-    height: 166px;
-    padding: 15px 30px;
-}
-
-input[type="checkbox"] {
-    display: inline;
-}
-
 textarea:-moz-placeholder,
 textarea::-moz-placeholder,
 input:-moz-placeholder,
 input::-moz-placeholder {
-    color: $secondary3_color;
+    color: $secondary2_color;
     opacity: 1;
-    font-weight: 500;
+    font-weight: $fw_5;
     font-size: 14px;
     line-height: 22px;
 }
 
 input:-ms-input-placeholder {
-    color: $secondary3_color;
-    font-weight: 500;
+    color: $secondary2_color;
+    font-weight: $fw_5;
     font-size: 14px;
     line-height: 22px;
 }
 
 textarea::-webkit-input-placeholder,
 input::-webkit-input-placeholder {
-    color: $secondary3_color;
+    color: $secondary2_color;
     opacity: 1;
-    font-weight: 500;
+    font-weight: $fw_5;
     font-size: 14px;
     line-height: 22px;
-}
-
-/* bootstrap resetting elements */
-.btn {
-    background-image: none;
 }
 
 textarea,
@@ -474,4 +448,112 @@ input[type="color"],
     -moz-box-shadow: none;
     -o-box-shadow: none;
     box-shadow: none;
+}
+input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    border-color: $secondary_color;
+    cursor: pointer;
+    font-size: 16px;
+    accent-color: $primary_color;
+}
+// spacing
+.tf-spacing-4 {
+    height: 4px;
+}
+.tf-spacing-8 {
+    height: 8px;
+}
+.tf-spacing-12 {
+    height: 12px;
+}
+.tf-spacing-16 {
+    height: 16px;
+}
+.tf-spacing-20 {
+    height: 20px;
+}
+.tf-spacing-24 {
+    height: 24px;
+}
+.tf-spacing-40 {
+    height: 40px;
+}
+.tf-spacing-60 {
+    height: 60px;
+}
+
+.group-input {
+    margin-bottom: 24px;
+}
+
+// switch-check
+.tf-switch-check {
+    position: relative;
+    width: 35px;
+    height: 20px;
+    -webkit-appearance: none;
+    background: $secondary2_color;
+    border-radius: 10px;
+    transition: 0.5s;
+    margin-right: 0;
+
+    &::before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        background: $white_color;
+        transition: 0.5s;
+    }
+    &:checked:checked[type="checkbox"] {
+        background: $primary_color;
+        transition: 0.5s;
+        &::before {
+            background: $white_color;
+            left: 16px;
+        }
+    }
+}
+
+// checkbox
+
+.tf-checkbox {
+    position: relative;
+    border: 1px solid $line_color;
+    border-radius: 6px;
+    background: none;
+    cursor: pointer;
+    outline: 0;
+    height: 24px;
+    width: 24px;
+    -webkit-appearance: none;
+    opacity: 0.5;
+    &:hover {
+        opacity: 1;
+    }
+    &:checked {
+        background-color: #000;
+        opacity: 1;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        width: 6px;
+        height: 10px;
+        border: solid #fff;
+        border-width: 0 2px 2px 0;
+        margin: -1px -1px 0 -1px;
+        transform: rotate(45deg) translate(-50%, -50%);
+        z-index: 2;
+    }
+}
+.tf-checkbox.smail {
+    width: 22px;
+    height: 22px;
 }

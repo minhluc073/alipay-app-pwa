@@ -1,196 +1,346 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+<!DOCTYPE html>
+<html lang="en">
 
-        <!-- Font -->
-        <link rel="stylesheet" href="fonts/fonts.css" />
-        <!-- Icons -->
-        <link rel="stylesheet" href="fonts/icons-alipay.css">
-        <link rel="stylesheet" href="styles/bootstrap.css">
-        <link rel="stylesheet"type="text/css" href="styles/styles.css"/>
-    </head>
-    <body>
-        
-        <!-- login -->
-        <section class="login-section">
-            <div class="tf-container">
-                <form class="tf-form-auth" action="boarding-02.html">
-                        <div class="row">
-                            <h2 class="tf-title">Login</h2>
-                            <div class="group-input">
-                                <label>Email</label>
-                                <input type="text" placeholder="Example@gmail">
-                            </div>
-                            <div class="group-input auth-pass-input">
-                                <label>Password</label>
-                                <input type="password" class="password-input" placeholder="Password" required>
-                                <a class="icon-union password-addon" id="password-addon"></a>
-                            </div>
-                            <a href="forgot-pass.html" class="auth-forgot-password">Forgot Password?</a>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-                        </div>
-                        <button type="submit" class="btn-large">Log In</button>
-                    
-                </form>
-                <div class="auth-line" >Or</div>
-                <ul class="bottom socials-login">
-                    <li><a href="#"><img src="images/icon-socials/facebook.png" alt="image">Continue with Facebook</a></li>
-                    <li><a href="#"><img src="images/icon-socials/google.png" alt="image">Continue with Google</a></li>
-                    <li><a href="#"><img src="images/icon-socials/apple.png" alt="image">Continue with Google</a></li>
-                </ul>
-            </div>
-        </section>
-        
-        <!-- register -->
+    <!-- Font -->
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <!-- Icons -->
+    <link rel="stylesheet" href="fonts/icons-alipay.css">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+</head>
 
-        <section class="register-section">
-            <div class="tf-container">
-                <form class="tf-form-auth" action="boarding-02.html">
-                    <div class="row">
-                        <h2 class="tf-title">Register</h2>
-                        <div class="group-input">
-                            <label>Name</label>
-                            <input type="text" value="Tony Nguyen"  placeholder="Name">
-                        </div>
-                        <div class="group-input">
-                            <label>Email</label>
-                            <input type="text" placeholder="Example@gmail">
-                        </div>
-                        <div class="group-input">
-                            <label>Phone Number</label>
-                            <input type="number" value="1234567890" placeholder="number">
-                        </div>
-                        <div class="group-input">
-                            <label>Password</label>
-                            <input type="password" class="password-input" placeholder="6-20 characters" required>
-                        </div>
-                        <div class="group-input auth-pass-input">
-                            <label>Comfirm Password</label>
-                            <input type="password" class="password-input" value="Henryhoang@123456789" placeholder="Password" required>
-                            <a class="icon-union password-addon" id="password-addon"></a>
-                        </div>
-                        <div class="group-checkbox">
-                            <input type="checkbox" checked>
-                            <label>I agree to Terms and condition</label>
-                        </div>
+<body>
 
+    <!-- login -->
+    <section class="login-section">
+        <div class="tf-container">
+            <form class="tf-form" action="boarding-02.html">
+                <div class="row">
+                    <h2 class="tf-title">Login</h2>
+                    <div class="group-input">
+                        <label>Email</label>
+                        <input type="text" placeholder="Example@gmail">
                     </div>
-                    <button type="submit" class="btn-large">Create An Account</button>
-                
+                    <div class="group-input auth-pass-input">
+                        <label>Password</label>
+                        <input type="password" class="password-input" placeholder="Password" required>
+                        <a class="icon-union password-addon" id="password-addon"></a>
+                    </div>
+                    <a href="forgot-pass.html" class="auth-forgot-password">Forgot Password?</a>
+
+                </div>
+                <button type="submit" class="tf-btn accent large">Log In</button>
+
             </form>
-            </div>
-        </section>
+            <div class="auth-line">Or</div>
+            <ul class="bottom socials-login">
+                <li><a href="#"><img src="images/icon-socials/facebook.png" alt="image">Continue with Facebook</a></li>
+                <li><a href="#"><img src="images/icon-socials/google.png" alt="image">Continue with Google</a></li>
+                <li><a href="#"><img src="images/icon-socials/apple.png" alt="image">Continue with Google</a></li>
+            </ul>
+        </div>
+    </section>
 
-        <!-- new pass -->
-        <section class="newpass-section">
-            <div class="tf-container">
-                <form class="tf-form-auth" action="boarding-02.html">
-                    <div class="row">
-                        <h2 class="tf-title">Create New Password</h2>
-                        <div class="group-input">
-                            <label>Password</label>
-                            <input type="password" class="password-input" placeholder="" required>
-                        </div>
-                        <div class="group-input">
-                            <label>Comfirm Password</label>
-                            <input type="password" class="password-input" placeholder="6-20 characters" required>
-                        </div>
+    <!-- register -->
+
+    <section class="register-section">
+        <div class="tf-container">
+            <form class="tf-form" action="boarding-02.html">
+                <div class="row">
+                    <h2 class="tf-title">Register</h2>
+                    <div class="group-input">
+                        <label>Name</label>
+                        <input type="text" value="Tony Nguyen" placeholder="Name">
                     </div>
-                    <button type="submit" class="btn-large">Log In</button>
-                
+                    <div class="group-input">
+                        <label>Email</label>
+                        <input type="text" placeholder="Example@gmail">
+                    </div>
+                    <div class="group-input">
+                        <label>Phone Number</label>
+                        <input type="number" value="1234567890" placeholder="number">
+                    </div>
+                    <div class="group-input">
+                        <label>Password</label>
+                        <input type="password" class="password-input" placeholder="6-20 characters" required>
+                    </div>
+                    <div class="group-input auth-pass-input">
+                        <label>Comfirm Password</label>
+                        <input type="password" class="password-input" value="Henryhoang@123456789"
+                            placeholder="Password" required>
+                        <a class="icon-union password-addon" id="password-addon"></a>
+                    </div>
+                    <div class="group-checkbox">
+                        <input type="checkbox" checked>
+                        <label>I agree to Terms and condition</label>
+                    </div>
+
+                </div>
+                <button type="submit" class="tf-btn accent large">Create An Account</button>
+
             </form>
+        </div>
+    </section>
+
+    <!-- new pass -->
+    <section class="newpass-section">
+        <div class="tf-container">
+            <form class="tf-form" action="boarding-02.html">
+                <div class="row">
+                    <h2 class="tf-title">Create New Password</h2>
+                    <div class="group-input">
+                        <label>Password</label>
+                        <input type="password" class="password-input" placeholder="" required>
+                    </div>
+                    <div class="group-input">
+                        <label>Comfirm Password</label>
+                        <input type="password" class="password-input" placeholder="6-20 characters" required>
+                    </div>
+                </div>
+                <button type="submit" class="tf-btn accent large">Log In</button>
+
+            </form>
+        </div>
+    </section>
+    <!-- verify OTP -->
+
+    <section class="verify-secton" style="margin: 50px 0px;">
+        <div class="tf-container">
+            <form class="tf-form-verify" action="index.html">
+                <div class="row">
+                    <h2 class="tf-title">
+                        Verification OTP
+                    </h2>
+                    <div class="d-flex group-input-verify">
+                        <input type="tel" maxlength="1" pattern="[0-9]" class="input-verify" value="1">
+                        <input type="tel" maxlength="1" pattern="[0-9]" class="input-verify" value="2">
+                        <input type="tel" maxlength="1" pattern="[0-9]" class="input-verify">
+                        <input type="tel" maxlength="1" pattern="[0-9]" class="input-verify">
+                    </div>
+                    <div class="text-send-code">
+                        <p>A code has been sent to your phone</p>
+                        <a href="#">Resend in 00:57</a>
+                    </div>
+                </div>
+                <button type="submit" class="tf-btn accent">Continue</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- verify account -->
+    <section class="verify-account-section">
+        <div class="tf-container">
+            <div class="images">
+                <img src="images/user/register.jpg" alt="images">
             </div>
-        </section>
-        <!-- verify OTP -->
-        
-        <section class="verify-secton" style="margin: 50px 0px;">
-            <div class="tf-container">
-                <form class="tf-form-verify" action="index.html">
+            <div class="verify-title">
+                <h2 class="tf-title">You’re verified</h2>
+                <p>You have been verified your information clet.
+                    Let’s make transactions!</p>
+            </div>
+            <a href="login.html" class="tf-btn accent large">Done</a>
+        </div>
+    </section>
+    <!-- wallet card -->
+    <!-- <section class="card-secton" style="margin: 50px 0px;">
+        <div class="tf-container">
+            <div class="tf-wallet-card">
+                <div class="balance">
                     <div class="row">
-                        <h2 class="tf-title">
-                            Verification OTP
-                        </h2>
-                        <div class="d-flex group-input-verify">
-                            <input type="tel" maxlength="1" pattern="[0-9]" class="input-verify" value="1">
-                            <input type="tel" maxlength="1" pattern="[0-9]" class="input-verify" value="2">
-                            <input type="tel" maxlength="1" pattern="[0-9]" class="input-verify">
-                            <input type="tel" maxlength="1" pattern="[0-9]" class="input-verify">
-                        </div>
-                        <div class="text-send-code">
-                            <p>A code has been sent to your phone</p>
-                            <a href="#">Resend in 00:57</a>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn-large">Continue</button>
-                </form>
-            </div>
-        </section>
-
-
-        <!-- verify account -->
-        <section class="verify-account-section">
-            <div class="tf-container">
-                <div class="images">
-                    <img src="images/user/register.jpg" alt="images">
-                </div>
-                <div class="verify-title">
-                    <h2 class="tf-title">You’re verified</h2>
-                    <p>You have been verified your information clet.
-                        Let’s make transactions!</p>
-                </div>
-                <a href="login.html" class="btn-large">Done</a>
-            </div>
-        </section>
-        <!-- wallet card -->
-        <section class="card-secton" style="margin: 50px 0px;">
-            <div class="tf-container">
-                <div class="tf-wallet-card">
-                    <div class="balance">
-                        <div class="row">
-                            <div class="col-6 br-right">
-                                <div class="inner-left">
-                                    <p>Your Balance:</p>
-                                    <h3>$3.466,9</h3>
-                                </div>
+                        <div class="col-6 br-right">
+                            <div class="inner-left">
+                                <p>Your Balance:</p>
+                                <h3>$3.466,9</h3>
                             </div>
-                            <div class="col-6">
-                                <div class="inner-right">
-                                    <p>Reward</p>
-                                    <h3>
-                                        <ul class="icon-gift-box">
-                                            <li class="path1"></li>
-                                            <li class="path2"></li>
-                                            <li class="path3"></li>
-                                            <li class="path4"></li>
-                                            <li class="path5"></li>
-                                            <li class="path6"></li>
-                                            <li class="path7"></li>
-                                            <li class="path8"></li>
-                                            <li class="path9"></li>
-                                            <li class="path10"></li>
-                                        </ul>
-                                        307
-                                        <span>Point</span>
-                                    </h3>
-                                </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="inner-right">
+                                <p>Reward</p>
+                                <h3>
+                                    <ul class="icon-gift-box">
+                                        <li class="path1"></li>
+                                        <li class="path2"></li>
+                                        <li class="path3"></li>
+                                        <li class="path4"></li>
+                                        <li class="path5"></li>
+                                        <li class="path6"></li>
+                                        <li class="path7"></li>
+                                        <li class="path8"></li>
+                                        <li class="path9"></li>
+                                        <li class="path10"></li>
+                                    </ul>
+                                    307
+                                    <span>Point</span>
+                                </h3>
                             </div>
                         </div>
                     </div>
-                    <div class="wallet-footer">
-                        hhhhhhhhhhhhhhhh
-                    </div>
+                </div>
+                <div class="wallet-footer">
+                    <ul>
+                        <li>
+                            <a href="transfer.html">
+                                <ul class="icon-group-transfers">
+                                    <li class="path1"></li>
+                                    <li class="path2"></li>
+                                    <li class="path3"></li>
+                                </ul>
+                                Transfer
+                            </a>
+                        </li>
+                        <li><a href="top-up.html">
+                                <ul class="icon-topup">
+                                    <li class="path1"></li>
+                                    <li class="path2"></li>
+                                    <li class="path3"></li>
+                                    <li class="path4"></li>
+                                </ul> 
+                                Top up
+                            </a></li>
+                        <li><a href="card.html">
+                            <ul class="icon-group-credit-card">
+                                <li class="path1"></li>
+                                <li class="path2"></li>
+                                <li class="path3"></li>
+                            </ul>
+                        </a></li>
+                        <li><a href="my-qr.html">
+                            <ul class="icon-my-qr">
+                                <li class="path1"></li>
+                                <li class="path2"></li>
+                                <li class="path3"></li>
+                                <li class="path4"></li>
+                                <li class="path5"></li>
+                                <li class="path6"></li>
+                                <li class="path7"></li>
+                            </ul>
+                        </a></li>
+                    </ul>
                 </div>
             </div>
+        </div>
 
-        </section>
-         <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
-         <script type="text/javascript" src="javascript/main.js"></script>
-         <script type="text/javascript" src="javascript/password-addon.js"></script>
-         <script type="text/javascript" src="javascript/verify-input.js"></script>
-         
-    </body>
-    </html>
+    </section> -->
+    <div class="tf-container">
+        <h1>this is heading</h1>
+        <h2>this is heading</h2>
+        <h3>this is heading</h3>
+        <h4>this is heading</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus eligendi, omnis facere in iure quo obcaecati cumque fuga harum numquam aspernatur quam explicabo id sed delectus hic unde, magnam minima.</p>
+
+        <!-- form design -->
+     <h1>form design</h1>
+
+     <form class="tf-form" style="margin: 20px 0px">
+        <div class="group-input">
+            <label for="">text</label>
+            <input type="text" placeholder="hhh">
+        </div>
+        <div class="group-input">
+            <label for="">text</label>
+            <input type="text" placeholder="hhh">
+        </div>
+        <div class="group-input">
+            <label for="">text</label>
+            <input type="text" placeholder="hhh">
+        </div>
+        <div class="group-input">
+            <label for="">text</label>
+            <input type="text" placeholder="hhh">
+        </div>
+     </form>
+     <!-- form default -->
+     <h1>form default</h1>
+
+     <form style="margin: 20px 0px">
+
+        <div class="group-input">
+            <label for="">text</label>
+            <input type="text" placeholder="text">
+        </div>
+        <div class="group-input">
+            <label for="">text</label>
+            <input type="text" placeholder="text">
+        </div>
+        <div class="group-input">
+            <label for="">text</label>
+            <input type="text" placeholder="text">
+        </div>
+        <div class="group-input">
+            <label for="">text</label>
+            <input type="text" placeholder="text">
+        </div>
+        <div class="group-input">
+            <textarea placeholder="text"></textarea>
+        </div>
+        
+        <button type="submit">Submit</button>
+     </form>
+     
+
+     <div class="group-input">
+        <h1>switch-check </h1>
+        <div class="group-input">
+            <input class="tf-switch-check" type="checkbox" value="checkbox" name="check">
+        </div>
+        <div class="group-input">
+            <input class="tf-switch-check" type="checkbox" value="checkbox" name="check" checked>
+        </div>
+    </div>
+     
+
+    <div class="group-input">
+        <input type="checkbox" class="tf-checkbox" checked>
+        <input type="checkbox" class="tf-checkbox">
+        <input type="checkbox" class="tf-checkbox smail" checked>
+        <input type="radio" checked name="radio">
+        <input type="radio" name="radio">
+
+    </div>
+    
+
+
+
+    </div>
+     
+    <div class="tf-container">
+        <h1>btn large</h1>
+        <a href="#" class="tf-btn accent large">Next <i class="icon-wifi"></i></a>
+        <div class="tf-spacing-20"></div>
+        <a href="#" class="tf-btn outline large">Next <i class="icon-wifi"></i></a>
+        <div class="tf-spacing-20"></div>
+        <a href="#" class="tf-btn light large">Next<i class="icon-wifi"></i></a>
+        <div class="tf-spacing-20"></div>
+        <h1>btn medium</h1>
+        <a href="#" class="tf-btn accent medium">Next<i class="icon-wifi"></i></a>
+        <div class="tf-spacing-20"></div>
+        <a href="#" class="tf-btn outline medium">Next<i class="icon-wifi"></i></a>
+        <div class="tf-spacing-20"></div>
+        <a href="#" class="tf-btn light medium">Next<i class="icon-wifi"></i></a>
+        <div class="tf-spacing-20"></div>
+        <h1>btn small</h1>
+        <a href="#" class="tf-btn accent small">Next<i class="icon-wifi"></i></a>
+        <div class="tf-spacing-20"></div>
+        <a href="#" class="tf-btn outline small">Next<i class="icon-wifi"></i></a>
+        <div class="tf-spacing-20"></div>
+        <a href="#" class="tf-btn light small">Next<i class="icon-wifi"></i></a>
+        <div class="tf-spacing-20"></div>
+    </div>
+    
+
+
+    <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascript/main.js"></script>
+    <script type="text/javascript" src="javascript/password-addon.js"></script>
+    <script type="text/javascript" src="javascript/verify-input.js"></script>
+
+</body>
+
+</html>

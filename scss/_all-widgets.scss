@@ -1,27 +1,62 @@
 .tf-container {
+    max-width: 1320px;
     padding-left: 16px;
     padding-right: 16px;
-    // max-width: 375px;
-    // width: 100%;
-    // margin: 0 auto;
-    // overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 // button
-.btn-large {
+.tf-btn {
     width: 100%;
-    height: 48px;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    background-color: $primary_color;
-    border: 1px solid $primary_color;
-    color: $white_color;
     text-transform: capitalize;
     display: flex;
+    gap: 8px;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
+}
+.tf-btn.accent {
+    background-color: $primary_color;
+    border: 1px solid $primary_color;
+    color: $white_color;
+    &:hover {
+        color: $primary_color;
+        border-color: $primary_color;
+        background-color: $white_color;
+    }
+}
+.tf-btn.outline {
+    color: $primary_color;
+    border:1px solid $primary_color;
+    background-color: $white_color;
+    &:hover {
+        background-color: $primary_color;
+        border: 1px solid $primary_color;
+        color: $white_color;
+    }
+}
+.tf-btn.light {
+    color: $light_color;
+    background-color: $bg_light_color;
+    &:hover {
+        background-color: $primary_color;
+        color: $white_color;
+    }
+}
+
+.tf-btn.large {
+    padding: 12px 40px;
+}
+.tf-btn.medium {
+    padding: 10px 40px;
+}
+
+.tf-btn.small {
+    padding: 7px 40px;
 }
 // title
 .tf-title {
@@ -41,14 +76,14 @@
 
 // form auth
 // form
-.tf-form-auth {
+.tf-form {
     .tf-title {
         margin-top: 20px;
         margin-bottom: 28px;
     }
-    input {
-        margin-bottom: 24px;
-    }
+    // input {
+    //     margin-bottom: 24px;
+    // }
     .group-input {
         position: relative;
 
@@ -56,8 +91,8 @@
             position: absolute;
             top: -11px;
             background-color: #ffff;
-            padding: 0px 7px;
-            left: 18px;
+            padding: 0px 5px;
+            left: 12px;
         }
     }
     .auth-pass-input {
@@ -124,7 +159,7 @@
     .balance {
         padding: 0px 16px 8px;
         border-bottom: 1px solid $line_br_color;
-        
+
         p {
             font-weight: 500;
         }
@@ -158,5 +193,9 @@
                 }
             }
         }
+    }
+
+    .wallet-footer {
+        margin-top: 12px;
     }
 }

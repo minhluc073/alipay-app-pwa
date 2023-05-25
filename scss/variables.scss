@@ -3,14 +3,81 @@ $primary_color: #533dea;
 $on_surface_color: #1e1e1e;
 $secondary_color: #717171;
 $secondary2_color: #c5c5c5;
-$secondary3_color: #c5c5c5;
+$secondary3_color: #F8F8F8;
 $line_color: #dddddd;
-$line_br_color:#EDEDED;
+$line_br_color: #ededed;
 $surface_color: #f5f5f5;
 $warning_color: #f2c71c;
 $success_color: #44b461;
 $critical_color: #ea3434;
-$white_color: #FFFFFF;
-
-
+$white_color: #ffffff;
+$light_color: #999999;
+$bg_light_color: #DFDFDF;
 $tf_shadow: 0px 8px 15px 0px rgba(24, 25, 27, 0.05);
+
+// font-weight
+$fw_3: 300;
+$fw_4: 400;
+$fw_5: 500;
+$fw_6: 600;
+$fw_7: 700;
+$fw_8: 800;
+
+.primary_color {
+    color: $primary_color;
+}
+.on_surface_color {
+    color: $on_surface_color;
+}
+.secondary_color {
+    color: $secondary_color;
+}
+.secondary2_color {
+    color: $secondary2_color;
+}
+.secondary3_color {
+    color: $secondary3_color;
+}
+.line_color {
+    color: $line_color;
+}
+.line_br_color {
+    color: $line_br_color;
+}
+.surface_color {
+    color: $surface_color;
+}
+.warning_color {
+    color: $warning_color;
+}
+.success_color {
+    color: $success_color;
+}
+.critical_color {
+    color: $critical_color;
+}
+.white_color {
+    color: $white_color;
+}
+.tf_shadow {
+    box-shadow: $tf_shadow;
+}
+// font-weight 
+.fw_3 {
+    font-weight: $fw_3;
+}
+.fw_4 {
+    font-weight: $fw_4;
+}
+.fw_5 {
+    font-weight: $fw_5;
+}
+.fw_6 {
+    font-weight: $fw_6;
+}
+.fw_7 {
+    font-weight: $fw_7;
+}
+.fw_8 {
+    font-weight: $fw_8;
+}
