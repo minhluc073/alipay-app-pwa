@@ -827,6 +827,64 @@ input[type=radio] {
   margin-top: 12px;
 }
 
+.tf-navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+}
+.tf-navigation-bar a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  font-size: 10px;
+  line-height: 16px;
+}
+.tf-navigation-bar a .icon {
+  font-size: 20px;
+}
+
+.icon-history {
+  border: 1px solid #717171;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
+  display: inline-flex;
+}
+.icon-history::after {
+  content: "\eae7";
+  left: -6px;
+  position: absolute;
+  top: -5px;
+  font-size: 29px;
+  color: #717171;
+}
+
+.icon-history.active {
+  border-color: #533dea;
+  background: #533dea;
+}
+.icon-history.active::after {
+  color: #ffffff;
+}
+
+.icon-scan-qr-code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #1e1e1e;
+  border-radius: 50%;
+}
+.icon-scan-qr-code::before {
+  content: "\ea7d";
+  color: #ffffff;
+  font-size: 20px;
+}
+
 .boarding-section {
   background: #1e1e1e;
   min-height: 394px;

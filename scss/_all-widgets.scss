@@ -31,7 +31,7 @@
 }
 .tf-btn.outline {
     color: $primary_color;
-    border:1px solid $primary_color;
+    border: 1px solid $primary_color;
     background-color: $white_color;
     &:hover {
         background-color: $primary_color;
@@ -199,3 +199,75 @@
         margin-top: 12px;
     }
 }
+
+.tf-navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+        font-size: 10px;
+        line-height: 16px;
+        .icon {
+            font-size: 20px;
+        }
+    }
+    
+}
+// custom icons
+
+.icon-history {
+    border: 1px solid $secondary_color;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    display: inline-flex;
+
+    &::after {
+        content: "\eae7";
+        left: -6px;
+        position: absolute;
+        top: -5px;
+        font-size: 29px;
+        color: $secondary_color;
+    }
+}
+.icon-history.active {
+    border-color: $primary_color;
+    background: $primary_color;
+    &::after {
+        color: $white_color;
+    }
+}
+.icon-scan-qr-code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: $on_surface_color;
+    border-radius: 50%;
+    &::before {
+        content: "\ea7d";
+        color: $white_color;
+        font-size: 20px;
+    }
+}
+// .icon-rewards {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 20px;
+//     height: 20px;
+//     background: $on_surface_color;
+//     border-radius: 50%;
+//     &::after {
+//         content: "\e90a";
+//         color: $white_color;
+//     }
+// }
