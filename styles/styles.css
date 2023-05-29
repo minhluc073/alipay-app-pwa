@@ -74,6 +74,38 @@
   font-weight: 800;
 }
 
+.bg_color_1 {
+  background: rgba(40, 62, 180, 0.1);
+}
+
+.bg_color_2 {
+  background: rgba(5, 132, 255, 0.1);
+}
+
+.bg_color_3 {
+  background: rgba(0, 170, 91, 0.1);
+}
+
+.bg_color_4 {
+  background: rgba(242, 195, 28, 0.1);
+}
+
+.bg_color_5 {
+  background: rgba(245, 149, 0, 0.1);
+}
+
+.bg_color_6 {
+  background: rgba(57, 163, 248, 0.1);
+}
+
+.bg_color_7 {
+  background: rgba(229, 53, 75, 0.1);
+}
+
+.bg_color_8 {
+  background: rgba(252, 184, 96, 0.1);
+}
+
 html {
   overflow-y: scroll;
   -webkit-text-size-adjust: 100%;
@@ -564,6 +596,10 @@ input[type=radio] {
   height: 60px;
 }
 
+.tf-spacing-80 {
+  height: 80px;
+}
+
 .group-input {
   margin-bottom: 24px;
 }
@@ -698,12 +734,6 @@ input[type=radio] {
 
 .tf-btn.small {
   padding: 7px 40px;
-}
-
-.tf-title {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 40px;
 }
 
 .line {
@@ -865,7 +895,6 @@ input[type=radio] {
 }
 
 .tf-navigation-bar {
-  box-shadow: 0px -1px 2px 0px rgba(0, 0, 0, 0.07);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1070,6 +1099,25 @@ input[type=radio] {
   color: #c5c5c5;
 }
 
+.tf-service-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+}
+.tf-service-item .logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tf-service-item .logo img {
+  width: 24px;
+  height: 24px;
+}
+
 .boarding-section {
   background: #1e1e1e;
   min-height: 394px;
@@ -1204,6 +1252,51 @@ input[type=radio] {
 }
 .verify-account-section .verify-title p {
   padding: 0px 35px;
+}
+
+.app-header {
+  background: url(../images/banner/banner-home.png);
+  padding: 46px 0px 84px;
+  margin: 0px -14px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+}
+.app-header .tf-topbar {
+  margin: 0px 14px;
+}
+.app-header .tf-topbar .user-info p {
+  font-size: 10px;
+  line-height: 16px;
+}
+.app-header .tf-topbar .icon-notification1 {
+  color: #ffffff;
+}
+
+.tf-topbar .user-info {
+  gap: 8px;
+}
+.tf-topbar .user-info img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.card-secton {
+  position: relative;
+  margin-top: -63px;
+}
+
+.bottom-navigation-bar {
+  position: fixed;
+  z-index: 1000;
+  background: #ffffff;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0px -1px 2px 0px rgba(0, 0, 0, 0.07);
 }
 
 /*# sourceMappingURL=styles.css.map */

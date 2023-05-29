@@ -1,0 +1,58 @@
+.app-header {
+    background: url(../images/banner/banner-home.png);
+    padding: 46px 0px 84px;
+    margin: 0px -14px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    border-bottom-right-radius:80px ;
+    border-bottom-left-radius:80px ;
+
+    .tf-topbar{
+        margin: 0px 14px;
+        .user-info {
+
+            p {
+                font-size: 10px;
+                line-height: 16px;
+
+            }
+        }
+
+        .icon-notification1 {
+            color: $white_color;
+        }
+    }
+
+      
+   
+  
+}
+
+.tf-topbar {
+
+    .user-info {
+        gap: 8px;
+        img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+.card-secton {
+    position: relative;
+    margin-top: -63px;
+}
+
+.bottom-navigation-bar {
+    position: fixed;
+    z-index: 1000;
+    background: $white_color;
+    width: 100%;
+    bottom: 0;
+    box-shadow: $tf-navigation-bar_shadow;
+}
+
+

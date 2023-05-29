@@ -60,9 +60,9 @@
 }
 // title
 .tf-title {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 40px;
+    // font-weight: 700;
+    // font-size: 32px;
+    // line-height: 40px;
 }
 // line
 .line {
@@ -239,7 +239,6 @@
     }
 }
 .tf-navigation-bar {
-    box-shadow: $tf-navigation-bar_shadow;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -467,5 +466,25 @@
         top: 14px;
         font-size: 20px;
         color: $secondary2_color;
+    }
+}
+// tf-service-item
+.tf-service-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+    .logo {
+        width: 44px;
+        height: 44px;
+        border-radius: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
     }
 }
