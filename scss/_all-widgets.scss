@@ -81,10 +81,9 @@
         margin-top: 20px;
         margin-bottom: 28px;
     }
-    // input {
-    //     margin-bottom: 24px;
-    // }
+
     .group-input {
+        // width: 100%;
         position: relative;
 
         label {
@@ -189,7 +188,7 @@
         margin-top: 12px;
         .wallet-cart-item {
             width: 25%;
-            box-select {
+            a {
                 display: flex;
                 flex-direction: column;
                 align-items: center;

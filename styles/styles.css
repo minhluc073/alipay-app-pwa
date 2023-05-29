@@ -817,18 +817,18 @@ input[type=radio] {
 .tf-wallet-card .wallet-footer .wallet-cart-item {
   width: 25%;
 }
-.tf-wallet-card .wallet-footer .wallet-cart-item box-select {
+.tf-wallet-card .wallet-footer .wallet-cart-item a {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.tf-wallet-card .wallet-footer .wallet-cart-item box-select .icon {
+.tf-wallet-card .wallet-footer .wallet-cart-item a .icon {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 40px;
 }
-.tf-wallet-card .wallet-footer .wallet-cart-item box-select .icon-my-qr {
+.tf-wallet-card .wallet-footer .wallet-cart-item a .icon-my-qr {
   font-size: 33px;
 }
 
