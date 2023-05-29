@@ -8,7 +8,7 @@
   };
   const custom_select = function () {
     var langArray = [];
-    $(".vodiapicker option").each(function () {
+    $(".default-select option").each(function () {
       var img = $(this).attr("data-thumbnail");
       var text = this.innerText;
       var value = $(this).val();
@@ -23,12 +23,12 @@
       langArray.push(item);
     });
 
-    $("#a").html(langArray);
+    $("#box-select").html(langArray);
 
     $(".btn-select").html(langArray[0]);
     $(".btn-select").attr("value", "en");
 
-    $("#a li").click(function () {
+    $("#box-select li").click(function () {
       var img = $(this).find("img").attr("src");
       var value = $(this).find("img").attr("value");
       var text = this.innerText;
@@ -36,11 +36,11 @@
         '<li><img src="' + img + '" alt="" /><span>' + text + "</span></li>";
       $(".btn-select").html(item);
       $(".btn-select").attr("value", value);
-      $(".b").toggle();
+      $(".banks-select").toggle();
     });
 
     $(".btn-select").click(function () {
-      $(".b").toggle();
+      $(".banks-select").toggle();
     });
 
     var sessionLang = localStorage.getItem("lang");

@@ -350,54 +350,68 @@
         <form class="tf-form" style="margin: 20px 0px">
             <div class="group-input">
                 <label for="">Bank</label>
-                <!-- <select class="vodiapicker">
-                    <option value="en" class="test"
-                        data-thumbnail="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/LetterA.svg/2000px-LetterA.svg.png">
-                        English <i class="icon-down"></i></option>
-                    <option value="au"
-                        data-thumbnail="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/NYCS-bull-trans-B.svg/480px-NYCS-bull-trans-B.svg.png">
-                        Engllish (AU)</option>
-                    <option value="uk" data-thumbnail="https://glot.io/static/img/c.svg?etag=ZaoLBh_p">Chinese
-                        (Simplified)</option>
-                    <option value="cn"
-                        data-thumbnail="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/NYCS-bull-trans-D.svg/2000px-NYCS-bull-trans-D.svg.png">
-                        German</option>
-                   
-                </select> -->
-
-                <div class="lang-select">
-                    <a class="btn-select" value=""></a>
-                    <div class="b">
-                        <ul id="a"></ul>
+                <div class="box-custom-select">
+                    <select class="default-select">
+                        <option class="item" data-thumbnail="images/logo-banks/logo2.jpg">Visa</option>
+                        <option class="item" data-thumbnail="images/logo-banks/logo3.jpg">Techcombank</option>
+                        <option class="item" data-thumbnail="images/logo-banks/logo4.jpg">Five star bank</option>
+                        <option class="item" data-thumbnail="images/logo-banks/logo8.jpg">Vietinbank</option>  
+                    </select>
+                    <div class="lang-select">
+                        <ul class="btn-select" value=""></ul>
+                        <i class="icon-down"></i>
+                    </div>
+                    <div class="banks-select">
+                        <ul id="box-select"></ul>
                     </div>
                 </div>
+                
             </div>
             <div class="group-input">
                 <label for="">Account Number</label>
-                <input type="text" placeholder="hhh">
+                <input type="text" placeholder="1234 0000 2134 3243" value="1234 0000 2134 3243">
+                <div class="credit-card">
+                    <span>Saved Number</span>
+                    <i class="icon-credit-card1"></i>
+                </div>
+
             </div>
             <div class="group-input">
                 <label for="">Account Name</label>
-                <input type="text" placeholder="hhh">
+                <input type="text" value="Henry Hoang">
             </div>
-            <div class="group-input">
+            <div class="group-input tf-search-bar">
                 <label for="">Amout Of Money</label>
-                <input type="text" placeholder="hhh">
+                <input type="text" value="$ 5" required class="search-field value_input st1" type="text">
+                <span class="icon-clear"></span>
             </div>
             <div class="group-input">
                 <label for="">Message</label>
-                <input type="text" placeholder="hhh">
+                <input type="text" value="Loan payment">
             </div>
+            <div class="d-flex gap-3">
+                <div class="group-input">
+                    <label for="">Message</label>
+                    <input type="date" placeholder="hh">
+                </div>
+                <div class="group-input">
+                    <label for="">Message</label>
+                    <input type="text" placeholder="CVV">
+                    <span></span>
+                </div>
+            </div>
+            
+
         </form>
     </div>
 
     <div class="bottom-navigation-bar">
         <div class="tf-container">
             <ul class="tf-navigation-bar">
-                <li class="active"><a class="fw_6" href="#"><i class="icon-home2"></i> Home</a> </li>
-                <li><a class="fw_4" href="history.html"><i class="icon-history"></i> History</a> </li>
-                <li><a class="fw_4" href="qr.html"><i class="icon-scan-qr-code"></i> </a> </li>
-                <li><a class="fw_4" href="rewards.html"><svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                <li class="active"><a class="fw_6 d-flex justify-content-center align-items-center flex-column" href="#"><i class="icon-home2"></i> Home</a> </li>
+                <li><a class="fw_4 d-flex justify-content-center align-items-center flex-column" href="history.html"><i class="icon-history"></i> History</a> </li>
+                <li><a class="fw_4 d-flex justify-content-center align-items-center flex-column" href="qr.html"><i class="icon-scan-qr-code"></i> </a> </li>
+                <li><a class="fw_4 d-flex justify-content-center align-items-center flex-column" href="rewards.html"><svg width="25" height="24" viewBox="0 0 25 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <circle cx="12.25" cy="12" r="9.5" stroke="#717171" />
                             <path
@@ -405,7 +419,7 @@
                                 stroke="#717171" stroke-width="1.25" />
                         </svg>
                         Rewards</a> </li>
-                <li><a class="fw_4" href="profile.html"><i class="icon-user-outline"></i> Profile</a> </li>
+                <li><a class="fw_4 d-flex justify-content-center align-items-center flex-column" href="profile.html"><i class="icon-user-outline"></i> Profile</a> </li>
             </ul>
             <span class="line"></span>
         </div>
@@ -414,10 +428,10 @@
     <div class="bottom-navigation-bar">
         <div class="tf-container">
             <ul class="tf-navigation-bar">
-                <li><a class="fw_4" href="#"><i class="icon-home"></i> Home</a> </li>
-                <li class="active"><a class="fw_6" href="history.html"><i class="icon-history"></i> History</a> </li>
-                <li><a class="fw_4" href="qr.html"><i class="icon-scan-qr-code"></i> </a> </li>
-                <li><a class="fw_4" href="rewards.html"><svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                <li><a class="fw_4 d-flex justify-content-center align-items-center flex-column" href="#"><i class="icon-home"></i> Home</a> </li>
+                <li class="active"><a class="fw_6 d-flex justify-content-center align-items-center flex-column" href="history.html"><i class="icon-history"></i> History</a> </li>
+                <li><a class="fw_4 d-flex justify-content-center align-items-center flex-column" href="qr.html"><i class="icon-scan-qr-code"></i> </a> </li>
+                <li><a class="fw_4 d-flex justify-content-center align-items-center flex-column" href="rewards.html"><svg width="25" height="24" viewBox="0 0 25 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <circle cx="12.25" cy="12" r="9.5" stroke="#717171" />
                             <path
@@ -425,7 +439,7 @@
                                 stroke="#717171" stroke-width="1.25" />
                         </svg>
                         Rewards</a> </li>
-                <li><a class="fw_4" href="profile.html"><i class="icon-user-outline"></i> Profile</a> </li>
+                <li><a class="fw_4 d-flex justify-content-center align-items-center flex-column" href="profile.html"><i class="icon-user-outline"></i> Profile</a> </li>
             </ul>
             <span class="line"></span>
         </div>
@@ -434,11 +448,11 @@
     <div class="bottom-navigation-bar">
         <div class="tf-container">
             <ul class="tf-navigation-bar">
-                <li><a class="fw_4" href="#"><i class="icon-home"></i> Home</a> </li>
-                <li><a class="fw_4" href="history.html"><i class="icon-history"></i> History</a> </li>
-                <li><a class="fw_4" href="qr.html"><i class="icon-scan-qr-code"></i> </a> </li>
-                <li class="active"><a class="fw_6" href="rewards.html"><i class="icon-star-fill"></i> Rewards</a> </li>
-                <li><a class="fw_4" href="profile.html"><i class="icon-user-outline"></i> Profile</a> </li>
+                <li><a class="fw_4 d-flex justify-content-center align-items-center flex-column" href="#"><i class="icon-home"></i> Home</a> </li>
+                <li><a class="fw_4 d-flex justify-content-center align-items-center flex-column" href="history.html"><i class="icon-history"></i> History</a> </li>
+                <li><a class="fw_4 d-flex justify-content-center align-items-center flex-column" href="qr.html"><i class="icon-scan-qr-code"></i> </a> </li>
+                <li class="active"><a class="fw_6 d-flex justify-content-center align-items-center flex-column" href="rewards.html"><i class="icon-star-fill"></i> Rewards</a> </li>
+                <li><a class="fw_4 d-flex justify-content-center align-items-center flex-column" href="profile.html"><i class="icon-user-outline"></i> Profile</a> </li>
             </ul>
             <span class="line"></span>
         </div>
@@ -447,10 +461,10 @@
     <div class="bottom-navigation-bar">
         <div class="tf-container">
             <ul class="tf-navigation-bar">
-                <li><a class="fw_4" href="#"><i class="icon-home"></i> Home</a> </li>
-                <li><a class="fw_4" href="history.html"><i class="icon-history"></i> History</a> </li>
-                <li><a class="fw_4" href="qr.html"><i class="icon-scan-qr-code"></i> </a> </li>
-                <li><a class="fw_4" href="rewards.html"><svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                <li><a class="fw_4 d-flex justify-content-center align-items-center flex-column" href="#"><i class="icon-home"></i> Home</a> </li>
+                <li><a class="fw_4 d-flex justify-content-center align-items-center flex-column" href="history.html"><i class="icon-history"></i> History</a> </li>
+                <li><a class="fw_4 d-flex justify-content-center align-items-center flex-column" href="qr.html"><i class="icon-scan-qr-code"></i> </a> </li>
+                <li><a class="fw_4 d-flex justify-content-center align-items-center flex-column" href="rewards.html"><svg width="25" height="24" viewBox="0 0 25 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <circle cx="12.25" cy="12" r="9.5" stroke="#717171" />
                             <path
@@ -458,7 +472,7 @@
                                 stroke="#717171" stroke-width="1.25" />
                         </svg>
                         Rewards</a> </li>
-                <li class="active"><a class="fw_6" href="profile.html"><i class="icon-user-fill"></i> Profile</a> </li>
+                <li class="active"><a class="fw_6 d-flex justify-content-center align-items-center flex-column" href="profile.html"><i class="icon-user-fill"></i> Profile</a> </li>
             </ul>
             <span class="line"></span>
         </div>
