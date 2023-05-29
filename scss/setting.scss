@@ -382,7 +382,6 @@ input[type="week"]:focus,
 input[type="number"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
-input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus {
     -webkit-box-shadow: none;
@@ -454,6 +453,9 @@ input[type="radio"] {
     font-size: 16px;
     accent-color: $primary_color;
 }
+
+
+
 // spacing
 .tf-spacing-4 {
     height: 4px;

@@ -924,7 +924,7 @@
 
 .icon-home2:before {
   content: "\e9a3";
-  color: #533dea;
+  font-size: 20px;
 }
 
 .icon-path49:before {
@@ -2202,6 +2202,7 @@
 
 .icon-left:before {
   content: "\ea81";
+  font-size: 24px;
 }
 
 .icon-health-care .path1:before {
@@ -2479,18 +2480,22 @@
 
 .icon-home:before {
   content: "\e904";
+  font-size: 20px;
 }
 
 .icon-star-fill:before {
   content: "\eab1";
+  font-size: 25px;
 }
 
 .icon-user-outline:before {
   content: "\eab2";
+  font-size: 22px;
 }
 
 .icon-user-fill:before {
   content: "\eab3";
+  font-size: 24px;
 }
 
 .icon-exchange:before {
@@ -2878,6 +2883,7 @@
 
 .icon-notification1:before {
   content: "\eaf9";
+  font-size: 24px;
 }
 
 .icon-bills-1:before {
