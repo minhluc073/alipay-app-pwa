@@ -300,7 +300,6 @@
         &:focus {
             border-color: $primary_color;
         }
-
     }
     .icon-search {
         position: absolute;
@@ -460,5 +459,13 @@
         i {
             font-size: 20px;
         }
+    }
+
+    .icon-info {
+        position: absolute;
+        right: 12px;
+        top: 14px;
+        font-size: 20px;
+        color: $secondary2_color;
     }
 }

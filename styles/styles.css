@@ -1062,6 +1062,13 @@ input[type=radio] {
 .group-input .credit-card i {
   font-size: 20px;
 }
+.group-input .icon-info {
+  position: absolute;
+  right: 12px;
+  top: 14px;
+  font-size: 20px;
+  color: #c5c5c5;
+}
 
 .boarding-section {
   background: #1e1e1e;
