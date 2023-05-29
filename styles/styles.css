@@ -871,7 +871,7 @@ input[type=radio] {
   align-items: center;
   padding: 8px 16px;
 }
-.tf-navigation-bar li box-select {
+.tf-navigation-bar li a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -879,17 +879,17 @@ input[type=radio] {
   font-size: 10px;
   line-height: 16px;
 }
-.tf-navigation-bar li.active box-select {
+.tf-navigation-bar li.active a {
   color: #1e1e1e;
 }
-.tf-navigation-bar li.active box-select .icon-history {
+.tf-navigation-bar li.active a .icon-history {
   border-color: #533dea;
   background: #533dea;
 }
-.tf-navigation-bar li.active box-select .icon-history::after {
+.tf-navigation-bar li.active a .icon-history::after {
   color: #ffffff;
 }
-.tf-navigation-bar li.active box-select i {
+.tf-navigation-bar li.active a i {
   color: #533dea;
 }
 
