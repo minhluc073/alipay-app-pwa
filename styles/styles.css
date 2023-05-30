@@ -74,6 +74,10 @@
   font-weight: 800;
 }
 
+.bg_surface_color {
+  background: #f5f5f5;
+}
+
 .bg_color_1 {
   background: rgba(40, 62, 180, 0.1);
 }
@@ -965,10 +969,16 @@ input[type=radio] {
 }
 
 .tf-statusbar {
-  padding: 8px 16px;
+  background: #ffffff;
+  padding: 12px 16px 8px;
+  margin: 0px -16px;
   border-bottom: 1px solid #ededed;
 }
 .tf-statusbar .icon-left {
+  color: #1e1e1e;
+}
+.tf-statusbar .icon-qrcode4 {
+  font-size: 24px;
   color: #1e1e1e;
 }
 
@@ -1297,6 +1307,111 @@ input[type=radio] {
   width: 100%;
   bottom: 0;
   box-shadow: 0px -1px 2px 0px rgba(0, 0, 0, 0.07);
+}
+
+.recipient-tes .recipient-box {
+  width: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-left: -6px;
+  cursor: pointer;
+}
+.recipient-tes .recipient-box img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.banner-tes img {
+  width: 290px;
+  height: 162px;
+  border-radius: 8px;
+}
+
+.wrap-transfer {
+  background: #ffffff;
+}
+
+.action-sheet-transfer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0px;
+  border-bottom: 1px solid #ededed;
+}
+.action-sheet-transfer .icon {
+  width: 36px;
+  height: 36px;
+  background: rgba(83, 61, 234, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.action-sheet-transfer .icon i {
+  font-size: 20px;
+  color: #533dea;
+}
+.action-sheet-transfer p {
+  font-size: 10px;
+  line-height: 16px;
+}
+
+.wrap-transfer-friends .tf-search-bar {
+  margin-bottom: 20px;
+}
+.wrap-transfer-friends .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 100;
+}
+.wrap-transfer-friends .menu-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.wrap-transfer-friends .menu-tabs .nav-tab {
+  border-bottom: 1px solid #ededed;
+  padding: 8px 0px;
+  text-align: center;
+}
+.wrap-transfer-friends .menu-tabs .nav-tab.active {
+  color: #533dea;
+  border-bottom: 2px solid #533dea;
+}
+.wrap-transfer-friends .content-tab {
+  padding-top: 180px;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.recipient-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.recipient-list .inner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 12px;
+}
+.recipient-list .inner img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.recipient-list .alphabet {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 12px;
 }
 
 /*# sourceMappingURL=styles.css.map */

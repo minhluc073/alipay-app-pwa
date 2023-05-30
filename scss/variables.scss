@@ -16,6 +16,7 @@ $bg_light_color: #DFDFDF;
 $tf_shadow: 0px 8px 15px 0px rgba(24, 25, 27, 0.05);
 $tf-navigation-bar_shadow:0px -1px 2px 0px rgba(0, 0, 0, 0.07);
 $rgba_primary_color:rgba(75, 40, 225, 0.1);
+$rgba_transfer_color:rgba(83, 61, 234, 0.1);
 $bg_color_1: rgba(40, 62, 180, 0.1);
 $bg_color_2: rgba(5, 132, 255, 0.1);
 $bg_color_3: rgba(0, 170, 91, 0.1);
@@ -94,6 +95,9 @@ $fw_8: 800;
 .fw_8 {
     font-weight: $fw_8;
 }
+ .bg_surface_color{
+    background: $surface_color;
+ }
  .bg_color_1 {
     background: $bg_color_1;
  }

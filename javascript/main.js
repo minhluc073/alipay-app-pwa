@@ -54,8 +54,40 @@
       $(".btn-select").html(langArray[langIndex]);
     }
   };
+  const tfTabs = function () {
+    $(".tf-tab").each(function () {
+      $(this).find(".content-tab").children().hide();
+      $(this).find(".content-tab").children().first().show();
+      $(this)
+        .find(".menu-tabs")
+        .children(".nav-tab")
+        .on("click", function (e) {
+          e.preventDefault();
+          var liActive = $(this).index();
+          var contentActive = $(this)
+            .siblings()
+            .removeClass("active")
+            .parents(".tf-tab")
+            .find(".content-tab")
+            .children()
+            .eq(liActive);
+          contentActive.addClass("active").fadeIn("slow");
+          contentActive.siblings().removeClass("active");
+          $(this)
+            .addClass("active")
+            .parents(".tf-tab")
+            .find(".content-tab")
+            .children()
+            .eq(liActive)
+            .siblings()
+            .hide();
+        });
+    });
+  };
+
   $(function () {
     clear_text();
     custom_select();
+    tfTabs();
   });
 })(jQuery);

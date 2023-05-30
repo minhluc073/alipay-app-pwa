@@ -6,17 +6,15 @@
     background-size: cover;
     background-position: center center;
     position: relative;
-    border-bottom-right-radius:80px ;
-    border-bottom-left-radius:80px ;
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 80px;
 
-    .tf-topbar{
+    .tf-topbar {
         margin: 0px 14px;
         .user-info {
-
             p {
                 font-size: 10px;
                 line-height: 16px;
-
             }
         }
 
@@ -24,14 +22,9 @@
             color: $white_color;
         }
     }
-
-      
-   
-  
 }
 
 .tf-topbar {
-
     .user-info {
         gap: 8px;
         img {
@@ -55,4 +48,27 @@
     box-shadow: $tf-navigation-bar_shadow;
 }
 
+.recipient-tes {
+    .recipient-box {
+        width: 64px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        margin-left: -6px;
+        cursor: pointer;
+        img {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+        }
+    }
 
+}
+.banner-tes {
+    img {
+        width: 290px;
+        height: 162px;
+        border-radius: 8px;
+    }
+}

@@ -319,9 +319,15 @@
 
 // tf-statusbar
 .tf-statusbar {
-    padding: 8px 16px;
+    background: $white_color;
+    padding: 12px 16px 8px;
+    margin: 0px -16px;
     border-bottom: 1px solid $line_br_color;
     .icon-left {
+        color: $on_surface_color;
+    }
+    .icon-qrcode4 {
+        font-size: 24px;
         color: $on_surface_color;
     }
 }
@@ -488,3 +494,4 @@
         }
     }
 }
+
