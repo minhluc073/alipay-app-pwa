@@ -103,7 +103,7 @@
 }
 
 .transfer-section {
-    .tf-wallet-card{
+    .tf-wallet-card {
         padding: 16px;
 
         .inner-left {
@@ -113,16 +113,14 @@
                 height: 32px;
                 border-radius: 50%;
             }
-            
         }
         .icon-down {
             font-size: 16px;
         }
-        
     }
     .transfer-amount {
         padding: 16px 16px 0px;
-        .top{
+        .top {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -137,7 +135,6 @@
             padding: 12px 0px;
         }
     }
-
 }
 .input-money {
     .money {
@@ -158,23 +155,59 @@
     }
 }
 .transfer-content {
-    .tf-form{
+    .tf-form {
         .tf-btn {
             margin-top: 73px;
             margin-bottom: 16px;
         }
     }
-   
 }
 .transfer-card {
-    margin-top:10px;
+    margin-top: 10px;
     .tf-card-block {
-        &:not(:last-child){
-        margin-bottom: 8px;
+        &:not(:last-child) {
+            margin-bottom: 8px;
         }
-      
     }
     .tf-btn {
         margin-top: 29px;
+    }
+}
+.transfer-confirm {
+    .tf-card-block {
+        margin-top: 4px;
+        padding: 0;
+        box-shadow: none;
+        gap: 16px;
+    }
+    .line {
+        width: 100%;
+        height: 1px;
+        border:1px solid $line_br_color;
+        margin: 10px 0px;
+    }
+    .bottom {
+        .tf-card-block {
+            gap: 12px;
+            img {
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+            }
+        }
+     
+    }
+}
+.transfer-list {
+    padding-bottom: 16px;
+    .tf-wallet-card {
+        padding: 12px;
+        margin-bottom: 128px;
+        .list-view {
+            padding-bottom: 8px;
+            &:not(:last-child){
+                border-bottom: 1px solid $line_br_color;
+            }
+        }
     }
 }
