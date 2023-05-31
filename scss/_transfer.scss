@@ -1,4 +1,9 @@
-
+.header-transfer {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
 .wrap-transfer {
     background: $white_color;
 }
@@ -9,7 +14,7 @@
     gap: 12px;
     padding: 12px 0px;
     border-bottom: 1px solid $line_br_color;
-    
+
     .icon {
         width: 36px;
         height: 36px;
@@ -18,58 +23,62 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
         i {
             font-size: 20px;
             color: $primary_color;
         }
     }
+
     p {
         font-size: 10px;
         line-height: 16px;
     }
-    
 }
-.wrap-transfer-friends{
 
-    .tf-search-bar{
+.wrap-transfer-friends {
+    .tf-search-bar {
         margin-bottom: 20px;
     }
-    .header{
+    .top {
+        background: $white_color;
+        z-index: 20;
         position: fixed;
-        top: 0;
+        top: 45px;
         width: 100%;
-        background: #fff;
-        z-index: 100;
+        padding-top: 12px;
     }
-    
-        .menu-tabs {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            .nav-tab {
-                border-bottom: 1px solid $line_br_color;
-                padding: 8px 0px;
-                text-align: center;
-                &.active {
-                    color: $primary_color;
-                    border-bottom: 2px solid $primary_color;
 
-                }
+    .menu-tabs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 20px;
+
+        .nav-tab {
+            border-bottom: 1px solid $line_br_color;
+            padding: 8px 0px;
+            text-align: center;
+            cursor: pointer;
+            &.active {
+                color: $primary_color;
+                border-bottom: 2px solid $primary_color;
             }
         }
-        .content-tab{
-            padding-top: 180px;
-            height: 100vh;
-            overflow-y: scroll;
-        }
-       
+    }
 
-    
+    .content-tab {
+        padding-top: 180px;
+        // height: 80vh;
+        // overflow-y: scroll;
+    }
 }
-.recipient-list{
+
+.recipient-list {
     display: flex;
     justify-content: space-between;
     gap: 12px;
     margin-bottom: 12px;
+
     .inner {
         display: flex;
         align-items: center;
@@ -84,11 +93,30 @@
             border-radius: 50%;
         }
     }
+
     .alphabet {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding-bottom: 12px;
     }
-   
+}
+
+.wrap-transfer-card {
+    .input-money {
+        padding: 16px;
+
+        .inner-left {
+            gap: 8px;
+            img {
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+            }
+            
+        }
+        .icon-down {
+            font-size: 16px;
+        }
+    }
 }
