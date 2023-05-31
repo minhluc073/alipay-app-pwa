@@ -102,8 +102,8 @@
     }
 }
 
-.wrap-transfer-card {
-    .input-money {
+.transfer-section {
+    .tf-wallet-card{
         padding: 16px;
 
         .inner-left {
@@ -118,5 +118,63 @@
         .icon-down {
             font-size: 16px;
         }
+        
+    }
+    .transfer-amount {
+        padding: 16px 16px 0px;
+        .top{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 12px;
+            border-bottom: 1px dashed $line_color;
+        }
+        .icon-group-dollar {
+            font-size: 40px;
+            margin-bottom: 12px;
+        }
+        .bottom {
+            padding: 12px 0px;
+        }
+    }
+
+}
+.input-money {
+    .money {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        margin-top: 12px;
+
+        .tag-money {
+            width: 107px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4px 12px;
+            background: $surface_color;
+            border-radius: 95px;
+        }
+    }
+}
+.transfer-content {
+    .tf-form{
+        .tf-btn {
+            margin-top: 73px;
+            margin-bottom: 16px;
+        }
+    }
+   
+}
+.transfer-card {
+    margin-top:10px;
+    .tf-card-block {
+        &:not(:last-child){
+        margin-bottom: 8px;
+        }
+      
+    }
+    .tf-btn {
+        margin-top: 29px;
     }
 }

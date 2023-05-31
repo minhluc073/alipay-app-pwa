@@ -84,10 +84,37 @@
         });
     });
   };
+  const suggessInput = function(){
+   $('.tag-money').on('click', function()
+   {
+     var val = $(this).text();
+     $('.value_input').val(val)
+   });
+  };
+  const tfPopup = function(){
+    var modalUp = $('.modal-up');
+    if(modalUp.length){
+      const open = function () {
+        modalUp.addClass("modal-menu--open");
+      };
+      const close = function () {
+        modalUp.removeClass("modal-menu--open");
+      };
+
+      $("#btn-popup-up").on("click", function () {
+        open();
+      });
+      $(".modal-menu__backdrop, .clear-popup").on("click", function () {
+        close();
+      });
+    }
+  };
 
   $(function () {
     clear_text();
     custom_select();
     tfTabs();
+    suggessInput();
+    tfPopup();
   });
 })(jQuery);
