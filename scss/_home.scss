@@ -28,6 +28,11 @@
 }
 
 .tf-topbar {
+    position: relative;
+    .back-btn{
+        position: absolute;
+        left: 0;
+    }
     .user-info {
         gap: 8px;
         img {

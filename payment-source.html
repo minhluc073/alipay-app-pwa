@@ -19,10 +19,9 @@
 
     <div class="app-header st1">
         <div class="tf-container">
-            <div class="tf-topbar d-flex justify-content-between align-items-center">
-                <i class="icon-left white_color"></i>
+            <div class="tf-topbar d-flex justify-content-center">
+               <a href="#" class="back-btn"><i class="icon-left white_color"></i></a> 
                 <h3 class="white_color">Transfer</h3>
-                &nbsp;
             </div>
         </div>
     </div>
@@ -57,7 +56,9 @@
             </div>
             <div class="tf-card-block d-flex align-items-center justify-content-between">
                 <div class="inner d-flex align-items-center">
-                    <img src="images/logo-banks/card-visa2.png" alt="image">
+                    <div class="logo-img">
+                        <img src="images/logo-banks/card-visa2.png" alt="image">
+                    </div>
                     <div class="content">
                         <h4><a href="#" class="fw_6">Visacard</a></h4>
                         <p>****  ****  ****  4234</p>
@@ -65,16 +66,20 @@
                 </div>
                 <input type="radio" name="radio">
             </div>
-            <a href="#" id="btn-popup-up"  class="tf-btn accent large">Continue</a>
+            <a href="#" id="btn-popup-up" class="tf-btn accent large">Continue</a>
+            
+
+
+
         </div>
     </div>
-    <div class="modal-up">
-        <div class="modal-menu__backdrop"></div>
-          <div class="wrap-popup">
+    <div class="tf-panel up">
+        <div class="panel_overlay"></div>
+          <div class="panel-box panel-up wrap-content-panel">
             <div class="heading">
                 <div class="tf-container">
                     <div class="d-flex align-items-center">
-                        <i class="icon-close1 clear-popup"></i>
+                        <i class="icon-close1 clear-panel"></i>
                         <h3 class="flex-grow-1 text-center">Confirm Top Up</h3>
                     </div>
                 </div>
@@ -84,7 +89,9 @@
                     <h3>Choose Source</h3>
                     <div class="tf-card-block d-flex align-items-center justify-content-between">
                         <div class="inner d-flex align-items-center">
-                            <img src="images/logo-banks/card-visa3.png" alt="image">
+                            <div class="logo-img">
+                                <img src="images/logo-banks/card-visa3.png" alt="image">
+                            </div>
                             <div class="content">
                             <h4><a href="#" class="fw_6">Mastercard</a></h4>
                             <p>****  ****  ****   7576</p>
@@ -112,11 +119,8 @@
 
             
           </div>
-
+          
     </div>
-  
-
-   
 
 
     <script type="text/javascript" src="javascript/jquery.min.js"></script>
