@@ -387,6 +387,7 @@
 }
 
 .content-by-bank {
+    margin-bottom: 20px;
      h3 {
         a{
             font-weight: $fw_6;
@@ -399,5 +400,8 @@
                 font-size: 18px;
             }
         }
+     }
+     .group-btn {
+        padding-top: 183px;
      }
 }

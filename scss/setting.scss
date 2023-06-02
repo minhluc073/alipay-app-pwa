@@ -484,6 +484,9 @@ input[type="radio"] {
 
 .group-input {
     margin-bottom: 24px;
+    &:last-child {
+        margin-bottom: 0px;
+    }
 }
 
 // switch-check
