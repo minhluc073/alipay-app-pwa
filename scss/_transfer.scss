@@ -284,7 +284,10 @@
     .icon-1 {
         position: absolute;
         top: -10%;
-        left: 38%;
+        left: 50%;
+        .check-icon {
+            transform: translateX(-50%);
+        }
     }
     .icon-2 {
         position: absolute;
@@ -352,44 +355,41 @@
     }
 }
 
-
 // transfer banks
 .bank-box {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 12px;
 }
 .bank-list-transfer {
     background: $white_color;
     border-radius: 8px;
     padding: 12px;
-    box-shadow:$tf_shadow;
+    box-shadow: $tf_shadow;
     li {
-        
         padding-bottom: 8px;
-        &:not(:last-child){
+        &:not(:last-child) {
             border-bottom: 1px solid $line_br_color;
             margin-bottom: 8px;
         }
-        a{
+        a {
             display: flex;
             gap: 16px;
             align-items: center;
             font-size: 14px;
             font-weight: $fw_5;
-            img{
+            img {
                 width: 28px;
                 height: 28px;
             }
         }
-        
     }
 }
 
 .content-by-bank {
     margin-bottom: 20px;
-     h3 {
-        a{
+    h3 {
+        a {
             font-weight: $fw_6;
             font-size: 12px;
             line-height: 20px;
@@ -400,8 +400,8 @@
                 font-size: 18px;
             }
         }
-     }
-     .group-btn {
+    }
+    .group-btn {
         padding-top: 183px;
-     }
+    }
 }

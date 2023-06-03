@@ -2051,7 +2051,10 @@ input[type=radio] {
 .wrap-success .icon-1 {
   position: absolute;
   top: -10%;
-  left: 38%;
+  left: 50%;
+}
+.wrap-success .icon-1 .check-icon {
+  transform: translateX(-50%);
 }
 .wrap-success .icon-2 {
   position: absolute;
