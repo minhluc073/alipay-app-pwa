@@ -148,8 +148,9 @@
         }
     }
 }
-// tf-wallet-card
-.tf-wallet-card {
+// tf-balance-box
+
+.tf-balance-box {
     padding: 12px 0px;
     background-color: $white_color;
     border-radius: 15px;
@@ -242,7 +243,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 16px;
+    padding: 12px 16px 8px;
 
     li {
         a {
@@ -273,7 +274,7 @@
 }
 .bottom-navigation-bar {
     .line {
-        margin: 4px auto 8px;
+        margin: 4px auto 0px;
     }
 }
 
@@ -427,6 +428,7 @@
         display: none;
         border: 1px solid $line_color;
         border-radius: 5px;
+        margin-top: 2px;
     }
 
     .open {
@@ -741,16 +743,13 @@
     cursor: pointer;
     position: relative;
     box-shadow: $tf_shadow;
-
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 16px;
+    color: $on_surface_color;
     .logo-bank {
         width: 32px;
         height: 32px;
-    }
-    a {
-        font-weight: 600;
-        font-size: 10px;
-        line-height: 16px;
-        color: $on_surface_color;
     }
 }
 .app-link {
@@ -760,7 +759,134 @@
     width: 100%;
     height: 100%;
 }
+.list-money {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 12px;
+    .tag-money {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        padding: 12px 32px;
+        background: $surface_color;
+        border-radius: 8px;
+    }
+}
+// card - list
+.tf-card-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    .logo {
+        width: 48px;
+        height: 32px;
+    }
+    .info {
+        flex: 1;
+    }
+    &.large {
+        padding: 16px;
+    }
+    &.medium {
+        padding: 8px 16px;
+    }
+    &.out-line {
+        border: 1px solid $primary_color;
+        border-radius: 8px;
+    }
+    &.bt-line {
+        border-bottom: 1px solid $line_br_color;
+    }
+}
+.tf-checkbox {
+    &.circle-check {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid $secondary_color;
+        &:checked {
+            background-color: $success_color;
+            border: 1px solid $success_color;
+        }
+        &::before {
+            right: 40%;
+            top: 46%;
+            width: 6px;
+            height: 10px;
+            margin: 0;
+            border-width: 0px 3px 3px 0px;
+        }
+    }
+}
+.auth-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 1px;
+        width: 40%;
+        border:1px solid $line_br_color;
+    }
 
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 40%;
+        border:1px solid $line_br_color;
+    }
+}
+
+// atm
+.tf-atm-card{
+    background: url(../images/banner/banner-card.png);
+    padding: 19px 19px 0px;
+    // height: 159px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    border-radius: 16px;
+    // border-bottom-right-radius: 80px;
+    // border-bottom-left-radius: 80px;
+    .heading {
+        display: flex;
+        justify-content: space-between;
+        a {
+            i{
+                color: $white_color;
+                font-size: 16px;
+            }
+           
+        }
+    }
+    h3{
+        padding: 42px 0px 12px;
+    }
+    .bottom {
+        background: $on_surface_color;
+        margin: 0px -19px;
+        padding: 4px 19px;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        span{
+            font-size: 10px;
+            line-height: 16px;
+        }
+        a{
+            color: $white_color;
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: $fw_6;
+        }
+        
+    }
+}
 /* animation */
 .ani1 {
     -webkit-animation: ani1 10s infinite ease-in-out alternate;

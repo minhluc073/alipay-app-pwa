@@ -4,28 +4,7 @@
     }
 
     .auth-line {
-        margin-bottom: 24px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        &::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            height: 1px;
-            width: 40%;
-            background-color: $line_color;
-        }
-
-        &::after {
-            content: "";
-            position: absolute;
-            right: 0;
-            height: 1px;
-            width: 40%;
-            background-color: $line_color;
-        }
+       
     }
 
     // login with social

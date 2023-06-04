@@ -113,7 +113,7 @@
 }
 
 .transfer-section {
-    .tf-wallet-card {
+    .tf-balance-box {
         padding: 16px;
 
         .inner-left {
@@ -164,11 +164,13 @@
         }
     }
 }
+
+
+
 .transfer-content {
     .tf-form {
         .tf-btn {
             margin-top: 73px;
-            margin-bottom: 16px;
         }
     }
 }
@@ -179,8 +181,9 @@
             margin-bottom: 8px;
         }
     }
-    .tf-btn {
-        margin-top: 29px;
+    .bottom-navigation-bar{
+        background: $surface_color;
+        z-index: 20;
     }
 }
 .transfer-confirm {
@@ -321,22 +324,19 @@
         text-align: center;
         margin-bottom: 40px;
         .top p {
-            font-weight: $fw_4;
             font-size: 14px;
             line-height: 22px;
         }
         .inner p {
             font-size: 16px;
-            color: $on_surface_color;
-            font-weight: $fw_6;
+            
             padding-bottom: 8px;
         }
         .bottom p {
             font-size: 14px;
             line-height: 22px;
             &:first-child {
-                color: $on_surface_color;
-                font-weight: $fw_6;
+                
                 padding-bottom: 4px;
             }
         }
@@ -359,7 +359,7 @@
 .bank-box {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 12px;
+    grid-gap: 12px;
 }
 .bank-list-transfer {
     background: $white_color;
@@ -403,5 +403,20 @@
     }
     .group-btn {
         padding-top: 183px;
+    }
+}
+.topup-content {
+   .tf-balance-box{
+    padding: 16px;
+    box-shadow: none;
+   } 
+   .bottom-navigation-bar{
+    z-index: 20;
+   }
+}
+.amount-money {
+    h3{
+            padding-bottom: 12px;
+
     }
 }
