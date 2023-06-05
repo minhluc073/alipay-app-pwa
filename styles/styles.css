@@ -2426,9 +2426,29 @@ input[type=radio] {
   bottom: 32px;
   border-radius: unset;
   background: none;
+  transition: unset;
 }
 .tf-panel .wrap-scan-qr .logo-qr {
   padding: 15px 25px 29px;
+  margin-bottom: 48px;
+  position: relative;
+}
+.tf-panel .wrap-scan-qr .logo-qr .circle-box {
+  position: absolute;
+  top: 24%;
+  left: 31%;
+}
+.tf-panel .wrap-scan-qr .logo-qr .circle-box::after {
+  border: 12px solid #fff;
+  border-top: none;
+  border-right: none;
+  top: 37px;
+  left: 36px;
+  height: 40px;
+  width: 68px;
+}
+.tf-panel .wrap-scan-qr.st2 .logo-qr {
+  margin-bottom: 90px;
 }
 
 .box-scan-notification {
@@ -2442,6 +2462,11 @@ input[type=radio] {
 .box-scan-notification p {
   font-size: 16px;
   line-height: 24px;
+  color: #1e1e1e;
+}
+.box-scan-notification i {
+  color: red;
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */

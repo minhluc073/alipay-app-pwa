@@ -34,19 +34,18 @@
     
     <div class="tf-panel scan">
         <div class="panel_overlay"></div>
-          <div class="panel-box panel-up wrap-scan-qr">
+          <div class="panel-box panel-up wrap-scan-qr st2">
             <div class="logo-qr">
                 <img src="images/scan-qr/qr-code-line.png" alt="image">
+                <span class="circle-box xl bg-circle check-icon"></span>
             </div>
-            <div class="box-scan-notification">
+            <!-- <div class="box-scan-notification">
                 <i class="icon-info"></i>
                 <p>Point your camera at the QR code to make a payment</p>
-            </div>
+            </div> -->
                 
           </div>
     </div>
-
- 
 
     <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
     <script type="text/javascript" src="javascript/jquery.min.js"></script>
@@ -56,7 +55,7 @@
     <script type="text/javascript">
         $(document).ready(function () {
             window.setTimeout(function () {
-                location.href = "42_qr-code.html";
+                location.href = "transfer-confirm.html";
             }, 3000);
         });
       </script>
