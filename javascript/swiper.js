@@ -31,6 +31,7 @@ if ($("div").hasClass("swiper-container")) {
       el: ".swiper-pagination",
       clickable: true,
     },
+   
     breakpoints: {
       320: {
         slidesPerView: 1,

@@ -94,7 +94,8 @@
   const tfPanel = function(){
     var panelUp = $('.up');
     var panelLeft = $('.left');
-    var panelRight = $('.right');
+    var panelRight = $('.right'); 
+    var panelScanQR = $('.scan');
 
     if(panelUp.length){
       const open = function () {
@@ -141,6 +142,16 @@
         close();
       });
     }
+    if(panelScanQR.length){
+      const close = function () {
+        panelScanQR.addClass("panel-close");
+        panelScanQR.removeClass("panel-open");
+      };
+      $(".panel_overlay").on("click", function () {
+        close();
+      });
+    }
+
   };
   const backPages = function () {
     $(".back-btn").on("click", function (e) {
@@ -148,7 +159,13 @@
 			window.history.back();
     });
   }
-
+  const setTimeIn = function () {
+    if ($(".scan").length > 0) {
+      setTimeout(function () {
+        $(".scan").addClass("panel-open");
+      }, 0);
+    }
+  };
   $(function () {
     clear_text();
     custom_select();
@@ -156,5 +173,6 @@
     suggessInput();
     tfPanel();
     backPages();
+    setTimeIn();
   });
 })(jQuery);
