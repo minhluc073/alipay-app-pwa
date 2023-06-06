@@ -58,6 +58,7 @@
     box-shadow: $tf-navigation-bar_shadow;
     &.st1 {
         background: $surface_color;
+        box-shadow: none;
     }
 }
 

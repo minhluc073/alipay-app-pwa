@@ -714,6 +714,12 @@
     &.bg-circle {
         background-color: $success_color;
     }
+    &.bg-critical{
+        background-color: $critical_color;
+    }
+    &.bg-blue{
+        background-color: $primary_color;
+    }
     &.check-icon {
         position: relative;
         &::after {

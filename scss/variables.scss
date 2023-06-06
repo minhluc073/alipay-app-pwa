@@ -25,6 +25,10 @@ $bg_color_5: rgba(245, 149, 0, 0.1);
 $bg_color_6: rgba(57, 163, 248, 0.1);
 $bg_color_7: rgba(229, 53, 75, 0.1);
 $bg_color_8: rgba(252, 184, 96, 0.1);
+$bg_color_9:rgba(57, 198, 93, 0.2);
+$bg_color_10:rgba(201, 126, 103, 0.2);
+$bg_color_11:rgba(24, 168, 201, 0.1);
+$bg_color_12:rgba(229, 99, 83, 0.2);
 $bg_popup: rgba(2, 22, 56, 0.3);
 
 // font-weight
@@ -122,4 +126,16 @@ $fw_8: 800;
 }
 .bg_color_8 {
     background: $bg_color_8;
+}
+.bg_color_9 {
+    background: $bg_color_9;
+}
+.bg_color_10 {
+    background: $bg_color_10;
+}
+.bg_color_11 {
+    background: $bg_color_11;
+}
+.bg_color_12 {
+    background: $bg_color_12;
 }
