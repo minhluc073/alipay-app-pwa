@@ -2758,4 +2758,31 @@ input[type=radio] {
   color: #1e1e1e;
 }
 
+.header-repicient .tf-statusbar a {
+  position: unset;
+}
+.header-repicient .tf-statusbar a i {
+  font-size: 24px;
+  color: #1e1e1e;
+}
+
+.box-user .avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+}
+.box-user .avatar span {
+  position: absolute;
+  top: 60px;
+  right: -5px;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  background: #717171;
+  border-radius: 50%;
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=styles.css.map */
