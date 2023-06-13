@@ -1024,36 +1024,36 @@ input[type=radio] {
   margin: 4px auto 0px;
 }
 
-.tf-search-bar {
+.input-field {
   position: relative;
 }
-.tf-search-bar .search-field {
+.input-field .search-field {
   padding-left: 40px;
   background: #f5f5f5;
   border-color: #ededed;
 }
-.tf-search-bar .search-field:focus {
+.input-field .search-field:focus {
   border-color: #ededed;
 }
-.tf-search-bar .search-field:valid ~ .icon-clear {
+.input-field .search-field:valid ~ .icon-clear {
   display: block;
 }
-.tf-search-bar .st1 {
+.input-field .st1 {
   padding-left: 14px;
   background: none;
   border-color: #dddddd;
 }
-.tf-search-bar .st1:focus {
+.input-field .st1:focus {
   border-color: #533dea;
 }
-.tf-search-bar .icon-search {
+.input-field .icon-search {
   position: absolute;
   font-size: 25px;
   left: 9px;
   top: 10px;
   color: #1e1e1e;
 }
-.tf-search-bar .icon-clear {
+.input-field .icon-clear {
   display: none;
   position: absolute;
   top: 14px;
@@ -1598,6 +1598,20 @@ input[type=radio] {
   font-size: 14px;
   line-height: 22px;
   font-weight: 600;
+}
+
+.list-user-info {
+  padding: 11px 0px;
+  border-bottom: 1px solid #ededed;
+  font-size: 14px;
+  color: #1e1e1e;
+  line-height: 22px;
+  gap: 12px;
+  display: flex;
+  align-items: center;
+}
+.list-user-info span {
+  font-size: 20px;
 }
 
 /* animation */
@@ -2426,12 +2440,10 @@ input[type=radio] {
   font-size: 20px;
   line-height: 25px;
   font-weight: 400;
-  color: #ea3434;
 }
 .wrap-panel-clear .bottom {
   background: #ffffff;
   border-radius: 13px;
-  margin-bottom: 8px;
   padding: 18px 16px;
 }
 .wrap-panel-clear .bottom a {
@@ -2569,7 +2581,7 @@ input[type=radio] {
   align-items: center;
   gap: 10px;
 }
-.bill-content .box-search .tf-search-bar {
+.bill-content .box-search .input-field {
   flex: 1;
 }
 .bill-content .box-search .icon-qrcode4 {
@@ -2758,6 +2770,9 @@ input[type=radio] {
   color: #1e1e1e;
 }
 
+.header-repicient .tf-statusbar {
+  border-bottom: none;
+}
 .header-repicient .tf-statusbar a {
   position: unset;
 }
@@ -2766,6 +2781,12 @@ input[type=radio] {
   color: #1e1e1e;
 }
 
+.box-user {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 .box-user .avatar {
   width: 96px;
   height: 96px;
@@ -2783,6 +2804,70 @@ input[type=radio] {
   background: #717171;
   border-radius: 50%;
   color: #ffffff;
+}
+.box-user p {
+  font-size: 10px;
+  font-weight: 600;
+  color: #1e1e1e;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.box-user p .icon-copy1 {
+  font-size: 16px;
+}
+
+.button-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 12px;
+}
+.button-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #1e1e1e;
+}
+.button-list li a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #533dea;
+}
+.button-list li a i {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.panel-detail .heading a:first-child {
+  border-bottom: 1px solid #ededed;
+}
+
+.edit-repicient.input-field > input {
+  background: none;
+  padding: 11px 32px;
+  border-radius: unset;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.edit-repicient.input-field > input:focus {
+  border-color: #ededed;
+}
+.edit-repicient.input-field .icon {
+  position: absolute;
+  font-size: 18px;
+  color: #1e1e1e;
+  top: 11px;
+}
+.edit-repicient.input-field .icon-clear {
+  top: 12px;
 }
 
 /*# sourceMappingURL=styles.css.map */

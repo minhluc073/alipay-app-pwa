@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>repicient detail</title>
+    <title>repicient</title>
 
     <!-- Font -->
     <link rel="stylesheet" href="fonts/fonts.css" />
@@ -20,9 +20,11 @@
 <body>
     <div class="header header-repicient">
         <div class="tf-container">
-            <div class="tf-statusbar d-flex justify-content-between align-items-center">
-                <a href="#" class="back-btn"> <i class="icon-left"></i> </a>
-                <a href="#" id="btn-popup-up"><i class="icon-more1"></i> </a>
+            <div class="tf-statusbar">
+                <h2 class="text-end">
+                    <a href="54_repicient-detail.html" class="primary_color fw_6">Done </a>
+                </h2>
+                
             </div>
         </div>
     </div>
@@ -42,28 +44,29 @@
             </ul>   
         </div>
         <ul class="mt-7">
-            <li class="list-user-info"><span class="icon-user"></span>Henry Hoang</li>
-            <li class="list-user-info"><span class="icon-credit-card2"></span>0321  0000  2342  2424</li>
-            <li class="list-user-info"><span class="icon-phone"></span>0922.342.234</li>
-            <li class="list-user-info"><span class="icon-email"></span>hi.avitex@gmail.com</li>
-
+            <li class="input-field edit-repicient">
+                <span class="icon icon-user"></span>
+                <input type="text" value="Henry Hoang" required class="search-field value_input" type="text">
+                <span class="icon-clear"></span>
+            </li>
+            <li class="edit-repicient input-field">
+                <span class="icon icon-credit-card2"></span>
+                <input type="text" value="0321  0000  2342  2424" type="text">
+            </li>
+            <li class="edit-repicient input-field">
+                <span class="icon icon-phone"></span>
+                <input type="text" value="0922.342.234"  type="text">
+            </li>
+            <li class="edit-repicient input-field">
+                <span class="icon icon-mail"></span>
+                <input type="text" value="hi.avitex@gmail.com" type="text">
+            </li>
         </ul>
        </div>
      
     </div>
   
-    <div class="tf-panel up">
-        <div class="panel_overlay"></div>
-          <div class="panel-box panel-up wrap-panel-clear panel-detail">
-            <div class="heading">
-                <a href="56_edit-repicient-detail.html" class="secondary_color">Edit</a>
-                <a href="#" class="critical_color">Delete</a>
-            </div>
-            <div class="bottom">
-                <a class="clear-panel" href="#">Cancel</a>
-            </div>
-          </div>
-    </div>
+   
     
 
     <script type="text/javascript" src="javascript/bootstrap.min.js"></script>

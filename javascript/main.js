@@ -50,7 +50,6 @@
       $(".btn-select").attr("value", sessionLang);
     } else {
       var langIndex = langArray.indexOf("ch");
-      console.log(langIndex);
       $(".btn-select").html(langArray[langIndex]);
     }
   };

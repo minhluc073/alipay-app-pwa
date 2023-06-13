@@ -3,7 +3,7 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        .tf-search-bar {
+        .input-field {
             flex: 1;
         }
         .icon-qrcode4 {
@@ -112,7 +112,7 @@
     grid-gap: 20px 12px;
 
     li {
-        a{
+        a {
             display: flex;
             flex-direction: column;
             gap: 4px;
@@ -126,15 +126,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-           
         }
-        
     }
 }
 
-
 .bill-payment-content {
-    .bill-topbar{
+    .bill-topbar {
         display: flex;
         align-items: center;
         gap: 8px;
@@ -148,11 +145,10 @@
             color: $primary_color;
         }
     }
-    
 }
-.wrapper-bill{
+.wrapper-bill {
     margin: 20px 0px 140px;
-    .archive-top{
+    .archive-top {
         background: $white_color;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
@@ -164,23 +160,23 @@
             padding-top: 26px;
         }
     }
-    .archive-bottom{
+    .archive-bottom {
         background: $white_color;
         padding: 25px 16px 20px;
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
 
-        h2{
+        h2 {
             padding-bottom: 18px;
         }
     }
     .dashed-line {
         width: 100%;
-       
+
         margin: 0px 4px;
         position: relative;
         &::before,
-        &::after{
+        &::after {
             content: "";
             position: absolute;
             width: 35px;
@@ -191,7 +187,7 @@
             border-radius: 50%;
             background: $surface_color;
         }
-        &::after{
+        &::after {
             right: -17px;
             left: unset;
         }
@@ -203,7 +199,7 @@
     font-size: 14px;
     line-height: 22px;
 
-    &:not(:last-child){
+    &:not(:last-child) {
         margin-bottom: 12px;
     }
     span {

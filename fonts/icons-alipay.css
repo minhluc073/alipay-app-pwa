@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?nvrq94');
-  src:  url('../fonts/icomoon.eot?nvrq94#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?nvrq94') format('truetype'),
-    url('../fonts/icomoon.woff?nvrq94') format('woff'),
-    url('../fonts/icomoon.svg?nvrq94#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?ogrkjy');
+  src:  url('../fonts/icomoon.eot?ogrkjy#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?ogrkjy') format('truetype'),
+    url('../fonts/icomoon.woff?ogrkjy') format('woff'),
+    url('../fonts/icomoon.svg?ogrkjy#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -143,6 +143,18 @@
   content: "\e91e";
   color: #f2c71c;
 }
+.icon-mail:before {
+  content: "\e929";
+}
+.icon-phone:before {
+  content: "\e9aa";
+}
+.icon-wlet:before {
+  content: "\eb6f";
+}
+.icon-user:before {
+  content: "\eb70";
+}
 .icon-eye:before {
   content: "\eb6a";
   color: #c5c5c5;
@@ -191,9 +203,6 @@
 .icon-location:before {
   content: "\e928";
   color: #717171;
-}
-.icon-mail:before {
-  content: "\e929";
 }
 .icon-bil .path1:before {
   content: "\e92a";
@@ -447,6 +456,9 @@
 }
 .icon-friends:before {
   content: "\e95e";
+}
+.icon-filter:before {
+  content: "\e9a2";
 }
 .icon-manage .path1:before {
   content: "\e960";
@@ -702,6 +714,10 @@
   margin-left: -1em;
   color: rgb(208, 210, 75);
 }
+.icon-noti:before {
+  content: "\eb6e";
+  color: #ea3434;
+}
 .icon-check:before {
   content: "\eaed";
 }
@@ -773,9 +789,6 @@
   margin-left: -1em;
   color: rgb(255, 209, 92);
 }
-.icon-phone:before {
-  content: "\e9a2";
-}
 .icon-home2:before {
   content: "\e9a3";
   color: #533dea;
@@ -801,9 +814,6 @@
 }
 .icon-calendar2:before {
   content: "\e9a9";
-}
-.icon-user:before {
-  content: "\e9aa";
 }
 .icon-email:before {
   content: "\e9ab";

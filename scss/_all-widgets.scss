@@ -279,7 +279,7 @@
 }
 
 // tf-search bar
-.tf-search-bar {
+.input-field {
     position: relative;
 
     .search-field {
@@ -714,10 +714,10 @@
     &.bg-circle {
         background-color: $success_color;
     }
-    &.bg-critical{
+    &.bg-critical {
         background-color: $critical_color;
     }
-    &.bg-blue{
+    &.bg-blue {
         background-color: $primary_color;
     }
     &.check-icon {
@@ -836,7 +836,7 @@
         left: 0;
         height: 1px;
         width: 40%;
-        border:1px solid $line_br_color;
+        border: 1px solid $line_br_color;
     }
 
     &::after {
@@ -844,12 +844,12 @@
         position: absolute;
         right: 0;
         width: 40%;
-        border:1px solid $line_br_color;
+        border: 1px solid $line_br_color;
     }
 }
 
 // atm
-.tf-atm-card{
+.tf-atm-card {
     background: url(../images/banner/banner-card.png);
     padding: 19px 19px 0px;
     // height: 159px;
@@ -864,14 +864,13 @@
         display: flex;
         justify-content: space-between;
         a {
-            i{
+            i {
                 color: $white_color;
                 font-size: 16px;
             }
-           
         }
     }
-    h3{
+    h3 {
         padding: 42px 0px 12px;
     }
     .bottom {
@@ -880,19 +879,32 @@
         padding: 4px 19px;
         border-bottom-left-radius: 16px;
         border-bottom-right-radius: 16px;
-        span{
+        span {
             font-size: 10px;
             line-height: 16px;
         }
-        a{
+        a {
             color: $white_color;
             font-size: 14px;
             line-height: 22px;
             font-weight: $fw_6;
         }
-        
     }
 }
+.list-user-info {
+    padding: 11px 0px;
+    border-bottom: 1px solid $line_br_color;
+    font-size: 14px;
+    color: $on_surface_color;
+    line-height: 22px;
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    span {
+        font-size: 20px;
+    }
+}
+
 /* animation */
 .ani1 {
     -webkit-animation: ani1 10s infinite ease-in-out alternate;
