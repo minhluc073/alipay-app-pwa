@@ -446,7 +446,6 @@
 }
 .icon-arrow-up_minor:before {
   content: "\e95b";
-  color: #533dea;
 }
 .icon-wallet-filled-money-tool:before {
   content: "\e95c";
@@ -723,7 +722,6 @@
 }
 .icon-water2:before {
   content: "\e994";
-  color: #438df7;
 }
 .icon-light .path1:before {
   content: "\e995";
@@ -2077,12 +2075,14 @@
 }
 .icon-home:before {
   content: "\e904";
+  font-size: 24px;
 }
 .icon-star-outline:before {
   content: "\eafb";
 }
 .icon-star-fill:before {
   content: "\eab1";
+  font-size: 24px;
 }
 .icon-user-outline:before {
   content: "\eab2";
@@ -2090,6 +2090,7 @@
 }
 .icon-user-fill:before {
   content: "\eab3";
+  font-size: 24px;
 }
 .icon-exchange:before {
   content: "\eab4";

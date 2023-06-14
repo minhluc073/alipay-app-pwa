@@ -355,36 +355,7 @@
         top: 3px;
     }
 }
-//tf-trading-history
-.tf-trading-history {
-    .inner-left {
-        gap: 8px;
 
-        img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-        }
-    }
-}
-.thumb-trading-history {
-    width: 40px;
-    height: 40px;
-    background: $rgba_primary_color;
-    border-radius: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .icon-electricity-1 {
-        color: $primary_color;
-        font-size: 24px;
-    }
-}
-.group-trading-history {
-    .tf-trading-history {
-        margin-bottom: 28px;
-    }
-}
 
 //custom select
 .box-custom-select {
@@ -852,14 +823,11 @@
 .tf-atm-card {
     background: url(../images/banner/banner-card.png);
     padding: 19px 19px 0px;
-    // height: 159px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     position: relative;
     border-radius: 16px;
-    // border-bottom-right-radius: 80px;
-    // border-bottom-left-radius: 80px;
     .heading {
         display: flex;
         justify-content: space-between;
