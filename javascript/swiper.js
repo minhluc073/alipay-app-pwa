@@ -1,3 +1,4 @@
+
 if ($("div").hasClass("swiper-container")) {
   var swiper = new Swiper(".recipient-tes", {
     loop: true,
@@ -17,7 +18,6 @@ if ($("div").hasClass("swiper-container")) {
     // },
   });
 }
-
 if ($("div").hasClass("swiper-container")) {
   var swiper = new Swiper(".banner-tes", {
     loop: true,
@@ -63,7 +63,35 @@ if ($("div").hasClass("swiper-container")) {
 
       },
     },
+    
   });
 }
+if ($("div").hasClass("swiper-container")) {
+  var swiper = new Swiper(".brand-tes", {
+    loop: true,
+    slidesPerView: 4,
+    spaceBetween: 8,
+  });
+}
+if ($("div").hasClass("swiper-container")) {
+  var swiper = new Swiper(".tes-2", {
+    loop: true,
+    slidesPerView: 2,
 
+  });
+}
+if ($("div").hasClass("swiper-container")) {
+  var swiper = new Swiper(".tes-food", {
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 15,
 
+  });
+}
+if ($("div").hasClass("swiper-container")) {
+  var swiper = new Swiper(".tes-noti", {
+    loop: true,
+    slidesPerView: 3,
+    // spaceBetween: 8,
+  });
+}

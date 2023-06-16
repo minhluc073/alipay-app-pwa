@@ -18,7 +18,7 @@
 
 <body>
 
-    <div class="header">
+    <div class="header is-fixed">
         <div class="tf-container">
             <div class="tf-statusbar d-flex justify-content-between align-items-center">
                 <a href="#" class="back-btn st1"> <i class="icon-left"></i> </a>
@@ -27,204 +27,200 @@
             </div>
         </div>
     </div>
-    <div class="app-section mt-1">
-        <div class="container">
-            <div class="wrap-total">
-                <div class="total-item">
-                    <a href="#" class="box-icon bg_primary"><i class="icon-arrow-up_minor primary_color"></i></a>
-                    <div class="content">
-                        <p class="fw_4">Income</p>
-                        <h2 class="fw_6 success_color">$778.35</h2>
-                    </div>
-                </div>
-                <div class="total-item">
-                    <a href="#" class="box-icon bg_critical"><i class="icon-arrow-up_minor critical_color arrow-down"></i></a>
-
-
-                    <div class="content">
-                        <p class="fw_4">Outcome</p>
-                        <h2 class="fw_6 critical_color">$878.35</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="app-section mt-1">
-        <div class="container">
-            <div class="tf-tab">
-                <ul class="menu-tabs timeline mb-5">
-                    <li class="nav-tab active">The last 7 days</li>
-                    <li class="nav-tab">30 days</li>
-                    <li class="nav-tab">Custom</li>
-
-                </ul>
-                <div class="wrap-chart">
-                        <ul class="case">
-                            <li>400</li>
-                            <li>200</li>
-                            <li>0</li>
-                            <li>-200</li>
-                            <li>-400</li>
-                        </ul>
-                        <div class="content-tab">
-                            <div class="chart-item">
-                                <img src="images/banner/chart.png" alt="">
-                                <ul class="bottom d-flex justify-content-between">
-                                    <li>29-06</li>
-                                    <li>05-07</li>
-                                </ul>  
-                            </div>
-                            <div class="chart-item">
-                                <img src="images/banner/chart.png" alt="">
-                                <ul class="bottom d-flex justify-content-between">
-                                    <li>29-06</li>
-                                    <li>05-07</li>
-                                </ul>  
-                            </div>
-                            <div class="chart-item">
-                                <img src="images/banner/chart.png" alt="">
-                                <ul class="bottom d-flex justify-content-between">
-                                    <li>29-06</li>
-                                    <li>05-07</li>
-                                </ul> 
-                            </div>
-                        </div>
-                    
-                    
-                    
-                </div>   
-            </div>
-        </div>
-    </div>
-    <div class="app-section mt-1">
+    <div id="app-wrap">
         <div class="tf-container">
-            <div class="trading-month">
-                <h4 class="fw_5 mb-3">November</h4>
-                <div class="group-trading-history mb-5">
-                    <div class="tf-trading-history">
-                        <div class="inner-left">
-                            <div class="icon-box rgba_primary">
-                                <i class="icon icon-electricity-1"></i>
-                            </div>
+            <div class="app-section mt-5">
+                <div class="wrap-total">
+                    <div class="total-item">
+                        <a href="#" class="box-icon bg_primary"><i class="icon-arrow-up_minor primary_color"></i></a>
                             <div class="content">
-                                <h4><a href="#">Electric bill</a></h4>
-                                <p>Today 10:27 AM</p>
+                                <p class="fw_4">Income</p>
+                                <h2 class="fw_6 success_color">$778.35</h2>
                             </div>
-                        </div>
-                        <a href="#" class="num-val critical_color">- $307</a>
                     </div>
-                    <div class="tf-trading-history">
-                        <div class="inner-left">
-                            <div class="thumb">
-                                <img src="images/user/user2.jpg" alt="image">
-                            </div>
-                            <div class="content">
-                                <h4><a href="#">Esther</a></h4>
-                                <p>Today 7:30 AM</p>
-                            </div>
+                    <div class="total-item">
+                        <a href="#" class="box-icon bg_critical"><i class="icon-arrow-up_minor critical_color arrow-down"></i></a>
+        
+        
+                        <div class="content">
+                            <p class="fw_4">Outcome</p>
+                            <h2 class="fw_6 critical_color">$878.35</h2>
                         </div>
-                        <a href="#" class="num-val success_color">+ $50</a>
-                    </div>
-                 
-                </div>
-            </div>
-            <div class="trading-month">
-                <h4 class="fw_5 mb-3">October</h4>
-                <div class="group-trading-history mb-5">
-                    <div class="tf-trading-history">
-                        <div class="inner-left">
-                            <div class="icon-box">
-                                <i class="icon icon-mobile"></i>
-                            </div>
-                            <div class="content">
-                                <h4><a href="#">Mobile</a></h4>
-                                <p>Yesterday 17:27 PM</p>
-                            </div>
-                        </div>
-                        <a href="#" class="num-val critical_color">- $25</a>
-                    </div>
-                    <div class="tf-trading-history">
-                        <div class="inner-left">
-                            <div class="icon-box">
-                                <i class="icon icon-wifi"></i>
-                            </div>
-                            <div class="content">
-                                <h4><a href="#">Wifi</a></h4>
-                                <p>Yesterday 13:27 PM</p>
-                            </div>
-                        </div>
-                        <a href="#" class="num-val critical_color">- $32</a>
-                    </div>
-                    <div class="tf-trading-history">
-                        <div class="inner-left">
-                            <div class="icon-box">
-                                <i class="icon icon-water2"></i>
-                            </div>
-                            <div class="content">
-                                <h4><a href="#">Water bill</a></h4>
-                                <p>Yesterday 10:27 AM</p>
-                            </div>
-                        </div>
-                       <a href="#" class="num-val critical_color">- $10</a>
                     </div>
                 </div>
             </div>
-            <div class="trading-month mb-9">
-                <h4 class="fw_5 mb-3">September</h4>
-                <div class="group-trading-history mb-5">
-                    <div class="tf-trading-history">
-                        <div class="inner-left">
-                            <div class="icon-box">
-                                <i class="icon icon-steam"></i>
-                            </div>
-                            <div class="content">
-                                <h4><a href="#">Steam</a></h4>
-                                <p>20/11/2022 17:27 PM</p>
-                            </div>
-                        </div>
-                        <a href="#" class="num-val critical_color">- $25</a>
-                    </div>
-                    <div class="tf-trading-history">
-                        <div class="inner-left">
-                            <div class="icon-box">
-                                <i class="icon icon-app-store"></i>
-                            </div>
-                            <div class="content">
-                                <h4><a href="#">App Store</a></h4>
-                                <p>20/11/2022 13:27 PM</p>
-                            </div>
-                        </div>
-                       <a href="#" class="num-val critical_color">- $32</a>
-                    </div>
-                    <div class="tf-trading-history">
-                        <div class="inner-left">
-                            <div class="thumb">
-                                <img src="images/user/user5.jpg" alt="image">
-                            </div>
-                            <div class="content">
-                                <h4><a href="#">Leslie</a></h4>
-                                <p>20/11/2022 10:27 AM</p>
-                            </div>
-                        </div>
-                        <a href="#" class="num-val success_color">+ $10</a>
-                    </div>
-                    <div class="tf-trading-history">
-                        <div class="inner-left">
-                            <div class="thumb">
-                                <img src="images/user/user5.jpg" alt="image">
-                            </div>
-                            <div class="content">
-                                <h4><a href="#">Leslie</a></h4>
-                                <p>20/11/2022 10:27 AM</p>
-                            </div>
-                        </div>
-                        <a href="#" class="num-val success_color">+ $10</a>
-                    </div>
+            <div class="app-section mt-5">
+                <div class="tf-tab">
+                        <ul class="menu-tabs timeline mb-5">
+                            <li class="nav-tab active">The last 7 days</li>
+                            <li class="nav-tab">30 days</li>
+                            <li class="nav-tab">Custom</li>
+        
+                        </ul>
+                        <div class="wrap-chart">
+                            <ul class="case">
+                                <li>400</li>
+                                <li>200</li>
+                                <li>0</li>
+                                <li>-200</li>
+                                <li>-400</li>
+                            </ul>
+                                <div class="content-tab">
+                                    <div class="chart-item">
+                                        <img src="images/banner/chart.png" alt="">
+                                        <ul class="bottom d-flex justify-content-between">
+                                            <li>29-06</li>
+                                            <li>05-07</li>
+                                        </ul>  
+                                    </div>
+                                    <div class="chart-item">
+                                        <img src="images/banner/chart.png" alt="">
+                                        <ul class="bottom d-flex justify-content-between">
+                                            <li>29-06</li>
+                                            <li>05-07</li>
+                                        </ul>  
+                                    </div>
+                                    <div class="chart-item">
+                                        <img src="images/banner/chart.png" alt="">
+                                        <ul class="bottom d-flex justify-content-between">
+                                            <li>29-06</li>
+                                            <li>05-07</li>
+                                        </ul> 
+                                    </div>
+                                </div>
+                        </div>   
                 </div>
             </div>
-
+            <div class="app-section mt-5 mb-5">
+                <div class="trading-month">
+                        <h4 class="fw_5 mb-3">November</h4>
+                        <div class="group-trading-history mb-5">
+                            <div class="tf-trading-history">
+                                <div class="inner-left">
+                                    <div class="icon-box rgba_primary">
+                                        <i class="icon icon-electricity-1"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h4><a href="#">Electric bill</a></h4>
+                                        <p>Today 10:27 AM</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="num-val critical_color">- $307</a>
+                            </div>
+                            <div class="tf-trading-history">
+                                <div class="inner-left">
+                                    <div class="thumb">
+                                        <img src="images/user/user2.jpg" alt="image">
+                                    </div>
+                                    <div class="content">
+                                        <h4><a href="#">Esther</a></h4>
+                                        <p>Today 7:30 AM</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="num-val success_color">+ $50</a>
+                            </div>
+                         
+                        </div>
+                </div>
+                <div class="trading-month">
+                        <h4 class="fw_5 mb-3">October</h4>
+                        <div class="group-trading-history mb-5">
+                            <div class="tf-trading-history">
+                                <div class="inner-left">
+                                    <div class="icon-box">
+                                        <i class="icon icon-mobile"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h4><a href="#">Mobile</a></h4>
+                                        <p>Yesterday 17:27 PM</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="num-val critical_color">- $25</a>
+                            </div>
+                            <div class="tf-trading-history">
+                                <div class="inner-left">
+                                    <div class="icon-box">
+                                        <i class="icon icon-wifi"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h4><a href="#">Wifi</a></h4>
+                                        <p>Yesterday 13:27 PM</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="num-val critical_color">- $32</a>
+                            </div>
+                            <div class="tf-trading-history">
+                                <div class="inner-left">
+                                    <div class="icon-box">
+                                        <i class="icon icon-water2"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h4><a href="#">Water bill</a></h4>
+                                        <p>Yesterday 10:27 AM</p>
+                                    </div>
+                                </div>
+                               <a href="#" class="num-val critical_color">- $10</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="trading-month">
+                        <h4 class="fw_5 mb-3">September</h4>
+                        <div class="group-trading-history mb-5">
+                            <div class="tf-trading-history">
+                                <div class="inner-left">
+                                    <div class="icon-box">
+                                        <i class="icon icon-steam"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h4><a href="#">Steam</a></h4>
+                                        <p>20/11/2022 17:27 PM</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="num-val critical_color">- $25</a>
+                            </div>
+                            <div class="tf-trading-history">
+                                <div class="inner-left">
+                                    <div class="icon-box">
+                                        <i class="icon icon-app-store"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h4><a href="#">App Store</a></h4>
+                                        <p>20/11/2022 13:27 PM</p>
+                                    </div>
+                                </div>
+                               <a href="#" class="num-val critical_color">- $32</a>
+                            </div>
+                            <div class="tf-trading-history">
+                                <div class="inner-left">
+                                    <div class="thumb">
+                                        <img src="images/user/user5.jpg" alt="image">
+                                    </div>
+                                    <div class="content">
+                                        <h4><a href="#">Leslie</a></h4>
+                                        <p>20/11/2022 10:27 AM</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="num-val success_color">+ $10</a>
+                            </div>
+                            <div class="tf-trading-history">
+                                <div class="inner-left">
+                                    <div class="thumb">
+                                        <img src="images/user/user5.jpg" alt="image">
+                                    </div>
+                                    <div class="content">
+                                        <h4><a href="#">Leslie</a></h4>
+                                        <p>20/11/2022 10:27 AM</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="num-val success_color">+ $10</a>
+                            </div>
+                        </div>
+                </div>
+        
+            </div>
         </div>
     </div>
+    
     <div class="bottom-navigation-bar">
         <div class="tf-container">
             <ul class="tf-navigation-bar">
@@ -235,7 +231,7 @@
                 <li><a class="fw_4 d-flex justify-content-center align-items-center flex-column" href="qr.html"><i
                             class="icon-scan-qr-code"></i> </a> </li>
                 <li><a class="fw_4 d-flex justify-content-center align-items-center flex-column"
-                        href="rewards.html"><svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                        href="62_rewards.html"><svg width="25" height="24" viewBox="0 0 25 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <circle cx="12.25" cy="12" r="9.5" stroke="#717171" />
                             <path

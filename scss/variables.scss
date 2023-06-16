@@ -13,6 +13,7 @@ $critical_color: #ea3434;
 $white_color: #ffffff;
 $light_color: #999999;
 $bg_light_color: #dfdfdf;
+$primary_rgba_color:rgba(33, 150, 243, 1);
 $tf_shadow: 0px 8px 15px 0px rgba(24, 25, 27, 0.05);
 $tf-navigation-bar_shadow: 0px -1px 2px 0px rgba(0, 0, 0, 0.07);
 $rgba_primary_color: rgba(75, 40, 225, 0.1);
@@ -31,6 +32,17 @@ $bg_color_9:rgba(57, 198, 93, 0.2);
 $bg_color_10:rgba(201, 126, 103, 0.2);
 $bg_color_11:rgba(24, 168, 201, 0.1);
 $bg_color_12:rgba(229, 99, 83, 0.2);
+$bg_service-1:rgba(198, 242, 178, 0.5);
+$bg_service-2:rgba(199, 238, 247, 0.5);
+$bg_service-3:rgba(241, 242, 178, 0.5);
+$bg_service-4:rgba(244, 204, 181, 0.5);
+$bg_service-5:rgba(167, 220, 232, 0.5);
+$bg_service-6:rgba(83, 61, 234, 0.2);
+$bg_service-7:rgba(193, 19, 35, 0.1);
+$bg_service-8:rgba(178, 242, 215, 0.5);
+
+
+
 $bg_popup: rgba(2, 22, 56, 0.3);
 
 // font-weight
@@ -105,6 +117,12 @@ $fw_8: 800;
 .bg_surface_color {
     background: $surface_color;
 }
+.bg_gift-card-1{
+    background: $secondary3_color;
+}
+.bg_gift-card-2{
+    background: $on_surface_color;
+}
 .bg_primary{
     background: $bg_primary;
 }
@@ -146,4 +164,28 @@ $fw_8: 800;
 }
 .bg_color_12 {
     background: $bg_color_12;
+}
+.bg_service-1{
+    background: $bg_service-1;
+}
+.bg_service-2{
+    background: $bg_service-2;
+}
+.bg_service-3{
+    background: $bg_service-3;
+}
+.bg_service-4{
+    background: $bg_service-4;
+}
+.bg_service-5{
+    background: $bg_service-5;
+}
+.bg_service-6{
+    background: $bg_service-6;
+}
+.bg_service-7{
+    background: $bg_service-7;
+}
+.bg_service-8{
+    background: $bg_service-8;
 }

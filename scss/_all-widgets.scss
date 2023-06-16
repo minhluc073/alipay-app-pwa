@@ -5,7 +5,25 @@
     margin-left: auto;
     margin-right: auto;
 }
-
+#app-wrap {
+    padding: 44px 0px 62px;
+    &.style1{
+        padding-bottom: 0px;
+    }
+}
+.is-fixed {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+.dots-tes {
+    position: unset;
+    span {
+        width: 5px;
+        height: 5px;
+    }
+}
 // button
 .tf-btn {
     width: 100%;
@@ -325,6 +343,8 @@
     margin: 0px -16px;
     border-bottom: 1px solid $line_br_color;
     position: relative;
+    height: 44px;
+
     .back-btn {
         left: 16px;
         position: absolute;
@@ -872,7 +892,47 @@
         font-size: 20px;
     }
 }
+.noti-list {
+    padding-bottom: 8px;
+    border-bottom: 1px solid $line_br_color;
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+    .icon-box {
+        width: 32px;
+        height: 32px;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content-right {
+        flex: 1;
+        .title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span {
+                font-size: 10px;
+                line-height: 16px;
+            }
+        }
+        .desc {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .dot {
+                padding: 4px;
+                display: inline-block;
+                border-radius: 1000px;
+                background: $critical_color;
+            }
+        }
+    }
 
+
+    
+}
 /* animation */
 .ani1 {
     -webkit-animation: ani1 10s infinite ease-in-out alternate;
