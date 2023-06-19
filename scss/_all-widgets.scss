@@ -23,6 +23,9 @@
         width: 5px;
         height: 5px;
     }
+    .swiper-pagination-bullet-active {
+        background: $primary_color;
+    }
 }
 // button
 .tf-btn {
@@ -111,6 +114,7 @@
             padding: 0px 5px;
             left: 12px;
         }
+      
     }
     .auth-pass-input {
         .password-addon {
@@ -127,6 +131,12 @@
     }
     .btn-large {
         margin-top: 28px;
+    }
+    .bottom-btn-fixed{
+        width: unset;
+        background: none;
+        left: 16px;
+        right: 16px;
     }
 }
 .tf-form-verify {

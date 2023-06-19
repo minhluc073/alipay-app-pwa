@@ -84,6 +84,48 @@
         content: "";
         transform: rotate(90deg);
     }
+
+    // large
+    &.large {
+        width: 225px;
+        height: 105px;
+        .desc {
+            padding: 12px 0px 10px 18px;
+            .name {
+                font-size: 12px;
+                line-height: 16px;
+            }
+            .code {
+                font-size: 16.5px;
+                line-height: 22.5px;
+            }
+            .counpon {
+                font-size: 10.5px;
+                line-height: 16.5px;
+            }
+            li {
+                &:last-child {
+                    font-size: 10.5px;
+                    line-height: 16.5px;
+                    margin-top: 7px;
+                    gap: 5px;
+                    i {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .img-gift {
+            width: 170px;
+            height: 105px;
+        }
+        &::after {
+            top: 50px;
+        }
+        &::before {
+            top: 46px;
+        }
+    }
 }
 .tes-2 {
     .space1 {
@@ -209,10 +251,167 @@
         width: 9px;
         height: 9px;
         border-radius: 100%;
-        background:$primary_rgba_color;
+        background: $primary_rgba_color;
         color: $white_color;
         display: inline-flex;
         align-items: center;
         justify-content: center;
     }
 }
+.tabs-food {
+    position: fixed;
+    z-index: 30;
+    top: 44px;
+    left: 16px;
+    right: 16px;
+    margin: 0px -16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background: $white_color;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 20px;
+    .nav-tab {
+        border-bottom: 1px solid $line_br_color;
+        padding-bottom: 8px;
+        text-align: center;
+        color: $secondary_color;
+        font-weight: $fw_6;
+        font-size: 14px;
+        line-height: 22px;
+        &.active {
+            color: $on_surface_color;
+            border-bottom: 2px solid $primary_color;
+        }
+    }
+}
+.tab-gift-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 12px;
+}
+.dots-food-tes span.swiper-pagination-bullet-active {
+    width: 28px;
+    border-radius: 30px;
+}
+.pt-tab-space {
+    padding-top: 75px;
+}
+
+// gift card details
+.header-style2 {
+    background: url(../images/rewards/gift-3.jpg);
+    padding: 39px 0px 140px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+
+    .sale {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 4px 16px;
+        border-top-left-radius: 8px;
+        background: $critical_color;
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: $fw_7;
+        color: $white_color;
+    }
+}
+.app-section {
+    padding: 12px 0px;
+}
+
+.voucher-info {
+    padding-bottom: 8px;
+    border-bottom: 1px solid $line_br_color;
+    a {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+.note-voucher {
+    padding: 2px 8px;
+    background-color: $critical_color;
+    color: $white_color;
+    font-size: 10px;
+    line-height: 16px;
+    border-radius: 4px;
+}
+.voucher-desc {
+    p {
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: $fw_4;
+    }
+    .btn-view-more {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        font-weight: $fw_4;
+        .icon-down {
+            font-size: 16px;
+            margin-top: 2px;
+        }
+    }
+}
+
+.giftcard-detail-section-3 {
+    .top {
+        padding-bottom: 12px;
+        border-bottom: 1px solid $line_br_color;
+        a {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            i {
+                font-size: 20px;
+                margin-top: 2px;
+            }
+        }
+    }
+    .address {
+        gap: 8px;
+        .icon-location {
+            font-size: 20px;
+        }
+        p {
+            flex: 1;
+            font-size: 14px;
+            line-height: 22px;
+        }
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: $primary_color;
+            .icon-send2 {
+                font-size: 20px;
+                color: $primary_color;
+            }
+        }
+    }
+}
+.giftcard-detail-section-4 {
+    .top {
+        gap: 13px;
+        align-items: center;
+        padding-bottom: 12px;
+        border-bottom: 1px solid $line_br_color;
+        .logo {
+            width: 42px;
+            height: 42px;
+        }
+        .desc {
+            flex: 1;
+        }
+        .icon-right {
+            font-size: 24px;
+        }
+    }
+}
+

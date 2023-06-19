@@ -49,7 +49,6 @@
 }
 
 .bottom-navigation-bar {
-    // padding-bottom: 16px;
     position: fixed;
     z-index: 1000;
     background: $white_color;
@@ -59,6 +58,11 @@
     &.st1 {
         background: $surface_color;
         box-shadow: none;
+    }
+    &.bottom-btn-fixed{
+        padding: 16px 0px;
+        box-shadow: unset;
+
     }
 }
 

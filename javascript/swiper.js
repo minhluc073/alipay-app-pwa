@@ -1,4 +1,3 @@
-
 if ($("div").hasClass("swiper-container")) {
   var swiper = new Swiper(".recipient-tes", {
     loop: true,
@@ -31,39 +30,34 @@ if ($("div").hasClass("swiper-container")) {
       el: ".swiper-pagination",
       clickable: true,
     },
-   
+
     breakpoints: {
       320: {
         slidesPerView: 1,
-        spaceBetween:  0,
+        spaceBetween: 0,
       },
       375: {
         slidesPerView: 1,
-        spaceBetween:  -30,
+        spaceBetween: -30,
       },
       500: {
         slidesPerView: 1,
-        spaceBetween:  -150,
-
+        spaceBetween: -150,
       },
       600: {
         slidesPerView: 2,
-        spaceBetween:  30,
-
+        spaceBetween: 30,
       },
       900: {
         slidesPerView: 3,
-        spaceBetween:  12,
-
+        spaceBetween: 12,
       },
 
       1200: {
         slidesPerView: 4,
         spaceBetween: 12,
-
       },
     },
-    
   });
 }
 if ($("div").hasClass("swiper-container")) {
@@ -77,7 +71,6 @@ if ($("div").hasClass("swiper-container")) {
   var swiper = new Swiper(".tes-2", {
     loop: true,
     slidesPerView: 2,
-
   });
 }
 if ($("div").hasClass("swiper-container")) {
@@ -85,7 +78,6 @@ if ($("div").hasClass("swiper-container")) {
     loop: true,
     slidesPerView: 2,
     spaceBetween: 15,
-
   });
 }
 if ($("div").hasClass("swiper-container")) {
@@ -93,5 +85,16 @@ if ($("div").hasClass("swiper-container")) {
     loop: true,
     slidesPerView: 3,
     // spaceBetween: 8,
+  });
+}
+if ($("div").hasClass("swiper-container")) {
+  var swiper = new Swiper(".tes-gift-1", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: -100,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
   });
 }
