@@ -83,7 +83,7 @@
         });
     });
   };
-  const suggessInput = function () {
+  const suggestInput = function () {
     $(".tag-money").on("click", function () {
       var val = $(this).text();
       $(".value_input").val(val);
@@ -200,13 +200,22 @@
       }, 3000);
     }
   };
+
+  var Preloader = function () {
+    setTimeout(function () {
+    $(".preload").fadeOut("slow", function () {
+        $(this).remove();
+    });
+    }, 800);
+};
   $(function () {
     clear_text();
     custom_select();
     tfTabs();
-    suggessInput();
+    suggestInput();
     tfPanel();
     backPage();
     setTimeIn();
+    Preloader();
   });
 })(jQuery);
