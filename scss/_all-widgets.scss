@@ -7,7 +7,7 @@
 }
 #app-wrap {
     padding: 44px 0px 62px;
-    &.style1{
+    &.style1 {
         padding-bottom: 0px;
     }
 }
@@ -114,7 +114,6 @@
             padding: 0px 5px;
             left: 12px;
         }
-      
     }
     .auth-pass-input {
         .password-addon {
@@ -132,7 +131,7 @@
     .btn-large {
         margin-top: 28px;
     }
-    .bottom-btn-fixed{
+    .bottom-btn-fixed {
         width: unset;
         background: none;
         left: 16px;
@@ -386,7 +385,6 @@
     }
 }
 
-
 //custom select
 .box-custom-select {
     .default-select {
@@ -560,6 +558,11 @@
         -webkit-transition-timing-function: ease;
         transition-timing-function: ease;
     }
+    .panel-center {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
     .panel-up {
         width: 100%;
         bottom: 0;
@@ -626,6 +629,17 @@
         }
     }
 }
+.modal-dialog.modal-dialog-centered {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100% - 1rem);
+
+}
 // content panel
 .wrap-content-panel {
     .heading {
@@ -689,10 +703,32 @@
 .circle-box {
     display: inline-block;
     border-radius: 50%;
-
+    &.check-icon {
+        position: relative;
+        &::after {
+            position: absolute;
+            border: 4px solid #fff;
+            border-top: none;
+            border-right: none;
+            content: "";
+            top: 22px;
+            left: 22px;
+            height: 13px;
+            transform: rotate(-45deg);
+            width: 22px;
+            border-radius: 3px;
+        }
+    }
     &.xl {
         width: 138px;
         height: 138px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i {
+            font-size: 66px;
+            color: $white_color;
+        }
     }
     &.lg {
         width: 82px;
@@ -720,22 +756,6 @@
     }
     &.bg-blue {
         background-color: $primary_color;
-    }
-    &.check-icon {
-        position: relative;
-        &::after {
-            position: absolute;
-            border: 4px solid #fff;
-            border-top: none;
-            border-right: none;
-            content: "";
-            top: 22px;
-            left: 22px;
-            height: 13px;
-            transform: rotate(-45deg);
-            width: 22px;
-            border-radius: 3px;
-        }
     }
 }
 //bank - list
@@ -918,7 +938,7 @@
     }
     .content-right {
         flex: 1;
-        .title{
+        .title {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -939,9 +959,6 @@
             }
         }
     }
-
-
-    
 }
 /* animation */
 .ani1 {

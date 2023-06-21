@@ -20,6 +20,7 @@
     background-size: cover;
     background-position: center center;
     position: relative;
+  
 }
 
 .panel-close {
@@ -35,7 +36,7 @@
         border-radius: unset;
         background: none;
         transition: unset;
- 
+
         .logo-qr {
             padding: 15px 25px 29px;
             margin-bottom: 48px;
@@ -55,8 +56,8 @@
                 }
             }
         }
-        &.st2{
-            .logo-qr{
+        &.st2 {
+            .logo-qr {
                 margin-bottom: 90px;
             }
         }
@@ -80,3 +81,5 @@
         font-size: 30px;
     }
 }
+
+

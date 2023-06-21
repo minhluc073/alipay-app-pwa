@@ -83,20 +83,20 @@
         });
     });
   };
-  const suggessInput = function(){
-   $('.tag-money').on('click', function()
-   {
-     var val = $(this).text();
-     $('.value_input').val(val)
-   });
+  const suggessInput = function () {
+    $(".tag-money").on("click", function () {
+      var val = $(this).text();
+      $(".value_input").val(val);
+    });
   };
-  const tfPanel = function(){
-    var panelUp = $('.up');
-    var panelLeft = $('.left');
-    var panelRight = $('.right'); 
-    var panelScanQR = $('.scan');
+  const tfPanel = function () {
+    var panelUp = $(".up");
+    var panelLeft = $(".left");
+    var panelRight = $(".right");
+    var panelScanQR = $(".scan");
+    var panelLogout = $(".logout");
 
-    if(panelUp.length){
+    if (panelUp.length) {
       const open = function () {
         panelUp.addClass("panel-open");
       };
@@ -111,7 +111,7 @@
         close();
       });
     }
-    if(panelLeft.length){
+    if (panelLeft.length) {
       const open = function () {
         panelLeft.addClass("panel-open");
       };
@@ -126,7 +126,7 @@
         close();
       });
     }
-    if(panelRight.length){
+    if (panelRight.length) {
       const open = function () {
         panelRight.addClass("panel-open");
       };
@@ -141,7 +141,7 @@
         close();
       });
     }
-    if(panelScanQR.length){
+    if (panelScanQR.length) {
       const close = function () {
         panelScanQR.addClass("panel-close");
         panelScanQR.removeClass("panel-open");
@@ -150,19 +150,38 @@
         close();
       });
     }
+    if (panelLogout.length) {
+      const open = function () {
+        panelLogout.addClass("panel-open");
+      };
+      const close = function () {
+        panelLogout.removeClass("panel-open");
+      };
 
+      $("#btn-logout").on("click", function () {
+        open();
+      });
+      $(".panel_overlay, .clear-panel").on("click", function () {
+        close();
+      });
+    }
   };
-  const backPages = function () {
+  const backPage = function () {
     $(".back-btn").on("click", function (e) {
       e.preventDefault();
-			window.history.back();
+      window.history.back();
     });
-  }
+  };
   const setTimeIn = function () {
     if ($(".scan").length > 0) {
       setTimeout(function () {
         $(".scan").addClass("panel-open");
       }, 0);
+    }
+    if ($("#modalhome1").length > 0) {
+      setTimeout(function () {
+        $("#modalhome1").modal({ show: true });
+      }, 3000);
     }
   };
   $(function () {
@@ -171,7 +190,7 @@
     tfTabs();
     suggessInput();
     tfPanel();
-    backPages();
+    backPage();
     setTimeIn();
   });
 })(jQuery);

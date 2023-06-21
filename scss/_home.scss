@@ -59,10 +59,9 @@
         background: $surface_color;
         box-shadow: none;
     }
-    &.bottom-btn-fixed{
+    &.bottom-btn-fixed {
         padding: 16px 0px;
         box-shadow: unset;
-
     }
 }
 
@@ -87,5 +86,52 @@
         width: 290px;
         height: 162px;
         border-radius: 8px;
+    }
+}
+#modalhome1{
+    .modal-content{
+        max-width: 273px;
+
+        .heading {
+            border-bottom: 1px solid $line_color;
+            padding: 16px;
+            h4{
+                padding: 0px 30px;
+            }
+        }
+        .bottom {
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            a{
+                padding: 11px 16px;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                &:first-child{
+                    border-right: 1px solid $line_color;
+                }
+            }
+        }
+    }
+   
+}
+#modalhome2{
+    .modal-content{
+    padding: 20px;
+    max-width: 335px;
+    .heading{
+        .cb {
+            .tf-checkbox.st1{
+                width: 16px;
+                height: 16px;
+                border-radius: 5px;
+                display: block;
+                &:checked{
+                    background: $primary_color;
+                }
+            }
+        }
+    }
+
     }
 }
