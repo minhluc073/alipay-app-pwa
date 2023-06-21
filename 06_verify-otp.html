@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>verify OTP</title>
-
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="images/logo.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/logo.png" />
     <!-- Font -->
     <link rel="stylesheet" href="fonts/fonts.css" />
     <!-- Icons -->
@@ -20,30 +22,30 @@
 <body>
     <div class="header">
         <div class="tf-container">
-            <div class="tf-statusbar d-flex justify-content-center align-items-center">
+            <div class="tf-statusbar br-none d-flex justify-content-center align-items-center">
                 <a href="#" class="back-btn"> <i class="icon-left"></i> </a>
                 <h3>Verification OTP</h3>
             </div>
-            <div class="tf-spacing-20"></div>
+            
         </div>
     </div>
     
-    <div class="wrap-transfer">
+    <div class="mt-5">
         <div class="tf-container">
-            <form class="tf-form-verify" action="successful.html">
-                <div class="row">
-                    <div class="d-flex group-input-verify">
+            <form class="tf-form tf-form-verify" action="07_verify-account.html">
+                <div class="d-flex group-input-verify">
                         <input type="tel" maxlength="1" pattern="[0-9]" class="input-verify" value="1">
                         <input type="tel" maxlength="1" pattern="[0-9]" class="input-verify" value="2">
-                        <input type="tel" maxlength="1" pattern="[0-9]" class="input-verify" value="3">
-                        <input type="tel" maxlength="1" pattern="[0-9]" class="input-verify" value="4">
-                    </div>
-                    <div class="text-send-code">
+                        <input type="tel" maxlength="1" pattern="[0-9]" class="input-verify">
+                        <input type="tel" maxlength="1" pattern="[0-9]" class="input-verify">
+                </div>
+                <div class="text-send-code">
                         <p class="fw_4">A code has been sent to your phone</p>
                         <p class="primary_color fw_7">Resend in&nbsp;<span class="js-countdown" data-timer="60" data-labels=" :  ,  : , : , "></span></p>
-                    </div>
                 </div>
-                <button type="submit" class="tf-btn accent">Continue</button>
+                <div class="bottom-navigation-bar bottom-btn-fixed">
+                    <button type="submit" class="tf-btn accent large">Continue</button>
+                </div>
             </form>
         </div>
 

@@ -271,7 +271,7 @@
 }
 .tf-panel {
     &.logout {
-        .box-logout {
+        .panel-logout {
             border-radius: 8px;
             max-width: 273px;
             width: 100%;
@@ -295,5 +295,47 @@
                 }
             }
         }
+    }
+
+    .panel-st-app {
+        .panel-content {
+            padding: 0px 16px;
+            .item {
+                padding: 12px 0px;
+                a {
+                    font-size: 14px;
+                    line-height: 22px;
+                    font-weight: $fw_5;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                   
+
+                    i {
+                        display: none;
+                        color: $primary_color;
+                    }
+                       
+                    &.active,
+                    &:hover,
+                    &:active {
+                        color: $primary_color;
+                        i {
+                            display: block;
+                        }
+                    }
+                }
+                &:not(:last-child) {
+                    border-bottom: 1px solid $line_br_color;
+                }
+            }
+        }
+    }
+    .line {
+        width: 80px;
+        height: 4px;
+        border-radius: 12px;
+        background: $line_color;
+        margin: 10px 0px 8px;
     }
 }

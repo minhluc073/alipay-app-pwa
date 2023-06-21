@@ -95,6 +95,7 @@
     var panelRight = $(".right");
     var panelScanQR = $(".scan");
     var panelLogout = $(".logout");
+    var panelLockApp = $(".lock-app");
 
     if (panelUp.length) {
       const open = function () {
@@ -159,6 +160,21 @@
       };
 
       $("#btn-logout").on("click", function () {
+        open();
+      });
+      $(".panel_overlay, .clear-panel").on("click", function () {
+        close();
+      });
+    }
+    if (panelLockApp.length) {
+      const open = function () {
+        panelLockApp.addClass("panel-open");
+      };
+      const close = function () {
+        panelLockApp.removeClass("panel-open");
+      };
+
+      $("#btn-lock").on("click", function () {
         open();
       });
       $(".panel_overlay, .clear-panel").on("click", function () {

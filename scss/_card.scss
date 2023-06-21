@@ -30,6 +30,20 @@
         border: 2px dashed $secondary2_color;
     }
 }
+.group-double-ip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    input[type="date"]{
+        padding: 12px 14px;
+    }
+}
+.box-card-search{
+    .search-field{
+        background: $white_color;
+        border-color: $white_color;
+    }
+}
 .tf-panel {
     .wrap-panel-clear {
         width: auto;

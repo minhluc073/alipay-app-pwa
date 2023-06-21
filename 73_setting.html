@@ -65,14 +65,14 @@
                 <h4 class="fw_6">Automatically Lock Apps</h4>
                 <p>Better account security, avoid unintended problems</p>
             </div>
-            <a href="#" class="inner-right">
+            <a href="#" id="btn-lock" class="inner-right">
                 <i class="icon-right"></i>
             </a>
         </div>
     </div>
     <div class="mt-1 list-setting-profile style1">
         <h4 class="fw_6">Language</h4>
-        <a href="#" class="inner-right">English <i class="icon-right"></i> </a>
+        <a href="#" id="btn-popup-up" class="inner-right">English <i class="icon-right"></i> </a>
     </div>
     <div class="mt-1 list-setting-profile style1">
         <h4 class="fw_6 critical_color">Log Out</h4>
@@ -81,7 +81,7 @@
   
     <div class="tf-panel logout">
         <div class="panel_overlay"></div>
-          <div class="panel-box panel-center box-logout">
+          <div class="panel-box panel-center panel-logout">
                 <div class="heading">
                     <h2 class="text-center">Do you really want to sign out of your account?</h2>
                 </div>
@@ -92,8 +92,44 @@
             
           </div>
     </div>
-  
-    
+    <div class="tf-panel lock-app">
+        <div class="panel_overlay"></div>
+        <div class="panel-box panel-up panel-st-app">
+            <div class="d-flex justify-content-center">
+                <span class="line"></span>
+            </div>
+            <h3 class="panel-title fw_6 text-center">Automatically lock the following app</h3>
+            <ul class="panel-content mt-3">
+                <li class="item"><a href="#">30 seconds <i class="icon-checkmark"></i></a></li>
+                <li class="item"><a href="#">1 minute <i class="icon-checkmark"></i></a></li>
+                <li class="item"><a href="#">2 minute <i class="icon-checkmark"></i></a></li>
+                <li class="item"><a href="#">5 minute <i class="icon-checkmark"></i></a></li>
+                <li class="item"><a href="#" class="active">No auto-lock <i class="icon-checkmark"></i></a></li>
+            </ul>
+
+            
+        </div>
+    </div>
+    <div class="tf-panel up">
+        <div class="panel_overlay"></div>
+        <div class="panel-box panel-up panel-st-app">
+            <div class="d-flex justify-content-center">
+                <span class="line"></span>
+            </div>
+            <h3 class="panel-title fw_6 text-center">Language</h3>
+            <ul class="panel-content mt-3">
+                <li class="item"><a href="#" class="active">English<i class="icon-checkmark"></i></a></li>
+                <li class="item"><a href="#">VietNam <i class="icon-checkmark"></i></a></li>
+                <li class="item"><a href="#">Portugal <i class="icon-checkmark"></i></a></li>
+                <li class="item"><a href="#">Germany <i class="icon-checkmark"></i></a></li>
+                <li class="item"><a href="#">China <i class="icon-checkmark"></i></a></li>
+                <li class="item"><a href="#">Switzerland <i class="icon-checkmark"></i></a></li>
+                <li class="item"><a href="#">France <i class="icon-checkmark"></i></a></li>
+            </ul>
+
+            
+        </div>
+    </div>
 
     <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
     <script type="text/javascript" src="javascript/jquery.min.js"></script>

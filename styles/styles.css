@@ -938,14 +938,13 @@ input[type=radio] {
 }
 .tf-form .auth-pass-input .password-addon {
   position: absolute;
-  right: 30px;
+  right: 14px;
   top: 14px;
+  font-size: 18px;
 }
 .tf-form .auth-forgot-password {
-  margin-top: -12px;
   color: #717171;
-  font-size: 12px;
-  line-height: 20px;
+  display: inline-block;
 }
 .tf-form .btn-large {
   margin-top: 28px;
@@ -1026,21 +1025,21 @@ input[type=radio] {
 .tf-balance-box .wallet-footer {
   margin-top: 12px;
 }
-.tf-balance-box .wallet-footer .wallet-cart-item {
+.tf-balance-box .wallet-footer .wallet-card-item {
   width: 25%;
 }
-.tf-balance-box .wallet-footer .wallet-cart-item a {
+.tf-balance-box .wallet-footer .wallet-card-item a {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.tf-balance-box .wallet-footer .wallet-cart-item a .icon {
+.tf-balance-box .wallet-footer .wallet-card-item a .icon {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 40px;
 }
-.tf-balance-box .wallet-footer .wallet-cart-item a .icon-my-qr {
+.tf-balance-box .wallet-footer .wallet-card-item a .icon-my-qr {
   font-size: 33px;
 }
 
@@ -1416,6 +1415,7 @@ input[type=radio] {
   align-items: center;
   justify-content: center;
   min-height: calc(100% - 1rem);
+  margin: 0;
 }
 
 .wrap-content-panel .heading {
@@ -1979,33 +1979,35 @@ input[type=radio] {
   transform: skew(-14deg, 8deg);
 }
 
-.boarding-content {
-  padding: 40px 0px;
-}
 .boarding-content .boarding-title {
   text-align: center;
   padding-bottom: 91px;
 }
-.boarding-content .boarding-title h2 {
+.boarding-content .boarding-title h1 {
   margin-bottom: 16px;
 }
 .boarding-content .boarding-title p {
   padding: 0 30px;
 }
-
-.boarding-footer {
-  padding-bottom: 24px;
+.boarding-content .boarding-title.st1 h1 {
+  padding: 0px 30px;
 }
-.boarding-footer p {
+.boarding-content .bottom {
   text-align: center;
-  padding: 0px 50px 11px;
+  padding: 0px 50px 24px;
 }
-.boarding-footer p a {
+.boarding-content .bottom a {
   font-weight: 700;
 }
 
-.login-section .tf-form-auth {
+.login-section .tf-form {
   margin-bottom: 71px;
+}
+.login-section .tf-form h1 {
+  margin-bottom: 28px;
+}
+.login-section .auth-line {
+  margin-bottom: 24px;
 }
 .login-section .socials-login li {
   padding: 13px 0px;
@@ -2028,13 +2030,99 @@ input[type=radio] {
   width: 20px;
   height: 20px;
 }
-
-.verify-account-section .verify-title {
-  text-align: center;
-  margin: 32px 0px 34px;
+.login-section .socials-login li:hover {
+  border-color: #533dea;
 }
-.verify-account-section .verify-title p {
-  padding: 0px 35px;
+.login-section .tf-btn {
+  margin-top: 28px;
+}
+.login-section .auth-link-rg {
+  color: #1e1e1e;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+.register-section .tf-form h1 {
+  margin-bottom: 28px;
+}
+.register-section .tf-form .group-cb {
+  align-items: center;
+}
+.register-section .tf-form .group-cb .tf-checkbox {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+.register-section .tf-form .group-cb .tf-checkbox:checked {
+  background-color: #533dea;
+}
+.register-section .tf-form .group-cb .tf-checkbox::before {
+  right: 43%;
+  top: 55%;
+  width: 5px;
+  height: 8px;
+}
+.register-section .tf-form .group-cb label {
+  margin: 0;
+  color: #1e1e1e;
+  font-weight: 400;
+}
+.register-section .tf-form .group-cb label a {
+  font-weight: 500;
+}
+.register-section .tf-form .tf-btn {
+  margin-top: 58px;
+}
+
+.verify-account-section .image-box {
+  padding: 24px 0px;
+  max-width: 375px;
+  height: 358px;
+  overflow: hidden;
+}
+.verify-account-section .tf-content p {
+  padding: 0px 30px;
+}
+
+.reset-pass-section .tf-title p {
+  padding-top: 9px;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+}
+.reset-pass-section .image-box {
+  margin: 75px 0px;
+  max-width: 343px;
+  height: 190px;
+  overflow: hidden;
+}
+.reset-pass-section .tf-form .tf-btn {
+  margin-top: 120px;
+  margin-bottom: 60px;
+}
+
+.newpass-section .tf-form h1 {
+  margin-bottom: 28px;
+  padding-right: 10px;
+}
+.newpass-section .tf-form .tf-btn {
+  margin-top: 28px;
+}
+
+.pw-confirm-section .image-box {
+  max-width: 375px;
+  height: 274px;
+  margin-bottom: 48px;
+}
+.pw-confirm-section .tf-content p {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+}
+.pw-confirm-section .tf-btn {
+  margin: 128px 0px 53px;
 }
 
 .app-header {
@@ -2150,6 +2238,10 @@ input[type=radio] {
   padding: 20px;
   max-width: 335px;
 }
+#modalhome2 .modal-content .heading h2 {
+  font-size: 22px;
+  line-height: 30px;
+}
 #modalhome2 .modal-content .heading .cb .tf-checkbox.st1 {
   width: 16px;
   height: 16px;
@@ -2158,6 +2250,27 @@ input[type=radio] {
 }
 #modalhome2 .modal-content .heading .cb .tf-checkbox.st1:checked {
   background: #533dea;
+}
+
+.box-service {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px 12px;
+}
+.box-service li a {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  text-align: center;
+}
+.box-service li .icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-transfer {
@@ -2572,6 +2685,20 @@ input[type=radio] {
   border: 2px dashed #c5c5c5;
 }
 
+.group-double-ip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.group-double-ip input[type=date] {
+  padding: 12px 14px;
+}
+
+.box-card-search .search-field {
+  background: #ffffff;
+  border-color: #ffffff;
+}
+
 .tf-panel .wrap-panel-clear {
   width: auto;
   left: 16px;
@@ -2838,27 +2965,6 @@ input[type=radio] {
 .box-outstanding-service li i {
   font-size: 24px;
   color: #44b461;
-}
-
-.box-service {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px 12px;
-}
-.box-service li a {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  align-items: center;
-  text-align: center;
-}
-.box-service li .icon-box {
-  width: 44px;
-  height: 44px;
-  border-radius: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .bill-payment-content .bill-topbar {
@@ -3845,28 +3951,62 @@ input[type=radio] {
   border: none;
 }
 
-.tf-panel.logout .box-logout {
+.tf-panel.logout .panel-logout {
   border-radius: 8px;
   max-width: 273px;
   width: 100%;
 }
-.tf-panel.logout .box-logout .heading {
+.tf-panel.logout .panel-logout .heading {
   padding: 16px;
   border-bottom: 1px solid #717171;
 }
-.tf-panel.logout .box-logout .bottom {
+.tf-panel.logout .panel-logout .bottom {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.tf-panel.logout .box-logout .bottom a {
+.tf-panel.logout .panel-logout .bottom a {
   padding: 11px 16px;
   text-align: center;
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
 }
-.tf-panel.logout .box-logout .bottom a:first-child {
+.tf-panel.logout .panel-logout .bottom a:first-child {
   border-right: 1px solid #717171;
+}
+.tf-panel .panel-st-app .panel-content {
+  padding: 0px 16px;
+}
+.tf-panel .panel-st-app .panel-content .item {
+  padding: 12px 0px;
+}
+.tf-panel .panel-st-app .panel-content .item a {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tf-panel .panel-st-app .panel-content .item a i {
+  display: none;
+  color: #533dea;
+}
+.tf-panel .panel-st-app .panel-content .item a.active, .tf-panel .panel-st-app .panel-content .item a:hover, .tf-panel .panel-st-app .panel-content .item a:active {
+  color: #533dea;
+}
+.tf-panel .panel-st-app .panel-content .item a.active i, .tf-panel .panel-st-app .panel-content .item a:hover i, .tf-panel .panel-st-app .panel-content .item a:active i {
+  display: block;
+}
+.tf-panel .panel-st-app .panel-content .item:not(:last-child) {
+  border-bottom: 1px solid #ededed;
+}
+.tf-panel .line {
+  width: 80px;
+  height: 4px;
+  border-radius: 12px;
+  background: #dddddd;
+  margin: 10px 0px 8px;
 }
 
 /*# sourceMappingURL=styles.css.map */

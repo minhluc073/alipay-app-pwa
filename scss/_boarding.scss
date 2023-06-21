@@ -17,6 +17,7 @@
 }
 .boarding-section.st2 {
     position: relative;
+    
     .images {
         position: relative;
         z-index: 1;
@@ -55,31 +56,34 @@
         transform: skew(-14deg, 8deg);
     }
 }
-
 .boarding-content {
-    padding: 40px 0px;
 
     .boarding-title {
         text-align: center;
         padding-bottom: 91px;
 
-        h2 {
+        h1 {
             
             margin-bottom: 16px;
         }
         p {
             padding: 0 30px;
         }
+    &.st1{
+        h1{
+            padding: 0px 30px;
+        }
     }
-}
-.boarding-footer {
-    padding-bottom: 24px;
-    p {
+    }
+    .bottom {
         text-align: center;
-        padding: 0px 50px 11px;
+        padding: 0px 50px 24px;
 
+        
+    
         a {
             font-weight: 700;
         }
     }
 }
+
