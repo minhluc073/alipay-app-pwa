@@ -195,19 +195,27 @@
       }, 0);
     }
     if ($("#modalhome1").length > 0) {
-      setTimeout(function () {
-        $("#modalhome1").modal({ show: true });
-      }, 3000);
+      let showPopup = sessionStorage.getItem("showPopup");
+      if (!JSON.parse(showPopup)){ 
+        setTimeout(function () {
+          $("#modalhome1").modal({ show: true });
+        }, 3000);
+      }
     }
   };
+  const hidePopupNoti = function(){
+    $(".btn-hide-modal").on("click", function(){
+      sessionStorage.setItem("showPopup",true)
 
+    });
+  }
   var Preloader = function () {
     setTimeout(function () {
-    $(".preload").fadeOut("slow", function () {
+      $(".preload").fadeOut("slow", function () {
         $(this).remove();
-    });
+      });
     }, 800);
-};
+  };
   $(function () {
     clear_text();
     custom_select();
@@ -216,6 +224,7 @@
     tfPanel();
     backPage();
     setTimeIn();
+    hidePopupNoti();
     Preloader();
   });
 })(jQuery);
