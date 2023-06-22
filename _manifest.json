@@ -7,7 +7,7 @@
     "short_name" : "Alipay",
     "description" : "",
     "orientation" : "portrait",
-    "background_color": "#533dea",
+    "background_color": "#ffffff",
     "theme_color": "#533dea",
     "generated" : "true",
       "icons": [
