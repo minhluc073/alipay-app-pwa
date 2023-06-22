@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>setting</title>
+    <title>Enter PIN</title>
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="images/logo.png" />
     <link rel="apple-touch-icon-precomposed" href="images/logo.png" />
@@ -19,7 +19,7 @@
 
 </head>
 
-<body> 
+<body>
      <!-- preloade -->
      <div class="preload preload-container">
         <div class="preload-logo">
@@ -31,38 +31,38 @@
         <div class="tf-container">
             <div class="tf-statusbar d-flex justify-content-center align-items-center">
                 <a href="#" class="back-btn"> <i class="icon-left"></i> </a>
-                <h3>Profile</h3>
+                <h3>Enter your PIN</h3>
             </div>
+            <div class="tf-spacing-20"></div>
         </div>
     </div>
-    <div class="mt-5">
-        <div class="tf-container">
-            <form class="tf-form" action="76_verify-account.html">
-                <div class="group-input">
-                    <label>Re-Enter Old Password</label>
-                    <input type="text" placeholder="6-20 characters" required>
-                </div>
-                <div class="group-input">
-                    <label>Create New Password</label>
-                    <input type="text" placeholder="6-20 characters" required>
-                </div>
-                <div class="group-input last">
-                    <label>Comfirm Password</label>
-                    <input type="text" placeholder="6-20 characters" required>
-                </div>
-                <div class="group-checkbox mt-3">
-                    <input type="checkbox" class="tf-checkbox st1" required>
-                    <span class="fw_3">Remember me</span>
-                </div>
-                <div class="bottom-navigation-bar bottom-btn-fixed">
-                    <button type="submit" class="tf-btn accent large">Next</button>
+    
+    <div class="wrap-transfer">
+            <form class="tf-form-verify" action="28_successful.html">
+                    <div class="d-flex group-input-verify">
+                        <input type="tel" maxlength="1" pattern="[0-9]" class="input-verify" value="3">
+                        <input type="tel" maxlength="1" pattern="[0-9]" class="input-verify" value="6">
+                        <input type="tel" maxlength="1" pattern="[0-9]" class="input-verify" value="2">
+                        <input type="tel" maxlength="1" pattern="[0-9]" class="input-verify" value="">
+                    </div>
+                    <div class="text-send-code">
+                        <p class="fw_4">Enter  your PIN to proceed</p>
+                    </div>
+                <div class="bottom-navigation-bar">
+                    <div class="tf-container">
+                        <button type="submit" class="tf-btn accent">Continue</button>
+                    </div>
                 </div>
             </form>
-        </div>
+
     </div>
+
+
 
     <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
     <script type="text/javascript" src="javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/count-down.js"></script>
+    <script type="text/javascript" src="javascript/verify-input.js"></script>
     <script type="text/javascript" src="javascript/main.js"></script>
 
 </body>

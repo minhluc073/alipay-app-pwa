@@ -338,4 +338,34 @@
         background: $line_color;
         margin: 10px 0px 8px;
     }
+
+    .panel-change-profile{
+        .heading{
+            padding: 0px;
+            margin-bottom: 4px;
+            border-radius: 8px;
+            a{
+                padding: 16px 0px;
+                text-align: center;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: $fw_6;
+                &:not(:last-child){
+                    border-bottom: 1px solid $line_br_color;
+                }
+            }
+        }
+        .bottom{
+            padding: 0px;
+            border-radius: 8px;
+
+            a{
+                color: $critical_color;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: $fw_6;
+                padding: 12px 8px;
+            }
+        }
+    }
 }

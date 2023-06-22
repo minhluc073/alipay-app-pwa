@@ -3038,7 +3038,7 @@ input[type=radio] {
 }
 
 .wrapper-bill {
-  margin: 20px 0px 140px;
+  margin: 20px 0px 60px;
 }
 .wrapper-bill .archive-top {
   background: #ffffff;
@@ -3373,10 +3373,12 @@ input[type=radio] {
   padding: 8px 0px 8px 12px;
 }
 .box-gift-card .desc .name {
-  font-size: 8px;
   line-height: 12px;
-  white-space: nowrap;
   overflow: hidden;
+}
+.box-gift-card .desc .name a {
+  font-size: 8px;
+  white-space: nowrap;
 }
 .box-gift-card .desc .code {
   font-size: 11px;
@@ -3432,8 +3434,10 @@ input[type=radio] {
   padding: 12px 0px 10px 18px;
 }
 .box-gift-card.large .desc .name {
-  font-size: 12px;
   line-height: 16px;
+}
+.box-gift-card.large .desc .name a {
+  font-size: 12px;
 }
 .box-gift-card.large .desc .code {
   font-size: 16.5px;
@@ -4063,6 +4067,32 @@ input[type=radio] {
   border-radius: 12px;
   background: #dddddd;
   margin: 10px 0px 8px;
+}
+.tf-panel .panel-change-profile .heading {
+  padding: 0px;
+  margin-bottom: 4px;
+  border-radius: 8px;
+}
+.tf-panel .panel-change-profile .heading a {
+  padding: 16px 0px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.tf-panel .panel-change-profile .heading a:not(:last-child) {
+  border-bottom: 1px solid #ededed;
+}
+.tf-panel .panel-change-profile .bottom {
+  padding: 0px;
+  border-radius: 8px;
+}
+.tf-panel .panel-change-profile .bottom a {
+  color: #ea3434;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  padding: 12px 8px;
 }
 
 /*# sourceMappingURL=styles.css.map */
