@@ -19,8 +19,11 @@ if ($("div").hasClass("swiper-container")) {
 }
 if ($("div").hasClass("swiper-container")) {
   var swiper = new Swiper(".banner-tes", {
+    speed: 1000,
+    parallax: true,
+    slidesPerView: 1.2,
+    spaceBetween: 12,
     loop: true,
-    slidesPerView: 1,
     navigation: {
       clickable: true,
       nextEl: ".button-lo-next",
@@ -32,30 +35,14 @@ if ($("div").hasClass("swiper-container")) {
     },
 
     breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 0,
+      1024: {
+        slidesPerView: 4,
       },
-      375: {
-        slidesPerView: 1,
-        spaceBetween: -30,
+      768: {
+        slidesPerView: 3,
       },
       500: {
-        slidesPerView: 1,
-        spaceBetween: -150,
-      },
-      600: {
         slidesPerView: 2,
-        spaceBetween: 30,
-      },
-      900: {
-        slidesPerView: 3,
-        spaceBetween: 12,
-      },
-
-      1200: {
-        slidesPerView: 4,
-        spaceBetween: 12,
       },
     },
   });
@@ -75,9 +62,21 @@ if ($("div").hasClass("swiper-container")) {
 }
 if ($("div").hasClass("swiper-container")) {
   var swiper = new Swiper(".tes-food", {
-    loop: true,
     slidesPerView: 2,
-    spaceBetween: 15,
+    spaceBetween: 16,
+    speed: 1000,
+    loop: true,
+    breakpoints: {
+      1024: {
+        slidesPerView: 5,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      500: {
+        slidesPerView: 2.2,
+      },
+    },
   });
 }
 if ($("div").hasClass("swiper-container")) {

@@ -89,6 +89,7 @@
     .image-box {
         padding: 24px 0px;
         max-width: 375px;
+        margin: 0px auto;
         height: 358px;
         overflow: hidden;
     }
@@ -108,7 +109,7 @@
         }
     }
     .image-box {
-        margin: 75px 0px;
+        margin: 75px auto;
         max-width: 343px;
         height: 190px;
         overflow: hidden;
@@ -135,6 +136,7 @@
 .pw-confirm-section {
     .image-box{
         max-width: 375px;
+        margin: 0px auto;
         height: 274px;
         margin-bottom: 48px;
     }
