@@ -824,7 +824,8 @@ input[type=radio] {
   height: 22px;
 }
 
-.tf-container {
+.tf-container,
+.fixed-container {
   max-width: 1320px;
   padding-left: 16px;
   padding-right: 16px;

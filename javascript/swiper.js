@@ -58,7 +58,7 @@ if ($("div").hasClass("swiper-container")) {
   var swiper = new Swiper(".tes-gift", {
     loop: true,
     slidesPerView: 2.2,
-    spaceBetween: 8,
+    spaceBetween: 16,
     speed: 1000,
     breakpoints: {
       1024: {
