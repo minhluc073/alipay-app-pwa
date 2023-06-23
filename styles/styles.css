@@ -3382,8 +3382,8 @@ input[type=radio] {
 }
 
 .box-gift-card {
-  width: 150px;
   display: flex;
+  justify-content: space-between;
   border-radius: 8px;
   position: relative;
 }
@@ -3418,11 +3418,14 @@ input[type=radio] {
   font-size: 10px;
 }
 .box-gift-card .img-gift {
-  width: 170px;
   height: 70px;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   overflow: hidden;
+}
+.box-gift-card .img-gift img {
+  width: 100%;
+  height: 100%;
 }
 .box-gift-card::after {
   position: absolute;
@@ -3444,9 +3447,8 @@ input[type=radio] {
   content: "";
   transform: rotate(90deg);
 }
-.box-gift-card.large {
-  width: 225px;
-  height: 105px;
+.box-gift-card.large .img-gift {
+  height: auto;
 }
 .box-gift-card.large .desc {
   padding: 12px 0px 10px 18px;
@@ -3474,20 +3476,11 @@ input[type=radio] {
 .box-gift-card.large .desc li:last-child i {
   font-size: 12px;
 }
-.box-gift-card.large .img-gift {
-  width: 170px;
-  height: 105px;
-}
 .box-gift-card.large::after {
   top: 50px;
 }
 .box-gift-card.large::before {
   top: 46px;
-}
-
-.tes-2 .space1 {
-  margin-right: -8px;
-  padding-left: 14px;
 }
 
 .food-box .img-box {

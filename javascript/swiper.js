@@ -55,9 +55,22 @@ if ($("div").hasClass("swiper-container")) {
   });
 }
 if ($("div").hasClass("swiper-container")) {
-  var swiper = new Swiper(".tes-2", {
+  var swiper = new Swiper(".tes-gift", {
     loop: true,
-    slidesPerView: 2,
+    slidesPerView: 2.2,
+    spaceBetween: 8,
+    speed: 1000,
+    breakpoints: {
+      1024: {
+        slidesPerView: 5,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      500: {
+        slidesPerView: 3,
+      },
+    },
   });
 }
 if ($("div").hasClass("swiper-container")) {
@@ -87,13 +100,24 @@ if ($("div").hasClass("swiper-container")) {
   });
 }
 if ($("div").hasClass("swiper-container")) {
-  var swiper = new Swiper(".tes-gift-1", {
+  var swiper = new Swiper(".tes-gift-2", {
     loop: true,
-    slidesPerView: 1,
-    spaceBetween: -100,
+    slidesPerView: 1.5,
+    spaceBetween: 16,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+    },
+    breakpoints: {
+      1024: {
+        slidesPerView: 4.2,
+      },
+      768: {
+        slidesPerView: 3.2,
+      },
+      500: {
+        slidesPerView: 2.2,
+      },
     },
   });
 }
