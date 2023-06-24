@@ -53,6 +53,7 @@
     z-index: 1000;
     background: $white_color;
     width: 100%;
+    min-height: 60px;
     bottom: 0;
     box-shadow: $tf-navigation-bar_shadow;
     &.st1 {
@@ -61,7 +62,7 @@
     }
     &.bottom-btn-fixed {
         padding: 16px 0px;
-        box-shadow: unset;
+        box-shadow: none;
     }
 }
 
