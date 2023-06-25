@@ -153,6 +153,20 @@
         }
     }
 }
+.tf-panel {
+    .panel-filter-history {
+        width: 100%;
+        z-index: 1000;
+        .header {
+            .clear-panel {
+                position: absolute;
+                left: 16px;
+            }
+        }
+    }
+
+}
+
 .filter-rs {
     display: flex;
     justify-content: space-between;

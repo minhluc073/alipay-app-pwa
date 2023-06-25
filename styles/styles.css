@@ -2187,6 +2187,12 @@ input[type=radio] {
   margin: 128px 0px 53px;
 }
 
+.tf-form-verify .bottom-btn-fixed {
+  width: unset;
+  left: 16px;
+  right: 16px;
+}
+
 .app-header {
   background: url(../images/banner/banner-home.png);
   padding: 46px 0px 84px;
@@ -2250,6 +2256,11 @@ input[type=radio] {
 .bottom-navigation-bar.bottom-btn-fixed {
   padding: 16px 0px;
   box-shadow: none;
+}
+.bottom-navigation-bar.st2 {
+  width: unset;
+  left: 16px;
+  right: 16px;
 }
 
 .recipient-tes .recipient-box {
@@ -2830,9 +2841,6 @@ input[type=radio] {
   border-bottom: 1px solid #ededed;
 }
 
-.box-card-advanced {
-  padding-bottom: 108px;
-}
 .box-card-advanced .list-card-info {
   padding: 0;
   border: none;
@@ -3336,6 +3344,15 @@ input[type=radio] {
 .filter-history li .tf-btn.active, .filter-history li .tf-btn:hover {
   background: #533dea;
   color: #ffffff;
+}
+
+.tf-panel .panel-filter-history {
+  width: 100%;
+  z-index: 1000;
+}
+.tf-panel .panel-filter-history .header .clear-panel {
+  position: absolute;
+  left: 16px;
 }
 
 .filter-rs {

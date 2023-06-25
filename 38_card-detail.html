@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <title>card detail</title>
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="images/logo.png" />
@@ -28,7 +29,7 @@
         </div>
       </div>
     <!-- /preload -->
-    <div class="header">
+    <div class="header is-fixed">
         <div class="tf-container">
             <div class="tf-statusbar d-flex justify-content-center align-items-center">
                 <a href="#" class="back-btn"> <i class="icon-left"></i> </a>
@@ -36,8 +37,8 @@
             </div>
         </div>
     </div>
-    <div class="tf-spacing-12"></div>
-    <div class="wrap-card-detail">
+    <div id="app-wrap">
+        <div class="wrap-card-detail mt-3">
         <div class="tf-container">
             <div class="tf-atm-card">
                 <div class="heading">
@@ -57,9 +58,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="tf-spacing-20"></div>
-    <div class="box-card-service">
+        </div>
+        <div class="box-card-service mt-5">
         <div class="tf-container">
             <h3 class="fw_6">Card service</h3>
             <div class="tf-spacing-12"></div>
@@ -71,9 +71,8 @@
                 <li>Withdrawal limit <span>2000$</span> </li>
             </ul>
         </div>
-    </div>
-    <div class="tf-spacing-20"></div>
-    <div class="box-card-advanced">
+        </div>
+        <div class="box-card-advanced mt-5">
         <div class="tf-container">
             <h3 class="fw_6">Advanced Utilities</h3>
             <div class="tf-spacing-12"></div>
@@ -81,6 +80,7 @@
                 <li>Limit increase <i class="icon-right"></i></li>
                 <li>Manage recharge <i class="icon-right"></i></li>
             </ul>
+        </div>
         </div>
     </div>
 
