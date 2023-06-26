@@ -30,7 +30,7 @@
       </div>
     <!-- /preload -->
     <div class="header">
-        <div class="container-fluid">
+        <div class="tf-container">
             <div class="tf-statusbar d-flex justify-content-center align-items-center">
                 <a href="#" class="back-btn"> <i class="icon-left"></i> </a>
                 <h3>Setting</h3>
@@ -38,14 +38,13 @@
         </div>
     </div>
     <div class="mt-1 box-settings-profile style1">
-        <div class="list-setting-profile">
+        <a class="list-setting-profile" href="74_change_password.html">
             <div class="inner-left">
                 <h4 class="fw_6">Change Password</h4>
             </div>
-            <a href="74_change_password.html" class="inner-right">
-                <i class="icon-right"></i>
-            </a>
-        </div>
+            <span class="inner-right"><i class="icon-right"></i></span>
+
+        </a>
         <div class="list-setting-profile">
             <div class="inner-left">
                 <h4 class="fw_6">Biometric Authentication</h4>
@@ -63,32 +62,30 @@
                 <input class="tf-switch-check" type="checkbox" value="checkbox" name="check" checked>
             </a>
         </div>
-        <div class="list-setting-profile">
+        <a class="list-setting-profile" href="75_notification-setting.html">
             <div class="inner-left">
                 <h4 class="fw_6">Setting Notification</h4>
             </div>
-            <a href="75_notification-setting.html" class="inner-right">
-                <i class="icon-right"></i>
-            </a>
-        </div>
-        <div class="list-setting-profile">
+            <span class="inner-right"><i class="icon-right"></i></span>
+        </a>
+        <a class="list-setting-profile" href="#" id="btn-lock">
             <div class="inner-left">
                 <h4 class="fw_6">Automatically Lock Apps</h4>
                 <p>Better account security, avoid unintended problems</p>
             </div>
-            <a href="#" id="btn-lock" class="inner-right">
+            <span class="inner-right">
                 <i class="icon-right"></i>
-            </a>
-        </div>
+            </span>
+        </a>
     </div>
-    <div class="mt-1 list-setting-profile style1">
+    <a class="mt-1 list-setting-profile style1" href="#" id="btn-popup-up">
         <h4 class="fw_6">Language</h4>
-        <a href="#" id="btn-popup-up" class="inner-right">English <i class="icon-right"></i> </a>
-    </div>
-    <div class="mt-1 list-setting-profile style1">
+        <span class="inner-right">English <i class="icon-right"></i> </span>
+    </a>
+    <a class="mt-1 list-setting-profile style1" href="#" id="btn-logout">
         <h4 class="fw_6 critical_color">Log Out</h4>
-        <a href="#" id="btn-logout" class="inner-right"> <i class="icon-right"></i> </a>
-    </div>
+        <span class="inner-right"> <i class="icon-right"></i> </span>
+    </a>
   
     <div class="tf-panel logout">
         <div class="panel_overlay"></div>

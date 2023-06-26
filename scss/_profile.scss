@@ -60,7 +60,7 @@
         font-weight: $fw_4;
         color: $on_surface_color;
     }
-    a {
+    span {
         display: flex;
         align-items: center;
         gap: 8px;
@@ -79,6 +79,13 @@
 .box-settings-profile {
     background-color: $white_color;
     padding: 12px 16px;
+    li {
+        &:not(:last-child) {
+            border-bottom: 1px solid $line_br_color;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+        }
+    }
     .list-setting-profile {
         gap: 12px;
         .icon {
@@ -93,11 +100,7 @@
             color: $on_surface_color;
         }
 
-        &:not(:last-child) {
-            border-bottom: 1px solid $line_br_color;
-            margin-bottom: 12px;
-            padding-bottom: 8px;
-        }
+       
     }
     &.style1 {
         padding: 16px;

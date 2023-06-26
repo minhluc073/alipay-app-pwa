@@ -1,7 +1,7 @@
 .app-header {
     background: url(../images/banner/banner-home.png);
-    padding: 46px 0px 84px;
-    margin: 0px -14px;
+    padding: 16px 0px 84px;
+    margin: 0px -16px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -10,7 +10,7 @@
     border-bottom-left-radius: 80px;
 
     .tf-topbar {
-        margin: 0px 14px;
+        padding: 0px 16px;
         .user-info {
             p {
                 font-size: 10px;
@@ -24,7 +24,7 @@
         }
     }
     &.st1 {
-        padding: 42px 0px 96px;
+        padding: 12px 0px 96px;
     }
 }
 
@@ -32,7 +32,7 @@
     position: relative;
     .back-btn {
         position: absolute;
-        left: 0;
+        left: 16px;
     }
     .user-info {
         gap: 8px;

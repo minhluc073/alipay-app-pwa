@@ -858,6 +858,14 @@ input[type=radio] {
   background: #533dea;
 }
 
+.back-btn,
+.icon-close1 {
+  min-width: 44px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
 .tf-btn {
   width: 100%;
   font-weight: 600;
@@ -1763,35 +1771,25 @@ input[type=radio] {
   background: #ffffff;
 }
 .preload-container .spinner {
-  width: 56px;
-  max-width: 56px;
-  height: 56px;
-  display: inline-grid;
-  border: 4.5px solid rgba(0, 0, 0, 0);
-  border-radius: 50%;
-  border-color: #533dea rgba(0, 0, 0, 0);
-  animation: spinner-preloader 1s infinite linear;
-}
-.preload-container .spinner::after, .preload-container .spinner::before {
-  content: "";
-  grid-area: 1/1;
-  margin: 2.2px;
-  border: inherit;
-  border-radius: 50%;
-}
-.preload-container .spinner::before {
-  border-color: #533dea rgba(0, 0, 0, 0);
-  animation: inherit;
-  animation-duration: 0.5s;
-  animation-direction: reverse;
-}
-.preload-container .spinner::after {
-  margin: 8.9px;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f5f5f5;
+  border-top: 5px solid #533dea;
+  border-radius: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  animation: spin 1s infinite linear;
 }
 
-@keyframes spinner-preloader {
-  100% {
-    transform: rotate(1turn);
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 /* animation */
@@ -2195,8 +2193,8 @@ input[type=radio] {
 
 .app-header {
   background: url(../images/banner/banner-home.png);
-  padding: 46px 0px 84px;
-  margin: 0px -14px;
+  padding: 16px 0px 84px;
+  margin: 0px -16px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -2205,7 +2203,7 @@ input[type=radio] {
   border-bottom-left-radius: 80px;
 }
 .app-header .tf-topbar {
-  margin: 0px 14px;
+  padding: 0px 16px;
 }
 .app-header .tf-topbar .user-info p {
   font-size: 10px;
@@ -2216,7 +2214,7 @@ input[type=radio] {
   font-size: 24px;
 }
 .app-header.st1 {
-  padding: 42px 0px 96px;
+  padding: 12px 0px 96px;
 }
 
 .tf-topbar {
@@ -2224,7 +2222,7 @@ input[type=radio] {
 }
 .tf-topbar .back-btn {
   position: absolute;
-  left: 0;
+  left: 16px;
 }
 .tf-topbar .user-info {
   gap: 8px;
@@ -2872,6 +2870,8 @@ input[type=radio] {
   line-height: 24px;
   text-align: center;
   padding: 20px 34px;
+  color: #533dea;
+  text-decoration: underline;
 }
 
 .wrap-scan-camera {
@@ -3217,6 +3217,13 @@ input[type=radio] {
 .header .tf-statusbar .icon {
   font-size: 24px;
 }
+.header .tf-statusbar .icon-filter {
+  min-width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 
 .wrap-total {
   display: flex;
@@ -3353,6 +3360,10 @@ input[type=radio] {
 .tf-panel .panel-filter-history .header .clear-panel {
   position: absolute;
   left: 16px;
+  min-width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
 }
 
 .filter-rs {
@@ -3651,7 +3662,7 @@ input[type=radio] {
 
 .header-style2 {
   background: url(../images/rewards/gift-3.jpg);
-  padding: 39px 0px 140px;
+  padding: 12px 0px 140px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -3823,7 +3834,7 @@ input[type=radio] {
   font-weight: 400;
   color: #1e1e1e;
 }
-.list-profile a {
+.list-profile span {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -3831,7 +3842,7 @@ input[type=radio] {
   line-height: 22px;
   font-weight: 600;
 }
-.list-profile a .icon-right {
+.list-profile span .icon-right {
   font-size: 18px;
 }
 .list-profile.outline {
@@ -3841,6 +3852,11 @@ input[type=radio] {
 .box-settings-profile {
   background-color: #ffffff;
   padding: 12px 16px;
+}
+.box-settings-profile li:not(:last-child) {
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
 }
 .box-settings-profile .list-setting-profile {
   gap: 12px;
@@ -3855,11 +3871,6 @@ input[type=radio] {
   line-height: 22px;
   font-weight: 400;
   color: #1e1e1e;
-}
-.box-settings-profile .list-setting-profile:not(:last-child) {
-  border-bottom: 1px solid #ededed;
-  margin-bottom: 12px;
-  padding-bottom: 8px;
 }
 .box-settings-profile.style1 {
   padding: 16px;

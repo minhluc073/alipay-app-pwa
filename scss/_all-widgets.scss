@@ -7,7 +7,6 @@
     margin-right: auto;
 }
 
-
 #app-wrap {
     padding: 44px 0px 62px;
     &.style1 {
@@ -29,6 +28,13 @@
     .swiper-pagination-bullet-active {
         background: $primary_color;
     }
+}
+.back-btn,
+.icon-close1 {
+    min-width: 44px;
+    height: 40px;
+    display: flex;
+    align-items: center;
 }
 // button
 .tf-btn {
@@ -997,37 +1003,27 @@
         background: $white_color;
     }
     .spinner {
-        width: 56px;
-        max-width: 56px;
-        height: 56px;
-        display: inline-grid;
-        border: 4.5px solid #0000;
-        border-radius: 50%;
-        border-color: $primary_color #0000;
-        animation: spinner-preloader 1s infinite linear;
-        &::after,
-        &::before {
-            content: "";
-            grid-area: 1/1;
-            margin: 2.2px;
-            border: inherit;
-            border-radius: 50%;
-        }
-        &::before {
-            border-color: $primary_color #0000;
-            animation: inherit;
-            animation-duration: 0.5s;
-            animation-direction: reverse;
-        }
-        &::after {
-            margin: 8.9px;
-        }
+        width: 50px;
+        height: 50px;
+        border: 5px solid $surface_color;
+        border-top: 5px solid $primary_color;
+        border-radius: 100%;
+        // position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+        animation: spin 1s infinite linear;
     }
 }
 
-@keyframes spinner-preloader {
-    100% {
-        transform: rotate(1turn);
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
     }
 }
 
