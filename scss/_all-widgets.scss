@@ -288,7 +288,12 @@
             gap: 2px;
             font-size: 10px;
             line-height: 16px;
+            &:active{
+                color: $on_surface_color;
+    
+            }
         }
+       
         &.active {
             a {
                 color: $on_surface_color;
