@@ -149,6 +149,10 @@
                     display: block;
                     &:checked {
                         background: $primary_color;
+
+                    }
+                    &::before{
+                        height: 9px;
                     }
                 }
             }
