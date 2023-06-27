@@ -1985,10 +1985,6 @@ input[type=radio] {
     transform: translateY(-7px);
   }
 }
-.dark-theme {
-  background: #1e1e1e;
-}
-
 .boarding-section {
   background: #1e1e1e;
   min-height: 394px;
@@ -2772,8 +2768,15 @@ input[type=radio] {
   grid-template-columns: 1fr 1fr;
   gap: 16px;
 }
-.group-double-ip input[type=date] {
-  padding: 12px 14px;
+.group-double-ip .input-group-append {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  margin-bottom: 30px;
+}
+.group-double-ip .input-group-append i {
+  font-size: 20px;
+  color: #c5c5c5;
 }
 
 .box-card-search .search-field {

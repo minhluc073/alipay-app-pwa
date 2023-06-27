@@ -105,7 +105,7 @@ if ($("div").hasClass("swiper-container")) {
   var swiper = new Swiper(".tes-gift-2", {
     loop: true,
     slidesPerView: 1.5,
-    spaceBetween: 16,
+    spaceBetween: 16.5,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,

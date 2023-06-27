@@ -15,6 +15,7 @@
     <!-- Icons -->
     <link rel="stylesheet" href="fonts/icons-alipay.css">
     <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/data-picker.min.css">
 
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
     <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
@@ -57,11 +58,14 @@
                 <div class="group-double-ip">
                     <div class="group-input">
                         <label>Expiry Date</label>
-                        <input type="date" value="mm/YY">
+                        <div class="datepicker date">
+                            <input type="datetime" placeholder="MM/YY">
+                            <span class="input-group-append"><i class="icon-calendar2"></i></span>
+                        </div>
                     </div>
                     <div class="group-input">
                         <label>CVV</label>
-                        <input type="text" placeholder="CVV">
+                        <input type="text" placeholder="CVV" required>
                         <i class="icon-info"></i>
                     </div>
                 </div>
@@ -80,6 +84,8 @@
 
     <script type="text/javascript" src="javascript/jquery.min.js"></script>
     <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascript/data-picker.min.js"></script>
+    <script type="text/javascript" src="javascript/custom-date.js"></script>
     <script type="text/javascript" src="javascript/main.js"></script>
 
 </body>
