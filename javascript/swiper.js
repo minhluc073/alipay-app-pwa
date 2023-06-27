@@ -94,9 +94,11 @@ if ($("div").hasClass("swiper-container")) {
 }
 if ($("div").hasClass("swiper-container")) {
   var swiper = new Swiper(".tes-noti", {
-    loop: true,
-    slidesPerView: 3,
-    // spaceBetween: 8,
+    loop:false,
+    slidesPerView: "auto",
+    spaceBetween: 8,
+    speed: 1000,
+    
   });
 }
 if ($("div").hasClass("swiper-container")) {

@@ -458,87 +458,87 @@ input[type="radio"] {
 .tf-spacing-4 {
     height: 4px;
 }
-.mt-1{
+.mt-1 {
     margin-top: 4px !important;
 }
-.mb-1{
+.mb-1 {
     margin-bottom: 4px !important;
 }
 .tf-spacing-8 {
     height: 8px;
 }
-.mt-2{
+.mt-2 {
     margin-top: 8px !important;
 }
-.mb-2{
+.mb-2 {
     margin-bottom: 8px !important;
 }
 .tf-spacing-12 {
     height: 12px;
 }
-.mt-3{
+.mt-3 {
     margin-top: 12px !important;
 }
-.mb-3{
+.mb-3 {
     margin-bottom: 12px !important;
 }
 .tf-spacing-16 {
     height: 16px;
 }
-.mt-4{
+.mt-4 {
     margin-top: 16px !important;
 }
-.mb-4{
+.mb-4 {
     margin-bottom: 16px !important;
 }
 .tf-spacing-20 {
     height: 20px;
 }
-.mt-5{
+.mt-5 {
     margin-top: 20px !important;
 }
-.mb-5{
+.mb-5 {
     margin-bottom: 20px !important;
 }
 .tf-spacing-24 {
     height: 24px;
 }
-.mt-6{
+.mt-6 {
     margin-top: 24px !important;
 }
-.mb-6{
+.mb-6 {
     margin-bottom: 24px !important;
 }
 .tf-spacing-40 {
     height: 40px;
 }
-.mt-7{
+.mt-7 {
     margin-top: 40px !important;
 }
-.mb-7{
+.mb-7 {
     margin-bottom: 40px !important;
 }
 .tf-spacing-60 {
     height: 60px;
 }
-.mt-8{
+.mt-8 {
     margin-top: 60px !important;
 }
-.mb-8{
+.mb-8 {
     margin-bottom: 60px !important;
 }
 .tf-spacing-80 {
     height: 80px;
 }
-.mt-9{
+.mt-9 {
     margin-top: 80px !important;
 }
-.mb-9{
+.mb-9 {
     margin-bottom: 80px !important;
 }
 .group-input {
     margin-bottom: 24px;
-    &.last{
+    &.last {
         margin-bottom: 0;
     }
 }
@@ -546,22 +546,22 @@ input[type="radio"] {
 // switch-check
 .tf-switch-check {
     position: relative;
-    width: 35px;
-    height: 20px;
+    height: 30px;
+    width: 56px;
     -webkit-appearance: none;
     background: $secondary2_color;
-    border-radius: 10px;
+    border-radius: 100px;
     transition: 0.5s;
     margin-right: 0;
 
     &::before {
         content: "";
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
+        border-radius: 100px;
+        width: 24px;
+        height: 24px;
         position: absolute;
-        top: 2px;
-        left: 2px;
+        top: 3px;
+        left: 4px;
         background: $white_color;
         transition: 0.5s;
     }
@@ -570,7 +570,7 @@ input[type="radio"] {
         transition: 0.5s;
         &::before {
             background: $white_color;
-            left: 16px;
+            left: 28px;
         }
     }
 }

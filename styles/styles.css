@@ -758,22 +758,22 @@ input[type=radio] {
 
 .tf-switch-check {
   position: relative;
-  width: 35px;
-  height: 20px;
+  height: 30px;
+  width: 56px;
   -webkit-appearance: none;
   background: #c5c5c5;
-  border-radius: 10px;
+  border-radius: 100px;
   transition: 0.5s;
   margin-right: 0;
 }
 .tf-switch-check::before {
   content: "";
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
+  border-radius: 100px;
+  width: 24px;
+  height: 24px;
   position: absolute;
-  top: 2px;
-  left: 2px;
+  top: 3px;
+  left: 4px;
   background: #ffffff;
   transition: 0.5s;
 }
@@ -783,7 +783,7 @@ input[type=radio] {
 }
 .tf-switch-check:checked:checked[type=checkbox]::before {
   background: #ffffff;
-  left: 16px;
+  left: 28px;
 }
 
 .tf-checkbox {
@@ -1985,6 +1985,10 @@ input[type=radio] {
     transform: translateY(-7px);
   }
 }
+.dark-theme {
+  background: #1e1e1e;
+}
+
 .boarding-section {
   background: #1e1e1e;
   min-height: 394px;
@@ -3573,6 +3577,9 @@ input[type=radio] {
   border-radius: 50%;
 }
 
+.tes-noti .nav-tab {
+  width: fit-content;
+}
 .tes-noti .nav-tab a {
   white-space: nowrap;
   padding: 4px 12px;
