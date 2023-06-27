@@ -3376,6 +3376,10 @@ input[type=radio] {
   align-items: center;
 }
 
+.wrap-filter-rs {
+  padding: 20px 0px 8px;
+}
+
 .filter-rs {
   display: flex;
   justify-content: space-between;
@@ -3696,6 +3700,9 @@ input[type=radio] {
 
 .app-section {
   padding: 12px 0px;
+}
+.app-section.st1 {
+  padding: 16px 0px;
 }
 
 .voucher-info {
