@@ -167,8 +167,10 @@
         //     height: 100vh;
         //     overflow-y: scroll;
         // }
+        bottom: 0;
         .box-btn {
             padding-top: 70px;
+            padding-bottom: 24px;
         }
     }
     .header {

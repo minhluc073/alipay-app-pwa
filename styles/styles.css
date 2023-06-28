@@ -3372,9 +3372,11 @@ input[type=radio] {
   width: 100%;
   z-index: 1000;
   height: unset;
+  bottom: 0;
 }
 .tf-panel .panel-filter-history .box-btn {
   padding-top: 70px;
+  padding-bottom: 24px;
 }
 .tf-panel .header .clear-panel {
   position: absolute;
