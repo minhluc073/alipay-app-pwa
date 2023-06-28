@@ -3621,6 +3621,7 @@ input[type=radio] {
   height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
+  background: #ffffff;
 }
 
 .note-service {
