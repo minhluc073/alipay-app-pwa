@@ -139,12 +139,6 @@
     .btn-large {
         margin-top: 28px;
     }
-    // .bottom-btn-fixed {
-    //     width: unset;
-    //     background: none;
-    //     left: 16px;
-    //     right: 16px;
-    // }
 }
 .tf-form-verify {
     .tf-title {
@@ -362,7 +356,7 @@
 // tf-statusbar
 .tf-statusbar {
     background: $white_color;
-    padding: 12px 16px 8px;
+    padding: 25px 16px;
     margin: 0px -16px;
     border-bottom: 1px solid $line_br_color;
     position: relative;
