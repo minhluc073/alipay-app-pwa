@@ -158,17 +158,26 @@
 }
 .tf-panel {
     .panel-filter-history {
-        width: 100%;
         z-index: 1000;
-        height: unset;
-        // bottom: 0;
-        // #app-wrap {
-        //     padding-bottom: 24px;
-        //     height: 100vh;
-        //     overflow-y: scroll;
-        // }
-        background: $white_color;
-        bottom: 0;
+        top: 0;
+        #app-wrap{
+            height: 100vh;
+            // overflow-y: scroll;
+            overflow-x: hidden;
+            background: $white_color;
+            scrollbar-width: thin;
+            scrollbar-color: $white_color;
+            &::-webkit-scrollbar {
+                width: 0 !important;
+                display: none;
+            }
+            &::-webkit-scrollbar-thumb,
+            &:-webkit-scrollbar-track {
+                background-color: transparent;
+
+            }
+        }
+       
         .box-btn {
             padding-top: 70px;
             padding-bottom: 24px;
