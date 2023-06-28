@@ -162,10 +162,13 @@
         z-index: 1000;
         height: unset;
         // bottom: 0;
-        #app-wrap {
-            padding-bottom: 24px;
-            height: 100vh;
-            overflow-y: scroll;
+        // #app-wrap {
+        //     padding-bottom: 24px;
+        //     height: 100vh;
+        //     overflow-y: scroll;
+        // }
+        .box-btn {
+            padding-top: 70px;
         }
     }
     .header {
