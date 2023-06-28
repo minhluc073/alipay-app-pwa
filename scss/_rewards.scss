@@ -249,15 +249,11 @@
                 width: 0 !important;
                 display: none;
             }
-            
+            &::-webkit-scrollbar-thumb,
             &:-webkit-scrollbar-track {
-                background: #fff
-            }
-            
-            &::-webkit-scrollbar-thumb {
                 background-color: transparent;
-            }
 
+            }
         }
         
         
