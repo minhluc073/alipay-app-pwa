@@ -2,9 +2,8 @@
     .tf-statusbar {
         .icon {
             font-size: 24px;
-           
         }
-        .icon-filter{
+        .icon-filter {
             min-width: 44px;
             height: 44px;
             display: flex;
@@ -161,7 +160,12 @@
     .panel-filter-history {
         width: 100%;
         z-index: 1000;
-        
+        height: unset;
+        #app-wrap {
+            padding-bottom: 80px;
+            height: 100vh;
+            overflow-y: scroll;
+        }
     }
     .header {
         .clear-panel {
@@ -174,7 +178,7 @@
         }
     }
 }
-.wrap-filter-rs{
+.wrap-filter-rs {
     padding: 20px 0px 8px;
 }
 .filter-rs {

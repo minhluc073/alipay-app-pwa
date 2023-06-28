@@ -3371,6 +3371,12 @@ input[type=radio] {
 .tf-panel .panel-filter-history {
   width: 100%;
   z-index: 1000;
+  height: unset;
+}
+.tf-panel .panel-filter-history #app-wrap {
+  padding-bottom: 80px;
+  height: 100vh;
+  overflow-y: scroll;
 }
 .tf-panel .header .clear-panel {
   position: absolute;
