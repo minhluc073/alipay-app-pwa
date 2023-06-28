@@ -835,7 +835,7 @@ input[type=radio] {
 }
 
 #app-wrap {
-  padding: 44px 0px 62px;
+  padding: 50px 0px 62px;
 }
 #app-wrap.style1 {
   padding-bottom: 0px;
@@ -859,10 +859,18 @@ input[type=radio] {
   background: #533dea;
 }
 
-.back-btn,
-.icon-close1 {
+.back-btn {
   min-width: 44px;
-  height: 40px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.icon-close1 {
+  position: absolute;
+  left: 0;
+  min-width: 44px;
+  height: 50px;
   display: flex;
   align-items: center;
 }
@@ -1154,18 +1162,24 @@ input[type=radio] {
 
 .tf-statusbar {
   background: #ffffff;
-  padding: 25px 16px;
+  padding: 0px 16px;
   margin: 0px -16px;
   border-bottom: 1px solid #ededed;
   position: relative;
-  height: 44px;
+  height: 50px;
 }
 .tf-statusbar .back-btn {
   left: 16px;
   position: absolute;
 }
-.tf-statusbar .back-btn.st1 {
-  position: unset;
+.tf-statusbar .action-right {
+  right: 16px;
+  position: absolute;
+  min-width: 44px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 .tf-statusbar .icon-qrcode4 {
   font-size: 24px;
@@ -1179,15 +1193,15 @@ input[type=radio] {
 .icon-notification1::after {
   position: absolute;
   content: "2";
-  font-size: 6px;
+  font-size: 8px;
   color: #ffffff;
-  width: 8px;
+  width: 10px;
   text-align: center;
-  height: 8px;
+  height: 10px;
   background: #ea3434;
   border-radius: 50%;
-  right: 4px;
-  top: 4px;
+  right: 3px;
+  top: 3px;
 }
 
 .box-custom-select .default-select {
@@ -2216,7 +2230,7 @@ input[type=radio] {
 }
 .app-header .tf-topbar .icon-notification1 {
   color: #ffffff;
-  font-size: 24px;
+  font-size: 26px;
 }
 .app-header.st1 {
   padding: 12px 0px 96px;
@@ -3230,11 +3244,11 @@ input[type=radio] {
 }
 
 .header .tf-statusbar .icon {
-  font-size: 24px;
+  font-size: 26px;
 }
 .header .tf-statusbar .icon-filter {
   min-width: 44px;
-  height: 44px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: flex-end;

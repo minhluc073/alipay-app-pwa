@@ -8,7 +8,7 @@
 }
 
 #app-wrap {
-    padding: 44px 0px 62px;
+    padding: 50px 0px 62px;
     &.style1 {
         padding-bottom: 0px;
     }
@@ -29,10 +29,18 @@
         background: $primary_color;
     }
 }
-.back-btn,
-.icon-close1 {
+.back-btn
+{
     min-width: 44px;
-    height: 40px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.icon-close1 {
+    position: absolute;
+    left: 0;
+    min-width: 44px;
+    height: 50px;
     display: flex;
     align-items: center;
 }
@@ -356,18 +364,27 @@
 // tf-statusbar
 .tf-statusbar {
     background: $white_color;
-    padding: 25px 16px;
+    padding: 0px 16px;
     margin: 0px -16px;
     border-bottom: 1px solid $line_br_color;
     position: relative;
-    height: 44px;
+    height: 50px;
 
     .back-btn {
         left: 16px;
         position: absolute;
-        &.st1 {
-            position: unset;
-        }
+        // &.st1 {
+        //     position: unset;
+        // }
+    }
+    .action-right {
+        right: 16px;
+        position: absolute;
+        min-width: 44px;
+        height:50px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
     }
 
     .icon-qrcode4 {
@@ -381,15 +398,15 @@
     &::after {
         position: absolute;
         content: "2";
-        font-size: 6px;
+        font-size: 8px;
         color: $white_color;
-        width: 8px;
+        width: 10px;
         text-align: center;
-        height: 8px;
+        height: 10px;
         background: $critical_color;
         border-radius: 50%;
-        right: 4px;
-        top: 4px;
+        right: 3px;
+        top: 3px;
     }
 }
 
@@ -1248,4 +1265,3 @@
         transform: translateY(-7px);
     }
 }
-
