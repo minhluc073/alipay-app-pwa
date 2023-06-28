@@ -240,27 +240,27 @@
         top: 0;
         #app-wrap {
             height: 100vh;
-            overflow-y: scroll;
+            // overflow-y: scroll;
             overflow-x: hidden;
             background: $white_color;
             scrollbar-width: thin;
-            scrollbar-color: $white_color
+            scrollbar-color: $white_color;
+            &::-webkit-scrollbar {
+                width: 0 !important;
+                display: none;
+            }
+            
+            &:-webkit-scrollbar-track {
+                background: #fff
+            }
+            
+            &::-webkit-scrollbar-thumb {
+                background-color: transparent;
+            }
+
         }
         
-        &::-webkit-scrollbar {
-            width: 0 !important;
-            display: none;
-        }
-        &::-webkit-scrollbar {
-            width:1px
-        }
-        &:-webkit-scrollbar-track {
-            background: #fff
-        }
         
-        &::-webkit-scrollbar-thumb {
-            background-color: transparent;
-        }
     }
 }
 
