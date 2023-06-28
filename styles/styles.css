@@ -3619,14 +3619,24 @@ input[type=radio] {
 }
 .tf-panel .panel-noti #app-wrap {
   height: 100vh;
+  overflow-y: scroll;
   overflow-x: hidden;
   background: #ffffff;
-  overflow-y: -moz-scrollbars-none;
-  -ms-overflow-style: none;
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff;
 }
 .tf-panel .panel-noti::-webkit-scrollbar {
   width: 0 !important;
   display: none;
+}
+.tf-panel .panel-noti::-webkit-scrollbar {
+  width: 1px;
+}
+.tf-panel .panel-noti:-webkit-scrollbar-track {
+  background: #fff;
+}
+.tf-panel .panel-noti::-webkit-scrollbar-thumb {
+  background-color: transparent;
 }
 
 .note-service {
