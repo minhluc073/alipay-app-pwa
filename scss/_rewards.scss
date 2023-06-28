@@ -64,7 +64,7 @@
         border-top-right-radius: 8px;
         border-bottom-right-radius: 8px;
         overflow: hidden;
-        img{
+        img {
             width: 100%;
             height: 100%;
         }
@@ -92,8 +92,7 @@
 
     // large
     &.large {
-        
-        .img-gift{
+        .img-gift {
             height: auto;
         }
         .desc {
@@ -138,11 +137,8 @@
     }
 }
 
-
-
 .food-box {
     .img-box {
-        
         position: relative;
         img {
             border-radius: 8px;
@@ -213,7 +209,7 @@
 }
 .tes-noti {
     .nav-tab {
-            width: fit-content;
+        width: fit-content;
         a {
             white-space: nowrap;
             padding: 4px 12px;
@@ -242,15 +238,20 @@
     .panel-noti {
         z-index: 1000;
         top: 0;
-        #app-wrap{
+        #app-wrap {
             height: 100vh;
-            overflow-y: scroll;
+            // overflow-y: scroll;
             overflow-x: hidden;
             background: $white_color;
+            overflow-y: -moz-scrollbars-none;
+            -ms-overflow-style: none;
+        }
+        &::-webkit-scrollbar {
+            width: 0 !important;
+            display: none;
         }
     }
 }
-
 
 .note-service {
     padding: 4px 4px 4px 12px;
@@ -339,7 +340,7 @@
 }
 .app-section {
     padding: 12px 0px;
-    &.st1{
+    &.st1 {
         padding: 16px 0px;
     }
 }
