@@ -547,6 +547,7 @@ input[type=color] {
   font-weight: 500;
   border: 1px solid #dddddd;
   color: #1e1e1e;
+  background: transparent;
   padding: 13px 14px;
   border-radius: 8px;
   -webkit-transition: all 0.3s ease-in-out;

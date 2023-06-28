@@ -361,6 +361,7 @@ input[type="color"] {
     font-weight: $fw_5;
     border: 1px solid $line_color;
     color: $on_surface_color;
+    background: transparent;
     padding: 13px 14px;
     border-radius: 8px;
     -webkit-transition: all 0.3s ease-in-out;
