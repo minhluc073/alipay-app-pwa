@@ -208,7 +208,7 @@
       sessionStorage.setItem("showPopup", true);
     });
   };
-  var Preloader = function () {
+  const preloader = function () {
     setTimeout(function () {
       $(".preload").fadeOut("slow", function () {
         $(this).remove();
@@ -224,6 +224,6 @@
     backPage();
     setTimeIn();
     hidePopupNoti();
-    Preloader();
+    preloader();
   });
 })(jQuery);

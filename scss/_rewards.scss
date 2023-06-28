@@ -26,7 +26,6 @@
     justify-content: space-between;
     border-radius: 8px;
     position: relative;
-    // margin-right: 8px;
     .desc {
         padding: 8px 0px 8px 12px;
         .name {
@@ -138,19 +137,12 @@
         }
     }
 }
-// .tes-2 {
-//     .space1 {
-//         margin-right: -8px;
-//         padding-left: 14px;
-//     }
-// }
+
 
 
 .food-box {
-    // width: 163px;
     .img-box {
-        // width: 163px;
-        // height: 106px;
+        
         position: relative;
         img {
             border-radius: 8px;
@@ -221,7 +213,6 @@
 }
 .tes-noti {
     .nav-tab {
-        // margin-right: 10px;
             width: fit-content;
         a {
             white-space: nowrap;
@@ -247,11 +238,18 @@
         }
     }
 }
-.tes-gift-2{
-    .swiper-slide{
-        // margin-left: -2px;
+.tf-panel {
+    .panel-noti {
+        z-index: 1000;
+
+        #app-wrap{
+            height: 100vh;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
     }
 }
+
 
 .note-service {
     padding: 4px 4px 4px 12px;
@@ -317,7 +315,6 @@
     padding-top: 75px;
 }
 
-// gift card details
 .header-style2 {
     background: url(../images/rewards/gift-3.jpg);
     padding: 12px 0px 140px;

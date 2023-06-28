@@ -1185,8 +1185,8 @@ input[type=radio] {
   height: 8px;
   background: #ea3434;
   border-radius: 50%;
-  right: 3px;
-  top: 3px;
+  right: 4px;
+  top: 4px;
 }
 
 .box-custom-select .default-select {
@@ -1987,7 +1987,7 @@ input[type=radio] {
 }
 .boarding-section {
   background: #1e1e1e;
-  min-height: 394px;
+  min-height: 310px;
   margin: 0 -45px;
   display: flex;
   justify-content: center;
@@ -2042,7 +2042,7 @@ input[type=radio] {
 
 .boarding-content .boarding-title {
   text-align: center;
-  padding-bottom: 91px;
+  padding-bottom: 60px;
 }
 .boarding-content .boarding-title h1 {
   margin-bottom: 16px;
@@ -2056,6 +2056,7 @@ input[type=radio] {
 .boarding-content .bottom {
   text-align: center;
   padding: 0px 50px 24px;
+  margin-top: 30px;
 }
 .boarding-content .bottom a {
   font-weight: 700;
@@ -2332,6 +2333,9 @@ input[type=radio] {
 }
 #modalhome2 .modal-content .heading .cb .tf-checkbox.st1:checked {
   background: #533dea;
+}
+#modalhome2 .modal-content .heading .cb .tf-checkbox.st1::before {
+  height: 9px;
 }
 
 .box-service {
@@ -3367,7 +3371,7 @@ input[type=radio] {
   width: 100%;
   z-index: 1000;
 }
-.tf-panel .panel-filter-history .header .clear-panel {
+.tf-panel .header .clear-panel {
   position: absolute;
   left: 16px;
   min-width: 44px;
@@ -3606,6 +3610,15 @@ input[type=radio] {
 .tes-noti .nav-tab.active a {
   background: #533dea;
   color: #ffffff;
+}
+
+.tf-panel .panel-noti {
+  z-index: 1000;
+}
+.tf-panel .panel-noti #app-wrap {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .note-service {
