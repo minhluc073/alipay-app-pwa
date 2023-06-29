@@ -91,12 +91,10 @@
   };
   const tfPanel = function () {
     var panelUp = $(".up");
+    var panelDown = $(".down");
     var panelLeft = $(".left");
     var panelRight = $(".right");
     var panelScanQR = $(".scan");
-    var panelLogout = $(".logout");
-    var panelLockApp = $(".lock-app");
-
     if (panelUp.length) {
       const open = function () {
         panelUp.addClass("panel-open");
@@ -106,6 +104,21 @@
       };
 
       $("#btn-popup-up").on("click", function () {
+        open();
+      });
+      $(".panel_overlay, .clear-panel").on("click", function () {
+        close();
+      });
+    }
+    if (panelDown.length) {
+      const open = function () {
+        panelDown.addClass("panel-open");
+      };
+      const close = function () {
+        panelDown.removeClass("panel-open");
+      };
+
+      $("#btn-popup-down").on("click", function () {
         open();
       });
       $(".panel_overlay, .clear-panel").on("click", function () {
@@ -151,36 +164,48 @@
         close();
       });
     }
-    if (panelLogout.length) {
-      const open = function () {
-        panelLogout.addClass("panel-open");
-      };
-      const close = function () {
-        panelLogout.removeClass("panel-open");
-      };
-
+   
+    if ($(".logout").length){
       $("#btn-logout").on("click", function () {
-        open();
-      });
+        $(".logout").addClass("panel-open");
+      })
       $(".panel_overlay, .clear-panel").on("click", function () {
-        close();
-      });
-    }
-    if (panelLockApp.length) {
-      const open = function () {
-        panelLockApp.addClass("panel-open");
-      };
-      const close = function () {
-        panelLockApp.removeClass("panel-open");
-      };
-
+        $(".logout").removeClass("panel-open");
+      })
+      }
+    if ($(".lock-app").length){
       $("#btn-lock").on("click", function () {
-        open();
-      });
+        $(".lock-app").addClass("panel-open");
+      })
       $(".panel_overlay, .clear-panel").on("click", function () {
-        close();
-      });
+        $(".lock-app").removeClass("panel-open");
+      })
+      }
+    if ($(".top-up").length){
+      $(".btn-topup").on("click", function () {
+        $(".top-up").addClass("panel-open");
+      })
+      $(".panel_overlay, .clear-panel").on("click", function () {
+        $(".top-up").removeClass("panel-open");
+      })
+      }
+    if ($(".card-popup").length){
+        $(".btn-card-popup").on("click", function () {
+          $(".card-popup").addClass("panel-open");
+        })
+        $(".panel_overlay, .clear-panel").on("click", function () {
+          $(".card-popup").removeClass("panel-open");
+        })
+        }
+    if ($(".recharge").length){
+    $("#btn-recharge").on("click", function () {
+      $(".recharge").addClass("panel-open");
+    })
+    $(".overlay-inner, .close").on("click", function () {
+      $(".recharge").removeClass("panel-open");
+    })
     }
+   
   };
   const backPage = function () {
     $(".back-btn").on("click", function (e) {
@@ -213,7 +238,7 @@
       $(".preload").fadeOut("slow", function () {
         $(this).remove();
       });
-    }, 800);
+    }, 150);
   };
   $(function () {
     clear_text();

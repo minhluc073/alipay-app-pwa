@@ -4,17 +4,17 @@
     top: 0;
     z-index: 10;
 }
-.wrap-transfer {
-    background: $white_color;
-}
+
 
 .action-sheet-transfer {
     display: flex;
     align-items: center;
     gap: 12px;
     padding: 12px 0px;
+    &:not(:last-child){
     border-bottom: 1px solid $line_br_color;
 
+    }
     .icon {
         width: 36px;
         height: 36px;

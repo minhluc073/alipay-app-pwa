@@ -41,7 +41,7 @@
     <div class="mt-3">
         <div class="tf-container">
              <h3 class="fw_6">Input your card info to link</h3>
-             <form class="tf-form mt-5" action="36_verify-otp.html">
+             <form class="tf-form mt-5">
                 
                 <div class="group-input">
                     <label>Card Number</label>
@@ -65,12 +65,12 @@
                     </div>
                     <div class="group-input">
                         <label>CVV</label>
-                        <input type="text" placeholder="CVV" required>
+                        <input type="text" placeholder="CVV">
                         <i class="icon-info"></i>
                     </div>
                 </div>
                 <div class="bottom-navigation-bar bottom-btn-fixed st2">
-                        <button type="submit" class="tf-btn accent large">Continue</button>
+                    <a class="tf-btn accent large" id="btn-popup-down">Continue</a>
                 </div>
 
              </form>
@@ -78,7 +78,43 @@
         </div>
     </div>
     
-  
+    <div class="tf-panel down">
+        <div class="panel_overlay"></div>
+        <div class="panel-box panel-down">
+            <div class="header">
+                <div class="tf-container">
+                    <div class="tf-statusbar br-none d-flex justify-content-center align-items-center">
+                        <a href="#" class="clear-panel"> <i class="icon-close1"></i> </a>
+                        <h3>Verification OTP</h3>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="mt-5">
+                <div class="tf-container">
+                    <form class="tf-form tf-form-verify" action="37_successful.html">
+                        <div class="d-flex group-input-verify">
+                                <input type="tel" maxlength="1" pattern="[0-9]" class="input-verify" value="1">
+                                <input type="tel" maxlength="1" pattern="[0-9]" class="input-verify" value="2">
+                                <input type="tel" maxlength="1" pattern="[0-9]" class="input-verify" value="3">
+                                <input type="tel" maxlength="1" pattern="[0-9]" class="input-verify">
+                        </div>
+                        <div class="text-send-code">
+                                <p class="fw_4">A code has been sent to your phone</p>
+                                <p class="primary_color fw_7">Resend in&nbsp;<span class="js-countdown" data-timer="60" data-labels=" :  ,  : , : , "></span></p>
+                        </div>
+                        <div class="mt-7 mb-6">
+                            <button type="submit" class="tf-btn accent large">Continue</button>
+                        </div>
+                        
+                    </form>
+                </div>
+        
+            </div>
+        
+        </div>
+    </div>
 
 
 

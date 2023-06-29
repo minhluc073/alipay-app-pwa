@@ -22,7 +22,7 @@ if ($("div").hasClass("swiper-container")) {
     speed: 1000,
     parallax: true,
     slidesPerView: 1.2,
-    spaceBetween: 12,
+    spaceBetween: 16,
     loop: true,
     navigation: {
       clickable: true,

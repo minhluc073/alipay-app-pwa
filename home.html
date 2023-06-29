@@ -22,11 +22,9 @@
 </head>
 
 <body>
-    <!-- preloade -->
-    <div class="preload preload-container">
-        <div class="preload-logo">
-        <div class="spinner"></div>
-        </div>
+     <!-- preloade -->
+     <div class="preload preload-container">
+        <div class="preload-logo"></div>
     </div>
     <!-- /preload -->
     <div class="app-header">
@@ -40,7 +38,7 @@
                         <p class="white_color fw_4">Let’s save your money!</p>
                     </div>
                 </a>
-                <a href="#" id="btn-popup-up"><i class="icon-notification1"></i></a>
+                <a href="#" id="btn-popup-up" class="icon-notification1"><span>2</span></a>
             </div>
         </div>
     </div>
@@ -81,7 +79,7 @@
                 <div class="wallet-footer">
                     <ul class="d-flex justify-content-between align-items-center">
                         <li class="wallet-card-item">
-                            <a class="fw_6 text-center" href="15_transfer-method.html">
+                            <a class="fw_6 text-center" id="btn-popup-down">
                                 <ul class="icon icon-group-transfers">
                                     <li class="path1"></li>
                                     <li class="path2"></li>
@@ -90,7 +88,7 @@
                                 Transfer
                             </a>
                         </li>
-                        <li class="wallet-card-item"><a class="fw_6" href="29_topup.html">
+                        <li class="wallet-card-item"><a class="fw_6 btn-topup" href="#">
                                 <ul class="icon icon-topup">
                                     <li class="path1"></li>
                                     <li class="path2"></li>
@@ -99,7 +97,7 @@
                                 </ul>
                                 Top up
                             </a></li>
-                        <li class="wallet-card-item"><a class="fw_6" href="33_card-list.html">
+                        <li class="wallet-card-item"><a class="fw_6 btn-card-popup" href="#">
                                 <ul class="icon icon-group-credit-card">
                                     <li class="path1"></li>
                                     <li class="path2"></li>
@@ -453,8 +451,6 @@
          </div>
       </div>
    </div>
-
-
     <div class="modal fade" id="modalhome2">
      <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -483,7 +479,6 @@
         </div>
      </div>
     </div>
-
     <div class="tf-panel up">
         <div class="panel-box panel-up panel-noti">
             <div class="header is-fixed">
@@ -1768,9 +1763,203 @@
         </div>
         
     </div>
+    <div class="tf-panel down">
+        <div class="panel_overlay"></div>
+        <div class="panel-box panel-down">
+            <div class="header bg_white_color">
+                <div class="tf-container">
+                    <div class="tf-statusbar d-flex justify-content-center align-items-center">
+                        <a href="#" class="clear-panel"> <i class="icon-close1"></i> </a>
+                        <h3>Transfer Method</h3>
+                        <a href="40_qr-code.html" class="action-right"><i class="icon-qrcode4"></i></a> 
+                    </div>
+                </div>
+            </div>
+            <div class="wrap-transfer mb-5">
+                <div class="tf-container">
+        
+                    <a href="16_transfer-friend.html" class="action-sheet-transfer">
+                        <div class="icon"><i class="icon-friends"></i></div>
+                        <div class="content">
+                            <h4 class="fw_6" >Transfer to Friend</h4>
+                            <p>Free, just phone number</p>
+                        </div>
+        
+                    </a>
+                    <a href="23_transfer-bank.html" class="action-sheet-transfer">
+                        <div class="icon"><i class="icon-bank2"></i></div>
+                        <div class="content">
+                            <h4 class="fw_6">Transfer to Bank</h4>
+                            <p>Transfer to bank account, card</p>
+                        </div>
+                    </a>
+        
+        
+                </div>
+        
+            </div>
+        </div>
+    </div>
+    <div class="tf-panel top-up">
+        <div class="panel_overlay"></div>
+        <div class="panel-box panel-down">
+            <div class="app-header st1">
+                <div class="tf-container">
+                    <div class="tf-topbar d-flex justify-content-center align-items-center">
+                       <a href="#" class="clear-panel"><i class="icon-left white_color"></i></a> 
+                        <h3 class="white_color">Top Up</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card-secton topup-content">
+                <div class="tf-container">
+                    <div class="tf-balance-box">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p>Your Balance:</p>
+                            <h3>$3.466,9</h3>
+                        </div>
+                        <div class="tf-spacing-16"></div>
+                        <div class="tf-form">
+                            <div class="group-input input-field input-money last">
+                                <label for="">Amount Of Money</label>
+                                <input type="text" value="200" required class="search-field value_input st1" type="text">
+                                <span class="icon-clear"></span>
+                            </div>
+                        </div>
+                       
+                    </div>
+                   
+                </div>
+            </div>
+           
+            <div class="amount-money">
+                <div class="tf-container">
+                    <h3>Amount Money</h3>
+                    <ul class="money list-money">
+                        <li><a class="tag-money" href="#">$50</a> </li>
+                        <li><a class="tag-money" href="#">$100</a> </li>
+                        <li><a class="tag-money" href="#">$200</a> </li>
+                        <li><a class="tag-money" href="#">$500</a> </li>
+                        <li><a class="tag-money" href="#">$1000</a> </li>
+                        <li><a class="tag-money" href="#">$2000</a> </li>
+                     </ul>
+                     <a href="#" id="btn-recharge" class="tf-btn accent large mt-7 mb-6">Continue</a>
+                </div>
+            </div>
+           
+          
+            
+        </div>
+    </div>
+    <div class="tf-panel recharge">
+        <div class="overlay-inner"></div>
+          <div class="panel-box panel-up wrap-content-panel">
+            <div class="heading">
+                <div class="tf-container">
+                    <div class="d-flex align-items-center position-relative justify-content-center">
+                        <i class="icon-close1 close"></i>
+                        <h3>Confirm Top Up</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="main-topup">
+                <div class="tf-container">
+                    <h3>Choose Source</h3>
+                    <div class="tf-card-block d-flex align-items-center justify-content-between">
+                        <div class="inner d-flex align-items-center">
+                            <div class="logo-img">
+                                <img src="images/logo-banks/card-visa3.png" alt="image">
+                            </div>
+                            <div class="content">
+                            <h4><a href="#" class="fw_6">Mastercard</a></h4>
+                            <p>****  ****  ****   7576</p>
+                            </div>
+                        </div>
+                        <i class="icon-right"></i>
+                    </div>
+                    <ul class="info">
+                        <li><h4 class="secondary_color fw_4 d-flex justify-content-between align-items-center">Amount <a href="#" class="on_surface_color fw_7">$ 200</a></h4></li>
+                        <li><h4 class="secondary_color fw_4 d-flex justify-content-between align-items-center">Fee <a href="#" class="success_color fw_7">Free</a></h4></li>
+                    </ul>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="total">
+                            <h4 class="secondary_color fw_4">Total</h4>
+                            <h2>$ 200</h2>
+                        </div>
+                        <a href="31_enter-pin.html" class="tf-btn accent large"><i class="icon-secure1"></i> Recharge</a>
 
-   
+                    </div>
+                </div>
+                
+            </div>
+          </div>
+          
+    </div>
+    <div class="tf-panel card-popup">
+        <div class="panel_overlay"></div>
+        <div class="panel-box panel-down">
+            <div class="header">
+                <div class="tf-container">
+                    <div class="tf-statusbar d-flex justify-content-center align-items-center">
+                        <a href="#" class="clear-panel"> <i class="icon-left"></i> </a>
+                        <h3>Manage Your Card</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="content-card mt-3 mb-5">
+                <div class="tf-container">
+                    <div class="tf-card-list bg_surface_color large out-line">
+                        <div class="logo">
+                            <img src="images/logo-banks/card-visa.png" alt="image">
+                        </div>
+                        <div class="info">
+                            <h4 class="fw_6"><a href="38_card-detail.html">Mastercard</a></h4>
+                            <p>****  ****  ****   7576</p>
+                        </div>
+                        <input type="checkbox" class="tf-checkbox circle-check" checked>
+                    </div>
+                    <p class="auth-line">Choose other card for payment</p>
+                    <ul class="box-card">
+                        <li class="tf-card-list medium bt-line">
+                            <div class="logo">
+                            <img src="images/logo-banks/card-visa2.png" alt="image">
+                        </div>
+                        <div class="info">
+                            <h4 class="fw_6"><a href="38_card-detail.html">Visacard</a></h4>
+                            <p>****  ****  ****   3245</p>
+                        </div>
+                        <input type="checkbox" class="tf-checkbox circle-check">
+                        </li>
+                        <li class="tf-card-list medium bt-line">
+                            <div class="logo">
+                            <img src="images/logo-banks/card-visa.png" alt="image">
+                        </div>
+                        <div class="info">
+                            <h4 class="fw_6"><a href="38_card-detail.html">Mastercard</a></h4>
+                            <p>****  ****  ****   7576</p>
+                        </div>
+                        <input type="checkbox" class="tf-checkbox circle-check">
+                        </li>
+                        <li class="tf-card-list medium">
+                            <div class="logo">
+                            <img src="images/logo-banks/card-visa2.png" alt="image">
+                        </div>
+                        <div class="info">
+                            <h4 class="fw_6"><a href="38_card-detail.html">Visacard</a></h4>
+                            <p>****  ****  ****   7214</p>
+                        </div>
+                        <input type="checkbox" class="tf-checkbox circle-check">
+                        </li>
+                    </ul>
+                    <div class="tf-spacing-20"></div>
+                    <a href="34_card.html" class="tf-btn large">Add a new card <i class="icon-plus fw_7"></i> </a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
 
+    
     <script type="text/javascript" src="javascript/jquery.min.js"></script>
     <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
     <script type="text/javascript" src="javascript/swiper-bundle.min.js"></script>
