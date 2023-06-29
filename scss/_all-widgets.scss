@@ -29,8 +29,7 @@
         background: $primary_color;
     }
 }
-.back-btn
-{
+.back-btn {
     min-width: 44px;
     height: 50px;
     display: flex;
@@ -373,15 +372,12 @@
     .back-btn {
         left: 16px;
         position: absolute;
-        // &.st1 {
-        //     position: unset;
-        // }
     }
     .action-right {
         right: 16px;
         position: absolute;
         min-width: 44px;
-        height:50px;
+        height: 50px;
         display: flex;
         align-items: center;
         justify-content: end;
@@ -398,15 +394,16 @@
     &::after {
         position: absolute;
         content: "2";
-        font-size: 8px;
+        font-size: 10px;
+        line-height: 9px;
         color: $white_color;
-        width: 10px;
-        text-align: center;
-        height: 10px;
+        width: 13px;
+        padding: 1px 4px;
+        height: 13px;
         background: $critical_color;
         border-radius: 50%;
-        right: 3px;
-        top: 3px;
+        right: -1px;
+        top: 1px;
     }
 }
 
