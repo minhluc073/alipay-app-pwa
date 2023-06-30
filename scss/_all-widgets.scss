@@ -15,7 +15,9 @@
 }
 .is-fixed {
     position: fixed;
-    left: 0;
+    top: 0;
+    max-width: 800px;
+    margin: 0 auto;
     width: 100%;
     z-index: 999;
 }
@@ -596,6 +598,7 @@
     .panel-down {
         width: 100%;
         top: 0;
+        left: 0;
         border-bottom-left-radius: 12px;
         border-bottom-right-radius: 12px;
         transform: translateY(-100%);

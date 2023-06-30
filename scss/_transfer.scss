@@ -1,19 +1,19 @@
 .header-transfer {
+    max-width: 800px;
+    margin: 0 auto;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 10;
 }
 
-
 .action-sheet-transfer {
     display: flex;
     align-items: center;
     gap: 12px;
     padding: 12px 0px;
-    &:not(:last-child){
-    border-bottom: 1px solid $line_br_color;
-
+    &:not(:last-child) {
+        border-bottom: 1px solid $line_br_color;
     }
     .icon {
         width: 36px;
@@ -41,7 +41,9 @@
         background: $white_color;
         z-index: 20;
         position: fixed;
-        top: 44px;
+        max-width: 800px;
+        margin: 0 auto;
+        top: 50px;
         left: 16px;
         right: 16px;
         padding: 12px 0px;
@@ -50,7 +52,9 @@
     .menu-tabs {
         position: fixed;
         z-index: 30;
-        top: 103px;
+        max-width: 800px;
+        margin: 0 auto;
+        top: 110px;
         left: 16px;
         right: 16px;
         background: $white_color;
@@ -165,8 +169,6 @@
     }
 }
 
-
-
 // .transfer-content {
 //     .tf-form {
 //         .tf-btn {
@@ -181,7 +183,7 @@
             margin-bottom: 8px;
         }
     }
-    .bottom-navigation-bar{
+    .bottom-navigation-bar {
         background: $surface_color;
         z-index: 20;
     }
@@ -329,14 +331,13 @@
         }
         .inner p {
             font-size: 16px;
-            
+
             padding-bottom: 8px;
         }
         .bottom p {
             font-size: 14px;
             line-height: 22px;
             &:first-child {
-                
                 padding-bottom: 4px;
             }
         }
@@ -406,17 +407,16 @@
     }
 }
 .topup-content {
-   .tf-balance-box{
-    padding: 16px;
-    box-shadow: none;
-   } 
-   .bottom-navigation-bar{
-    z-index: 20;
-   }
+    .tf-balance-box {
+        padding: 16px;
+        box-shadow: none;
+    }
+    .bottom-navigation-bar {
+        z-index: 20;
+    }
 }
 .amount-money {
-    h3{
-            padding-bottom: 12px;
-
+    h3 {
+        padding-bottom: 12px;
     }
 }

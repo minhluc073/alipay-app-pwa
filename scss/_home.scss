@@ -54,6 +54,8 @@
     z-index: 1000;
     background: $white_color;
     width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
     min-height: 60px;
     bottom: 0;
     box-shadow: $tf-navigation-bar_shadow;
@@ -186,6 +188,8 @@
         .panel-box {
             border-radius: unset;
             top: 0;
+            max-width: 800px;
+            margin: 0 auto;
             .content-tab {
                 height: 100vh;
                 overflow-y: scroll;

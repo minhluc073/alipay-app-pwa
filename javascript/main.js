@@ -1,11 +1,29 @@
+/*
+ * clear_text
+ * custom select
+ * tabs
+ * suggest input
+ * tf panel
+ * back Page
+ * setTimeIn
+ * hide popup 
+ * preloader
+ */
+
+
+
 (function ($) {
   "use strict";
 
+  /* clear text
+  ------------------------------------------------------------------------------------- */
   const clear_text = function () {
     $(".icon-clear").on("click", function () {
       $(".value_input").val("");
     });
   };
+    /* custom select
+  ------------------------------------------------------------------------------------- */
   const custom_select = function () {
     var langArray = [];
     $(".default-select option").each(function () {
@@ -53,6 +71,8 @@
       $(".btn-select").html(langArray[langIndex]);
     }
   };
+    /* tabs
+  ------------------------------------------------------------------------------------- */
   const tfTabs = function () {
     $(".tf-tab").each(function () {
       $(this).find(".content-tab").children().hide();
@@ -83,12 +103,16 @@
         });
     });
   };
+   /* suggest input
+  ------------------------------------------------------------------------------------- */
   const suggestInput = function () {
     $(".tag-money").on("click", function () {
       var val = $(this).text();
       $(".value_input").val(val);
     });
   };
+   /* tf panel
+  ------------------------------------------------------------------------------------- */
   const tfPanel = function () {
     var panelUp = $(".up");
     var panelDown = $(".down");
@@ -209,12 +233,16 @@
     }
    
   };
+  /* back Page
+  ------------------------------------------------------------------------------------- */
   const backPage = function () {
     $(".back-btn").on("click", function (e) {
       e.preventDefault();
       window.history.back();
     });
   };
+   /* setTimeIn
+  ------------------------------------------------------------------------------------- */
   const setTimeIn = function () {
     if ($(".scan").length > 0) {
       setTimeout(function () {
@@ -230,11 +258,15 @@
       }
     }
   };
+   /* hide popup 
+  ------------------------------------------------------------------------------------- */
   const hidePopupNoti = function () {
     $(".btn-hide-modal").on("click", function () {
       sessionStorage.setItem("showPopup", true);
     });
   };
+   /* preloader
+  ------------------------------------------------------------------------------------- */
   const preloader = function () {
     setTimeout(function () {
       $(".preload").fadeOut("slow", function () {
