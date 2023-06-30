@@ -10,6 +10,16 @@
             align-items: center;
             justify-content: flex-end;
         }
+        .left-back {
+            position: absolute;
+            left: 16px;
+            min-width: 44px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            color: #1e1e1e;
+        }
     }
 }
 
@@ -160,7 +170,7 @@
     .panel-filter-history {
         z-index: 1000;
         top: 0;
-        #app-wrap{
+        #app-wrap {
             height: 100vh;
             // overflow-y: scroll;
             overflow-x: hidden;
@@ -174,10 +184,9 @@
             &::-webkit-scrollbar-thumb,
             &:-webkit-scrollbar-track {
                 background-color: transparent;
-
             }
         }
-       
+
         .box-btn {
             padding-top: 70px;
             padding-bottom: 24px;

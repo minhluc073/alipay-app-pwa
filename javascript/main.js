@@ -181,14 +181,16 @@
         $(".lock-app").removeClass("panel-open");
       })
       }
-    if ($(".top-up").length){
-      $(".btn-topup").on("click", function () {
-        $(".top-up").addClass("panel-open");
-      })
-      $(".panel_overlay, .clear-panel").on("click", function () {
-        $(".top-up").removeClass("panel-open");
-      })
-      }
+      if ($(".repicient").length){
+        $(".btn-repicient").on("click", function () {
+          $(".repicient").addClass("panel-open");
+        })
+        $(".panel_overlay, .clear-panel").on("click", function () {
+          $(".repicient").removeClass("panel-open");
+        })
+        }
+
+
     if ($(".card-popup").length){
         $(".btn-card-popup").on("click", function () {
           $(".card-popup").addClass("panel-open");

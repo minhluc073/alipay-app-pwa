@@ -2409,11 +2409,32 @@ input[type=radio] {
   align-items: center;
 }
 
-.tf-panel.recharge .overlay-inner {
-  z-index: 1400;
+.tf-panel.repicient .panel-box {
+  border-radius: unset;
+  top: 0;
 }
-.tf-panel .wrap-content-panel {
-  z-index: 1500;
+.tf-panel.repicient .panel-box .content-tab {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: #ffffff;
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff;
+}
+.tf-panel.repicient .panel-box .content-tab::-webkit-scrollbar {
+  width: 0 !important;
+  display: none;
+}
+.tf-panel.repicient .panel-box .content-tab::-webkit-scrollbar-thumb, .tf-panel.repicient .panel-box .content-tab:-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.tf-panel.repicient .panel-box .clear-panel {
+  min-width: 44px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #1e1e1e;
 }
 
 .header-transfer {
@@ -3296,6 +3317,16 @@ input[type=radio] {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+.header .tf-statusbar .left-back {
+  position: absolute;
+  left: 16px;
+  min-width: 44px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #1e1e1e;
 }
 
 .wrap-total {
