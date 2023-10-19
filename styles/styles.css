@@ -645,6 +645,14 @@ input[type=radio] {
   accent-color: #533dea;
 }
 
+textarea {
+  resize: none;
+}
+
+textarea.form-textarea[rows] {
+  height: auto;
+}
+
 .tf-spacing-4 {
   height: 4px;
 }
@@ -751,6 +759,10 @@ input[type=radio] {
 
 .mb-9 {
   margin-bottom: 80px !important;
+}
+
+.gap-4 {
+  gap: 4px !important;
 }
 
 .group-input {
@@ -4290,6 +4302,101 @@ input[type=radio] {
   line-height: 24px;
   font-weight: 600;
   padding: 12px 8px;
+}
+
+.panel-sidebar .header-sidebar {
+  background-color: #533dea;
+}
+.panel-sidebar .header-sidebar .sidebar-logo {
+  display: flex;
+  align-items: center;
+}
+.panel-sidebar .header-sidebar .sidebar-logo h5 {
+  font-size: 22px;
+  line-height: 32px;
+  color: #ffffff;
+}
+.panel-sidebar .header-sidebar .sidebar-logo img {
+  width: 60px;
+}
+.panel-sidebar .header-sidebar .icon-close1 {
+  position: unset;
+  justify-content: flex-end;
+  color: #ffffff;
+}
+.panel-sidebar .panel-body {
+  height: 100vh;
+  overflow-x: hidden;
+  background: #ffffff;
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff;
+  padding: 60px 0px 30px;
+}
+.panel-sidebar .box-nav {
+  margin-top: 25px;
+}
+.panel-sidebar .box-nav .nav-title {
+  color: #000;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  padding-bottom: 12px;
+}
+.panel-sidebar .box-nav .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0px;
+  position: relative;
+}
+.panel-sidebar .box-nav .nav-link span {
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+.panel-sidebar .box-nav .nav-link .icon {
+  color: #717171;
+}
+.panel-sidebar .box-nav .nav-link::after {
+  position: absolute;
+  font-family: "icomoon";
+  content: "\ea7f";
+  right: 0;
+  color: #717171;
+  font-size: 14px;
+}
+
+.app-content {
+  padding: 50px 0px 16px;
+}
+
+.box-components {
+  border-radius: 8px;
+  padding: 10px 16px;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 15px 0px rgba(24, 25, 27, 0.05);
+}
+.box-components .item-link {
+  padding: 15px 0px;
+  display: flex;
+  position: relative;
+  color: #1e1e1e;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+.box-components .item-link::after {
+  position: absolute;
+  font-family: "icomoon";
+  content: "\ea7f";
+  right: 0;
+  color: #717171;
+  font-size: 14px;
+  font-weight: 400;
+}
+.box-components li:not(:last-child) {
+  border-bottom: 1px solid #ededed;
 }
 
 /*# sourceMappingURL=styles.css.map */

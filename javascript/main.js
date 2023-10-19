@@ -253,7 +253,7 @@
       let showPopup = sessionStorage.getItem("showPopup");
       if (!JSON.parse(showPopup)) {
         setTimeout(function () {
-          $("#modalhome1").modal({ show: true });
+          $("#modalhome1").modal('show');
         }, 3000);
       }
     }

@@ -457,6 +457,12 @@ input[type="radio"] {
     font-size: 16px;
     accent-color: $primary_color;
 }
+textarea{
+    resize: none;
+}
+textarea.form-textarea[rows]{
+    height: auto;
+}
 
 // spacing
 .tf-spacing-4 {
@@ -539,6 +545,9 @@ input[type="radio"] {
 }
 .mb-9 {
     margin-bottom: 80px !important;
+}
+.gap-4{
+    gap: 4px !important;
 }
 .group-input {
     margin-bottom: 24px;
