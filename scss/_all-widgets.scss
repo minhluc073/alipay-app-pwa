@@ -48,58 +48,7 @@
     font-size: 16px;
     color: $on_surface_color;
 }
-// button
-.tf-btn {
-    width: 100%;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    text-transform: capitalize;
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-}
-.tf-btn.accent {
-    background-color: $primary_color;
-    border: 1px solid $primary_color;
-    color: $white_color;
-    &:hover {
-        color: $primary_color;
-        border-color: $primary_color;
-        background-color: $white_color;
-    }
-}
-.tf-btn.outline {
-    color: $primary_color;
-    border: 1px solid $primary_color;
-    background-color: $white_color;
-    &:hover {
-        background-color: $primary_color;
-        border: 1px solid $primary_color;
-        color: $white_color;
-    }
-}
-.tf-btn.light {
-    color: $light_color;
-    background-color: $bg_light_color;
-    &:hover {
-        background-color: $primary_color;
-        color: $white_color;
-    }
-}
 
-.tf-btn.large {
-    padding: 12px 40px;
-}
-.tf-btn.medium {
-    padding: 10px 40px;
-}
-
-.tf-btn.small {
-    padding: 7px 40px;
-}
 
 .line {
     display: block;

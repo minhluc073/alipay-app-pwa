@@ -321,7 +321,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
     width: 100%;
-    padding: 12px 40px;
+    padding: 12px 20px;
     font-weight: $fw_6;
     font-size: 16px;
     line-height: 24px;
@@ -546,9 +546,7 @@ textarea.form-textarea[rows]{
 .mb-9 {
     margin-bottom: 80px !important;
 }
-.gap-4{
-    gap: 4px !important;
-}
+
 .group-input {
     margin-bottom: 24px;
     &.last {
@@ -625,4 +623,25 @@ textarea.form-textarea[rows]{
 .tf-checkbox.smail {
     width: 22px;
     height: 22px;
+}
+
+// grid
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+// gap
+.gap-4{
+    gap: 4px !important;
+}
+.gap-8{
+    gap: 8px !important;
+}
+.gap-12{
+    gap: 12px !important;
 }
