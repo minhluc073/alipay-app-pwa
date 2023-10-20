@@ -283,38 +283,7 @@
         justify-content: center;
     }
 }
-.tabs-food {
-    position: fixed;
-    z-index: 30;
-    top: 44px;
-    left: 16px;
-    right: 16px;
-    margin: 0px -16px;
-    padding-left: 16px;
-    padding-right: 16px;
-    background: $white_color;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 20px;
-    .nav-tab {
-        border-bottom: 1px solid $line_br_color;
-        padding-bottom: 8px;
-        text-align: center;
-        color: $secondary_color;
-        font-weight: $fw_6;
-        font-size: 14px;
-        line-height: 22px;
-        &.active {
-            color: $on_surface_color;
-            border-bottom: 2px solid $primary_color;
-        }
-    }
-}
-.tab-gift-item {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px 12px;
-}
+
 .dots-food-tes span.swiper-pagination-bullet-active {
     width: 28px;
     border-radius: 30px;

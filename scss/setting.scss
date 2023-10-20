@@ -234,7 +234,9 @@ label {
 }
 
 body {
-    font: 12px/20px "Plus Jakarta Sans", sans-serif;
+    font:
+        12px/20px "Plus Jakarta Sans",
+        sans-serif;
     font-weight: 500;
     background-color: $white_color;
     color: $secondary_color;
@@ -457,10 +459,10 @@ input[type="radio"] {
     font-size: 16px;
     accent-color: $primary_color;
 }
-textarea{
+textarea {
     resize: none;
 }
-textarea.form-textarea[rows]{
+textarea.form-textarea[rows] {
     height: auto;
 }
 
@@ -584,6 +586,46 @@ textarea.form-textarea[rows]{
             left: 28px;
         }
     }
+    &.success {
+        &:checked:checked[type="checkbox"] {
+            background: $success_color;
+            transition: 0.5s;
+            &::before {
+                background: $white_color;
+                left: 28px;
+            }
+        }
+    }
+    &.warning {
+        &:checked:checked[type="checkbox"] {
+            background: $warning_color;
+            transition: 0.5s;
+            &::before {
+                background: $white_color;
+                left: 28px;
+            }
+        }
+    }
+    &.danger {
+        &:checked:checked[type="checkbox"] {
+            background: $critical_color;
+            transition: 0.5s;
+            &::before {
+                background: $white_color;
+                left: 28px;
+            }
+        }
+    }
+    &.dark {
+        &:checked:checked[type="checkbox"] {
+            background: $on_surface_color;
+            transition: 0.5s;
+            &::before {
+                background: $white_color;
+                left: 28px;
+            }
+        }
+    }
 }
 
 // checkbox
@@ -624,6 +666,67 @@ textarea.form-textarea[rows]{
     width: 22px;
     height: 22px;
 }
+.tf-radio[type="radio"] {
+    position: relative;
+    border: 1px solid $primary_color;
+    border-radius: 50px;
+    background: none;
+    cursor: pointer;
+    outline: 0;
+    height: 18px;
+    width: 18px;
+    -webkit-appearance: none;
+
+    &:checked {
+        &::before {
+            opacity: 1;
+        }
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        background-color: $primary_color;
+        z-index: 2;
+        opacity: 0;
+    }
+
+    &.square {
+        border-radius: 0;
+        &::before {
+            border-radius: 0;
+        }
+        &:checked {
+            &::before {
+                opacity: 1;
+            }
+        }
+    }
+    &.style-2 {
+        &:checked {
+            background-color: $primary_color;
+            border-color: $primary_color;
+            &::before {
+                opacity: 1;
+            }
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            border-radius: 50%;
+            width: 8px;
+            height: 8px;
+            background-color: $white_color;
+          
+        }
+    }
+}
 
 // grid
 .grid-2 {
@@ -633,15 +736,31 @@ textarea.form-textarea[rows]{
 .grid-3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-
 }
 // gap
-.gap-4{
+.gap-4 {
     gap: 4px !important;
 }
-.gap-8{
+.gap-8 {
     gap: 8px !important;
 }
-.gap-12{
+.gap-12 {
     gap: 12px !important;
+}
+
+// text-color
+.text-primary {
+    color: $primary_color !important;
+}
+.text-success {
+    color: $success_color !important;
+}
+.text-secondary {
+    color: $secondary_color !important;
+}
+.text-warning {
+    color: $warning_color !important;
+}
+.text-danger {
+    color: $critical_color;
 }
